@@ -12,7 +12,7 @@ const songs = [
     { id: 5, title: "Dieu fait Toutes Choses Nouvelles", artist: "Spiritual Songs" , lyrics: "Dieu fait toutes choses nouvelles" },
 ]
 
-export default function SongPage({ params }: { params: { id: string } }) {
+export default function SongPage({ params }: Readonly<{ params: { id: string } }>) {
     const router = useRouter()
     const songId = parseInt(params.id)
     const song = songs.find(s => s.id === songId)
