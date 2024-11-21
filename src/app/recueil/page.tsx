@@ -44,8 +44,8 @@ export default function Home() {
               }}
             >
               <Link href={`/song/${song.id}`} className="block text-blue-600 hover:underline">
-                <div className="flex flex-col items-center justify-center text-center">
-                  <span className="font-semibold">{song.title}</span>
+                <div className="flex flex-col">
+                  <span className="font-semibold">{song.id}- {song.title}</span>
                   <span>{song.artist}</span>
                 </div>
               </Link>

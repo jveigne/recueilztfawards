@@ -18,7 +18,7 @@ export default function Home() {
       <div className="flex flex-col items-center space-y-4">
         {/* Boutons d'action */}
         <button className="bg-yellow-400 text-blue-900 px-6 py-3 rounded-full font-semibold text-lg shadow hover:bg-yellow-500 w-64">
-          <Link href="/program">Planning du ZTF Awards</Link>
+          <Link href="/program">Programme du ZTF Awards</Link>
         </button>
         <button className="bg-white text-blue-900 px-6 py-6 rounded-full font-semibold text-lg shadow hover:bg-gray-200 w-64">
   <Link href="/recueil">Recueil Musical</Link>

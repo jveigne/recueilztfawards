@@ -52,8 +52,8 @@ export default function SongPage({ params }: { params: Params }) {
                 )}
             </div>
             <br />
-            <h1 className="text-3xl font-bold mb-4">{song.title}</h1>
-            <h2 className="text-xl mb-4">par {song.artist}</h2>
+            <h1 className="text-3xl font-bold mb-4">{song.id}- {song.title}</h1>
+            <h2 className="text-xl mb-4">{song.artist}</h2>
             <p className="whitespace-pre-line mb-6">{song.lyrics}</p>
 
             <div className="mt-8">
