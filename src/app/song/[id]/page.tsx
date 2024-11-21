@@ -57,7 +57,7 @@ export default function SongPage({ params }: { params: Params }) {
             <p className="whitespace-pre-line mb-6">{song.lyrics}</p>
 
             <div className="mt-8">
-                <Link href="/" className="text-blue-600 hover:underline">
+                <Link href="/recueil" className="text-blue-600 hover:underline">
                     Retour à la liste des chansons
                 </Link>
             </div>
