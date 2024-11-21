@@ -28,7 +28,7 @@ export default function Home() {
       {/* Liste des chansons */}
       <div className="container mx-auto p-4">
         <ul className="space-y-4">
-          {songs.map((song, index) => (
+          {songs.map((song) => (
             <li
               key={song.id}
               className="bg-white shadow-md rounded-lg p-6 border-t-4 transition-transform transform hover:scale-105 hover:shadow-lg"
