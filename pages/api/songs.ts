@@ -1,14 +1,6 @@
 import { NextApiRequest, NextApiResponse } from "next";
 import { Song } from "../../models/Song";
 
-
-type Songs = {
-    id: number;
-    title: string;
-    artist: string;
-    lyrics: string;
-};
-
 let songsData: Song[] | null = null;
 
 export default function handler(req: NextApiRequest, res: NextApiResponse) {
