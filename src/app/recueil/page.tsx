@@ -14,6 +14,7 @@ async function getSongs() {
 
     const querySnapshot = await getDocs(collection(db, 'songs').withConverter(SongConverter));
     songs = querySnapshot.docs.map((doc) => doc.data());
+    console.log(songs)
 
   } catch (error) {
     console.error('Erreur lors de la récupération des chansons :', error);
@@ -30,6 +31,8 @@ export default async function Home() {
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ songs }),
   });
+  
+  console.log("donnée envoyé")
 
 
   return (
