@@ -48,7 +48,6 @@ export default async function Home() {
           </div>
         </div>
       </header>
-
       {/* Liste des chansons */}
       <div className="container mx-auto p-4">
         <ul className="space-y-4">
