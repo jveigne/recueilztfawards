@@ -1,16 +1,9 @@
 'use client';
 
-import { use } from 'react';
+import { use, useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
 import Link from 'next/link';
-
-const songs = [
-    { id: 1, title: "La Femme Samaritaine", artist: "Spiritual Songs", lyrics: "Il m'a dit tout ce que j'ai fais" },
-    { id: 2, title: "Où est Ton Trésor", artist: "Spiritual Songs", lyrics: "où est ton trésor? là sera ton coeur" },
-    { id: 3, title: "Be Thou My Vision", artist: "Spiritual Songs", lyrics: "God I love you" },
-    { id: 4, title: "Une chose m'inquiète", artist: "Spiritual Songs", lyrics: "Une chose m'inquiète c'est que j'ai beaucoup d'argent" },
-    { id: 5, title: "Dieu fait Toutes Choses Nouvelles", artist: "Spiritual Songs", lyrics: "Dieu fait toutes choses nouvelles" },
-];
+import { Song } from '../../../../models/Song';
 
 // Définir `params` comme une promesse
 type Params = Promise<{ id: string }>;
@@ -21,10 +14,31 @@ export default function SongPage({ params }: { params: Params }) {
     const songId = parseInt(resolvedParams.id, 10);
 
     const router = useRouter();
+    const [songs, setSongs] = useState<Song[]>([]); // État pour stocker les chansons
+
+    useEffect(() => {
+        const fetchData = async () => {
+            try {
+                // Requête GET à l'API pour récupérer le tableau de chansons
+                const response = await fetch('/api/songs');
+                if (response.ok) {
+                    const data: Song[] = await response.json();
+                    setSongs(data);
+                } else {
+                    console.error('Erreur lors de la récupération des données');
+                }
+            } catch (error) {
+                console.error('Erreur réseau :', error);
+            }
+        };
+
+        fetchData();
+    }, []);
+
     const song = songs.find((s) => s.id === songId);
 
     if (!song) {
-        return <div>Chanson non trouvée</div>;
+        return <div><p>Chargement...</p></div>;
     }
 
     const currentIndex = songs.findIndex((s) => s.id === songId);

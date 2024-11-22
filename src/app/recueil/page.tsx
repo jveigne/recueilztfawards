@@ -1,15 +1,37 @@
 import Link from 'next/link';
+import { Song } from '../../../models/Song';
+import {collection, getDocs } from 'firebase/firestore';
+import { SongConverter } from '../../../models/converter';
+import { db } from '../../../lib/firebase';
 
-// Simulons une base de données de chansons
-const songs = [
-  { id: 1, title: "La Femme Samaritaine", artist: "Spiritual Songs", category: "Louange" },
-  { id: 2, title: "Où est Ton Trésor", artist: "Spiritual Songs", category: "prédication & Atelier" },
-  { id: 3, title: "Be Thou My Vision", artist: "Spiritual Songs", category: "prédication & Atelier" },
-  { id: 4, title: "Une chose m'inquiète", artist: "Spiritual Songs", category: "Louange" },
-  { id: 5, title: "Dieu fait Toutes Choses Nouvelles", artist: "Spiritual Songs", category: "fin" },
-];
 
-export default function Home() {
+let songs: Song[] = [];
+
+async function getSongs() {
+
+  try {
+    // Récupérer les données de Firestore
+
+    const querySnapshot = await getDocs(collection(db, 'songs').withConverter(SongConverter));
+    songs = querySnapshot.docs.map((doc) => doc.data());
+
+  } catch (error) {
+    console.error('Erreur lors de la récupération des chansons :', error);
+  }
+}
+
+export default async function Home() {
+
+  getSongs();
+
+  // Envoi du tableau de chansons à l'API via POST
+  await fetch(process.env.URL + '/api/songs', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ songs }),
+  });
+
+
   return (
     <div>
       {/* Header */}
@@ -33,14 +55,7 @@ export default function Home() {
               key={song.id}
               className="bg-white shadow-md rounded-lg p-6 border-t-4 transition-transform transform hover:scale-105 hover:shadow-lg"
               style={{
-                borderColor:
-                  song.category === "Louange"
-                    ? "#FFD700" // Bleu
-                    : song.category === "prédication & Atelier"
-                    ? "#FFD700" // Vert
-                    : song.category === "fin"
-                    ? "#FFD700" // Rouge
-                    : "#FFD700", // Jaune
+                borderColor: "#FFD700", // Jaune
               }}
             >
               <Link href={`/song/${song.id}`} className="block text-blue-600 hover:underline">
