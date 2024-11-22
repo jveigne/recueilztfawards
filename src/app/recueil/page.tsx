@@ -1,37 +1,30 @@
+'use client';
+
 import Link from 'next/link';
 import { Song } from '../../../models/Song';
-import {collection, getDocs } from 'firebase/firestore';
-import { SongConverter } from '../../../models/converter';
-import { db } from '../../../lib/firebase';
+import { useEffect, useState } from 'react';
 
+export default function Home() {
+  const [songs, setSongs] = useState<Song[]>([]); // État pour stocker les chansons
 
-let songs: Song[] = [];
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        // Requête GET à l'API pour récupérer le tableau de chansons
+        const response = await fetch(process.env.NEXT_PUBLIC_ZTF_AWARD_URL+'/api/songs');
+        if (response.ok) {
+          const data: Song[] = await response.json();
+          setSongs(data);
+        } else {
+          console.error('Erreur lors de la récupération des données');
+        }
+      } catch (error) {
+        console.error('Erreur réseau :', error);
+      }
+    };
 
-async function getSongs() {
-
-  try {
-    // Récupérer les données de Firestore
-
-    const querySnapshot = await getDocs(collection(db, 'songs').withConverter(SongConverter));
-    songs = querySnapshot.docs.map((doc) => doc.data());
-
-  } catch (error) {
-    console.error('Erreur lors de la récupération des chansons :', error);
-  }
-}
-
-export default async function Home() {
-
-  getSongs();
-
-  // Envoi du tableau de chansons à l'API via POST
-  await fetch(process.env.NEXT_PUBLIC_ZTF_AWARD_URL + '/api/songs', {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({ songs }),
-  });
-  
-  console.log("donnée envoyé")
+    fetchData();
+  }, []);
 
 
   return (
@@ -51,7 +44,7 @@ export default async function Home() {
       {/* Liste des chansons */}
       <div className="container mx-auto p-4">
         <ul className="space-y-4">
-          {songs.map((song) => (
+          {songs.map(song => (
             <li
               key={song.id}
               className="bg-white shadow-md rounded-lg p-6 border-t-4 transition-transform transform hover:scale-105 hover:shadow-lg"

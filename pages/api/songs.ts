@@ -1,9 +1,11 @@
+import {collection, getDocs } from "firebase/firestore";
 import { NextApiRequest, NextApiResponse } from "next";
-import { Song } from "../../models/Song";
+import { db } from "../../lib/firebase";
+import { SongConverter } from "../../models/converter";
 
-let songsData: Song[] | null = null;
 
-export default function handler(req: NextApiRequest, res: NextApiResponse) {
+
+export async function handler(req: NextApiRequest, res: NextApiResponse) {
     if (req.method === 'POST') {
         const { songs } = req.body;
 
@@ -13,17 +15,20 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
         }
 
         // Stocker l'objet envoyé
-        songsData = songs;
+       // songsData = songs;
 
         return res.status(200).json({ message: 'Chanson enregistrée avec succès.' });
     } else if (req.method === 'GET') {
-        // Renvoyer le tableau de chansons
-        if (songsData !== null && songsData.length > 0) {
-            return res.status(200).json(songsData);
-        } else {
-            return res.status(404).json({ message: 'Aucune chanson trouvée.' });
+        try {
+            // Récupérer les données de Firestore
+            const querySnapshot = await getDocs(collection(db, 'songs').withConverter(SongConverter));
+            return res.json(querySnapshot.docs.map((doc) => doc.data()));
+        } catch (error) {
+            console.error('Erreur lors de la récupération des chansons :', error);
         }
     } else {
         return res.status(405).json({ message: 'Méthode non autorisée.' });
     }
 }
+
+export default handler

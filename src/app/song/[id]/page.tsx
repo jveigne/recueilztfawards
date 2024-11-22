@@ -20,7 +20,7 @@ export default function SongPage({ params }: { params: Params }) {
         const fetchData = async () => {
             try {
                 // Requête GET à l'API pour récupérer le tableau de chansons
-                const response = await fetch('/api/songs');
+                const response = await fetch(process.env.NEXT_PUBLIC_ZTF_AWARD_URL+'/api/songs');
                 if (response.ok) {
                     const data: Song[] = await response.json();
                     setSongs(data);
