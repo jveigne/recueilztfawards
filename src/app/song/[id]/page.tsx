@@ -38,7 +38,15 @@ export default function SongPage({ params }: { params: Params }) {
     const song = songs.find((s) => s.id === songId);
 
     if (!song) {
-        return <div><p>Chargement...</p></div>;
+        return (<>
+                <div><p>Chargement...</p></div>
+                <div className="mt-8">
+                    <Link href="/recueil" className="text-blue-600 hover:underline">
+                        Retour à la liste des chansons
+                    </Link>
+                </div>
+            </>
+    );
     }
 
     const currentIndex = songs.findIndex((s) => s.id === songId);
