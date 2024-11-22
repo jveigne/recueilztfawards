@@ -14,7 +14,6 @@ export default function SongPage({ params }: { params: Params }) {
     const songId = parseInt(resolvedParams.id, 10);
 
     const router = useRouter();
-
     const [songs, setSongs] = useState<Song[]>([]); // État pour stocker les chansons
 
     useEffect(() => {
@@ -35,7 +34,6 @@ export default function SongPage({ params }: { params: Params }) {
 
         fetchData();
     }, []);
-
 
     const song = songs.find((s) => s.id === songId);
 
