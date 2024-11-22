@@ -25,7 +25,7 @@ export default async function Home() {
   getSongs();
 
   // Envoi du tableau de chansons à l'API via POST
-  await fetch(process.env.URL + '/api/songs', {
+  await fetch(process.env.ZTF_AWARD_URL + '/api/songs', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ songs }),
