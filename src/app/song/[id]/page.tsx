@@ -1,14 +1,15 @@
 'use client';
 
-import { use, useEffect, useState } from 'react';
-import { useRouter } from 'next/navigation';
+import {use, useEffect, useState} from 'react';
+import {useRouter} from 'next/navigation';
 import Link from 'next/link';
-import { Song } from '../../../../models/Song';
+import {Song} from '../../../../models/Song';
+import DOMPurify from 'dompurify';
 
 // Définir `params` comme une promesse
 type Params = Promise<{ id: string }>;
 
-export default function SongPage({ params }: { params: Params }) {
+export default function SongPage({params}: { params: Params }) {
     // Utiliser `use` pour résoudre la promesse côté client
     const resolvedParams = use(params);
     const songId = parseInt(resolvedParams.id, 10);
@@ -20,7 +21,7 @@ export default function SongPage({ params }: { params: Params }) {
         const fetchData = async () => {
             try {
                 // Requête GET à l'API pour récupérer le tableau de chansons
-                const response = await fetch(process.env.NEXT_PUBLIC_ZTF_AWARD_URL+'/api/songs');
+                const response = await fetch(process.env.NEXT_PUBLIC_ZTF_AWARD_URL + '/api/songs');
                 if (response.ok) {
                     const data: Song[] = await response.json();
                     setSongs(data);
@@ -46,12 +47,14 @@ export default function SongPage({ params }: { params: Params }) {
                     </Link>
                 </div>
             </>
-    );
+        );
     }
 
     const currentIndex = songs.findIndex((s) => s.id === songId);
     const prevSong = songs[currentIndex - 1];
     const nextSong = songs[currentIndex + 1];
+
+    const sanitizedHTML = DOMPurify.sanitize(song.lyrics);
 
     return (
         <div className="container mx-auto p-4">
@@ -73,10 +76,13 @@ export default function SongPage({ params }: { params: Params }) {
                     </button>
                 )}
             </div>
-            <br />
+            <br/>
             <h1 className="text-3xl font-bold mb-4">{song.id}- {song.title}</h1>
             <h2 className="text-xl mb-4">{song.artist}</h2>
-            <p className="whitespace-pre-line mb-6">{song.lyrics}</p>
+            <div
+                className="prose"
+                dangerouslySetInnerHTML={{__html: sanitizedHTML}}
+            ></div>
 
             <div className="mt-8">
                 <Link href="/recueil" className="text-blue-600 hover:underline">
@@ -86,3 +92,4 @@ export default function SongPage({ params }: { params: Params }) {
         </div>
     );
 }
+

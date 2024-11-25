@@ -14,6 +14,7 @@ export default function Home() {
         const response = await fetch(process.env.NEXT_PUBLIC_ZTF_AWARD_URL+'/api/songs');
         if (response.ok) {
           const data: Song[] = await response.json();
+          data.sort((a: Song, b: Song) => a.title.localeCompare(b.title))
           setSongs(data);
         } else {
           console.error('Erreur lors de la récupération des données');
@@ -54,7 +55,7 @@ export default function Home() {
             >
               <Link href={`/song/${song.id}`} className="block text-blue-600 hover:underline">
                 <div className="flex flex-col">
-                  <span className="font-semibold">{song.id}- {song.title}</span>
+                  <span className="font-semibold">{song.title}</span>
                   <span>{song.artist}</span>
                 </div>
               </Link>
