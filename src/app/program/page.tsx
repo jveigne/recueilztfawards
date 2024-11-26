@@ -1,3 +1,5 @@
+'use client';
+
 import React from "react";
 import Link from "next/link";
 const schedule = [
@@ -99,6 +101,8 @@ export default function Schedule() {
             </div>
           ))}
         </div>
+
+
       </div>
     </div>
   );
