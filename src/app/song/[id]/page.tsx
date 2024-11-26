@@ -76,6 +76,11 @@ export default function SongPage({params}: { params: Params }) {
                     </button>
                 )}
             </div>
+            <div className="mt-8">
+                <Link href="/recueil" className="text-blue-600 hover:underline">
+                    Retour à la liste des chansons
+                </Link>
+            </div>
             <br/>
             <h1 className="text-3xl font-bold mb-4">{song.title}</h1>
             <h2 className="text-xl mb-4">{song.artist}</h2>
@@ -84,11 +89,6 @@ export default function SongPage({params}: { params: Params }) {
                 dangerouslySetInnerHTML={{__html: sanitizedHTML}}
             ></div>
 
-            <div className="mt-8">
-                <Link href="/recueil" className="text-blue-600 hover:underline">
-                    Retour à la liste des chansons
-                </Link>
-            </div>
         </div>
     );
 }

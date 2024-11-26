@@ -58,7 +58,7 @@ export default function Schedule() {
           {/*<p className="text-lg mt-2">ZTF Awards 2024</p>*/}
           {/* Ajout d'un margin pour séparer le bouton */}
           <div className="mt-4">
-            <button className="bg-blue-500 text-white px-12 py-4 rounded-lg shadow hover:bg-blue-600 w-full">
+            <button className="bg-blue-500 text-white px-12 py-4 rounded-lg shadow hover:bg-blue-600">
               <Link href="/">Accueil</Link>
             </button>
           </div>
