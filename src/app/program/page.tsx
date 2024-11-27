@@ -49,7 +49,6 @@ const programme = [
   },
 ];
 
-
 const schedule = [
   {
     time: "09:00 - 10:30",
@@ -96,38 +95,36 @@ const schedule = [
 ];
 
 export default function Schedule() {
-  const { boolState} = useBooleanContext(); //reccupère le contexte de la langue fr/en
-  // choix des données en fonction de la langue fr/en
+  const { boolState } = useBooleanContext(); // récupère le contexte de la langue fr/en
+  // Choix des données en fonction de la langue fr/en
   const events = boolState ? schedule : programme;
 
   return (
-    <div className="min-h-screen bg-gray-100">
+    <div style={{ fontFamily: "'Cinzel', serif" }} className="min-h-screen bg-gray-100"> {/* Application de la police ici */}
       {/* Header */}
-      <header className="bg-blue-900 text-white py-6">
-
+      <header
+        style={{
+          backgroundColor: '#05053B', // Couleur personnalisée pour le fond du header
+        }}
+        className="text-white py-6"
+      >
         <div className="container mx-auto px-4 text-center">
-
           <h1 className="text-4xl font-bold">
-            { boolState ?
-                <span className="text-yellow-400">Official Schedule of the Day</span>
-                :
-                <span className="text-yellow-400">Programme officiel de la journée</span>
-            }
+            {boolState ? (
+              <span className="text-yellow-400">Official Schedule of the Day</span>
+            ) : (
+              <span className="text-yellow-400">Programme officiel de la journée</span>
+            )}
           </h1>
 
           <div className="mt-4">
             <Link href="/">
-              <button className="bg-blue-500 text-white px-12 py-4 rounded-lg shadow hover:bg-blue-600 w-full">
-                { boolState ?
-                    "Home" :
-                    "Accueil"
-                }
+              <button className="bg-blue-500 text-white px-12 py-4 rounded-lg shadow hover:bg-blue-600">
+                {boolState ? "Home" : "Accueil"}
               </button>
-            </Link>            
+            </Link>
           </div>
-
         </div>
-
       </header>
 
       {/* Contenu */}
@@ -139,13 +136,13 @@ export default function Schedule() {
               className="bg-white shadow-md rounded-lg p-6 border-t-4 transition-transform transform hover:scale-105 hover:shadow-lg"
               style={{
                 borderColor:
-                    event.category === (boolState ? "Praise" : "Louange")
-                        ? "#007bff" // Bleu pour Louange / Praise
-                        : event.category === (boolState ? "preaching & Workshop" : "prédication & Atelier")
-                            ? "#28a745" // Vert pour prédication & Atelier
-                            : event.category === (boolState ? "Fence" : "fin")
-                                ? "#FF0000" // Rouge pour la fin
-                                : "#ffc107", // Jaune par défaut (pauses)
+                  event.category === (boolState ? "Praise" : "Louange")
+                    ? "#007bff" // Bleu pour Louange / Praise
+                    : event.category === (boolState ? "preaching & Workshop" : "prédication & Atelier")
+                    ? "#28a745" // Vert pour prédication & Atelier
+                    : event.category === (boolState ? "Fence" : "fin")
+                    ? "#FF0000" // Rouge pour la fin
+                    : "#ffc107", // Jaune par défaut (pauses)
               }}
             >
               <h2 className="text-lg font-semibold text-blue-900">{event.time}</h2>
