@@ -30,8 +30,8 @@ export default function Home() {
                     ) : (
                         <>
                             <h1 className="text-5xl font-yesteryears mb-6 text-center">Bienvenue</h1>
-                            <h2 className="text-4xl font-yestereyears mb-6 text-center">Aux </h2>
-                            <h2 className="text-4xl font-roboto font-bold mb-6 text-center text-orange">ZTF AWARDS 2024</h2>
+                            <h2 className="text-4xl font-yesteryears mb-6 text-center">Aux</h2>
+                            <h2 className="text-4xl font-yesteryears font-bold mb-6 text-center text-orange">ZTF AWARDS 2024</h2>
 
                         </>
                         )}
