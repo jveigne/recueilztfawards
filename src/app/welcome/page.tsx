@@ -39,33 +39,54 @@ export default function Home() {
             {
                 boolState ?
                     <>
-                        <button
-                            className="bg-yellow-400 text-blue-900 px-6 py-6 rounded-full font-semibold text-lg shadow hover:bg-yellow-500 w-64">
-                            <Link href="/program">ZTF Awards program</Link>
-                        </button>
-                        <button
-                            className="bg-white text-blue-900 px-6 py-6 rounded-full font-semibold text-lg shadow hover:bg-gray-200 w-64">
-                            <Link href="/recueil">Musical collection</Link>
-                        </button>
-                        <button
-                            className="bg-white text-blue-900 px-6 py-6 rounded-full font-semibold text-lg shadow hover:bg-gray-200 w-64">
-                            <Link href="/">Back</Link>
-                        </button>
+                        <Link href="/program">
+                            <button
+                                className="bg-yellow-400 text-blue-900 px-6 py-6 rounded-full font-semibold text-lg shadow hover:bg-yellow-500 w-64">
+                                    ZTF Awards Program
+                            </button>
+                        </Link>
+
+                        <Link href="/recueil">
+                            <button
+                                className="bg-white text-blue-900 px-6 py-6 rounded-full font-semibold text-lg shadow hover:bg-gray-200 w-64">
+                                    Musical collection
+                            </button>
+                        </Link>
+                        
+                        <Link href="/">
+                            <button
+                                className="bg-white text-blue-900 px-4 py-2 rounded-full font-semibold text-sm shadow hover:bg-gray-200 w-40">
+                                    Back
+                            </button>
+                        </Link>
                     </>
                     :
                     <>
-                        <button
-                            className="bg-yellow-400 text-blue-900 px-6 py-6 rounded-full font-semibold text-lg shadow hover:bg-yellow-500 w-64">
-                            <Link href="/program">Programme du ZTF Awards</Link>
-                        </button>
-                        <button
-                            className="bg-white text-blue-900 px-6 py-6 rounded-full font-semibold text-lg shadow hover:bg-gray-200 w-64">
-                            <Link href="/recueil">Recueil Musical</Link>
-                        </button>
-                        <button
-                            className="bg-white text-blue-900 px-6 py-6 rounded-full font-semibold text-lg shadow hover:bg-gray-200 w-64">
-                            <Link href="/">Retour</Link>
-                        </button>
+                        <Link href="/program">
+                            <button
+                                className="bg-yellow-400 text-blue-900 px-6 py-6 rounded-full font-semibold text-lg shadow hover:bg-yellow-500 w-64">
+                                    Programme du ZTF Awards
+                            </button>
+                        </Link>
+
+
+                        <Link href="/recueil">
+                            <button
+                                className="bg-white text-blue-900 px-6 py-6 rounded-full font-semibold text-lg shadow hover:bg-gray-200 w-64">
+                                    Recueil Musical
+                            </button>
+                        </Link>
+
+
+
+                        <br/>
+                        <Link href="/">
+                            <button
+                                className="bg-white text-blue-900 px-4 py-2 rounded-full font-semibold text-sm shadow hover:bg-gray-200 w-40">
+                                    Retour
+                            </button>
+                        </Link>
+
                     </>
             }
         </div>
