@@ -21,6 +21,7 @@ export default {
         yesteryears: ['Yesteryears', 'cursive'],
         hurricane: ['Hurricane', 'sans-serif'],
         roboto: ['Roboto', 'sans-serif'],
+        montserrat: ['Montserrat', 'sans-serif'],
       },
     },
   },

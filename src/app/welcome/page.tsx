@@ -29,9 +29,9 @@ export default function Home() {
                         </h1>
                     ) : (
                         <>
-                            <h1 className="text-5xl font-yesteryears mb-6 text-center">Bienvenue</h1>
-                            <h2 className="text-4xl font-yesteryears mb-6 text-center">Aux</h2>
-                            <h2 className="text-4xl font-yesteryears font-bold mb-6 text-center text-orange">ZTF AWARDS 2024</h2>
+                            <h1 className="text-7xl font-lavishly font-bold mb-6 text-center">Bienvenue</h1>
+                            <h2 className="text-5xl font-lavishly font-bold mb-6 text-center">Aux</h2>
+                            <h2 className="text-5xl font-montserrat font-bold mb-6 text-center text-orange">ZTF AWARDS 2024</h2>
 
                         </>
                         )}
@@ -71,21 +71,21 @@ export default function Home() {
                         <>
                             <Link href="/program">
                                 <button
-                                    className="bg-orange text-blue-900 px-6 py-1 rounded-full font-semibold text-lg shadow hover:bg-yellow-500 w-64">
+                                    className="bg-orange text-blue-900 px-6 py-1 rounded-full font-montserrat font-semibold text-lg shadow hover:bg-yellow-500 w-64">
                                     Programme de la Cérémonie
                                 </button>
                             </Link>
 
                             <Link href="/recueil">
                                 <button
-                                    className="bg-white text-blue-900 px-6 py-4 rounded-full font-semibold text-lg shadow hover:bg-gray-200 w-64">
+                                    className="bg-white text-blue-900 px-6 py-4 rounded-full font-montserrat font-semibold text-lg shadow hover:bg-gray-200 w-64">
                                     Recueil Musical
                                 </button>
                             </Link>
                             <br/>
                             <Link href="/">
                                 <button
-                                    className="bg-white text-blue-900 px-4 py-2 rounded-full font-semibold text-sm shadow hover:bg-gray-200 w-40">
+                                    className="bg-white text-blue-900 px-4 py-2 rounded-full font-montserrat font-semibold text-sm shadow hover:bg-gray-200 w-40">
                                     Retour
                                 </button>
                             </Link>
