@@ -116,11 +116,11 @@ export default function Schedule() {
           </h1>
 
           <div className="mt-4">
-
-            <button className="bg-blue-500 text-white px-12 py-4 rounded-lg shadow hover:bg-blue-600">
-              <Link href="/">{boolState ? "Home" : "Accueil"}</Link>
-            </button>
-            
+            <Link href="/">
+              <button className="bg-blue-500 text-white px-12 py-4 rounded-lg shadow hover:bg-blue-600">
+                {boolState ? "Home" : "Accueil"}
+              </button>
+            </Link>            
           </div>
 
         </div>

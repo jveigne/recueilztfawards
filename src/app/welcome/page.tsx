@@ -52,7 +52,7 @@ export default function Home() {
                                     Musical collection
                             </button>
                         </Link>
-                        
+                        <br/>
                         <Link href="/">
                             <button
                                 className="bg-white text-blue-900 px-4 py-2 rounded-full font-semibold text-sm shadow hover:bg-gray-200 w-40">
