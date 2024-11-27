@@ -20,31 +20,74 @@ export default function Home() {
         router.push('/welcome'); // Redirige vers une autre page
     };
 
+    return (
+        <div
+            className="flex flex-col items-center justify-center min-h-screen text-white"
+            style={{
+                backgroundColor: '#05053B',
+                width: '100vw', // Prend la largeur totale de la fenêtre
+                height: '100vh', // Prend la hauteur totale de la fenêtre
+                margin: 0, // Supprime les marges par défaut
+                padding: 0, // Supprime les espacements internes par défaut
+            }}
+        >
+            <br />
+            {/* Sous-titre */}
+            <p className="text-lg mb-10 text-center max-w-2xl">
+                {/* Célébrons ensemble les talents musicaux qui inspirent et touchent nos cœurs. */}
+            </p>
 
-  return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-b from-blue-900 to-blue-600 text-white">
+            {/* Conteneur avec position relative pour gérer le filigrane et l'image */}
+            <div className="relative mb-8 w-full flex justify-center items-center">
+                {/* Image principale au-dessus du filigrane */}
+                <img
+                    src="/images/cropped-favicon-270x270.png"
+                    alt="ZTF Logo"
+                    className="w-48 h-48 object-contain relative z-10" // L'image principale avec une z-index pour qu'elle soit au-dessus du filigrane
+                />
+            </div>
 
-        <br/>
-        {/* Sous-titre */}
-        <p className="text-lg mb-10 text-center max-w-2xl">
-            {/*Célébrons ensemble les talents musicaux qui inspirent et touchent nos cœurs.
-        Découvrez les meilleurs artistes, chansons et moments marquants de l'année.*/}
-        </p>
+            <br />
 
-        {/* Conteneur des boutons */}
-        <div className="flex flex-col items-center space-y-4">
-            {/* Boutons d'action */}
-            <button
-                onClick={setFalse}
-                className="bg-yellow-400 text-blue-900 px-6 py-3 rounded-full font-semibold text-lg shadow hover:bg-yellow-500 w-64">
-                <Link href="/welcome">Français</Link> 🇫🇷
-            </button>
-            <button
-                onClick={setTrue} className="bg-white text-blue-900 px-6 py-3 rounded-full font-semibold text-lg shadow hover:bg-gray-200 w-64">
-                <Link href="/welcome">English</Link> 🏴󠁧󠁢󠁥󠁮󠁧󠁿
-            </button>
+            {/* Conteneur des boutons */}
+            <div className="flex flex-col items-center space-y-4">
+    {/* Bouton Français */}
+    <button
+        onClick={setFalse}
+        className="flex items-center justify-center bg-yellow-400 text-blue-900 px-6 py-3 rounded-full font-semibold text-lg shadow hover:bg-yellow-500 w-64 space-x-2"
+        style={{ fontFamily: "'Cinzel', serif" }}  // Application de la police cérémoniale
+    >
+        {/* Texte Français */}
+        <Link href="/welcome" className="flex items-center">
+            <span>Français</span>
+        </Link>
+        {/* Icône du drapeau français */}
+        <img
+            src="/images/france.png"
+            alt="France"
+            className="w-6 h-4 object-contain"
+        />
+    </button>
+
+    {/* Bouton English */}
+    <button
+        onClick={setTrue}
+        className="flex items-center justify-center bg-white text-blue-900 px-6 py-3 rounded-full font-semibold text-lg shadow hover:bg-gray-200 w-64 space-x-2"
+        style={{ fontFamily: "'Cinzel', serif" }}  // Application de la police cérémoniale
+    >
+        {/* Texte English */}
+        <Link href="/welcome" className="flex items-center">
+            <span>English</span>
+        </Link>
+        {/* Icône du drapeau anglais */}
+        <img
+            src="/images/england.png"
+            alt="england"
+            className="w-6 h-4 object-contain"
+        />
+    </button>
+</div>
 
         </div>
-    </div>
-  );
+    );
 }
