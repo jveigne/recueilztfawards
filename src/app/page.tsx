@@ -7,7 +7,7 @@ import { useRouter } from 'next/navigation';
 
 export default function Home() {
 
-    const { boolState, setBoolState } = useBooleanContext();
+    const { setBoolState } = useBooleanContext();
     const router = useRouter();
 
     const setTrue = () => {
