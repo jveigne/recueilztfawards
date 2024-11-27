@@ -117,7 +117,7 @@ export default function Schedule() {
 
           <div className="mt-4">
             <Link href="/">
-              <button className="bg-blue-500 text-white px-12 py-4 rounded-lg shadow hover:bg-blue-600">
+              <button className="bg-blue-500 text-white px-12 py-4 rounded-lg shadow hover:bg-blue-600 w-full">
                 { boolState ?
                     "Home" :
                     "Accueil"

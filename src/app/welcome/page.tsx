@@ -42,14 +42,14 @@ export default function Home() {
                         <Link href="/program">
                             <button
                                 className="bg-yellow-400 text-blue-900 px-6 py-6 rounded-full font-semibold text-lg shadow hover:bg-yellow-500 w-64">
-                                    ZTF Awards Program
+                                    Programme of the Ceremony
                             </button>
                         </Link>
 
                         <Link href="/recueil">
                             <button
-                                className="bg-white text-blue-900 px-6 py-6 rounded-full font-semibold text-lg shadow hover:bg-gray-200 w-64">
-                                    Musical collection
+                                className="bg-white text-blue-900 px-6 py-8 rounded-full font-semibold text-lg shadow hover:bg-gray-200 w-64">
+                                    Songbook
                             </button>
                         </Link>
                         <br/>
@@ -65,14 +65,14 @@ export default function Home() {
                         <Link href="/program">
                             <button
                                 className="bg-yellow-400 text-blue-900 px-6 py-6 rounded-full font-semibold text-lg shadow hover:bg-yellow-500 w-64">
-                                    Programme ZTF Awards
+                                    Programme de la Cérémonie
                             </button>
                         </Link>
 
 
                         <Link href="/recueil">
                             <button
-                                className="bg-white text-blue-900 px-6 py-6 rounded-full font-semibold text-lg shadow hover:bg-gray-200 w-64">
+                                className="bg-white text-blue-900 px-6 py-8 rounded-full font-semibold text-lg shadow hover:bg-gray-200 w-64">
                                     Recueil Musical
                             </button>
                         </Link>

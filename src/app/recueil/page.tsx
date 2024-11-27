@@ -43,10 +43,12 @@ export default function Home() {
                   </h1>
                   <div className="flex flex-col sm:flex-row sm:justify-center space-y-4 sm:space-y-0 sm:space-x-4">
                     {/* Bouton accueil */}
-                    <button
-                        className="bg-blue-500 text-white px-12 py-4 rounded-lg shadow hover:bg-blue-600 w-full sm:w-auto">
-                      <Link href="/">Home</Link>
-                    </button>
+                    <Link href="/">
+                      <button
+                          className="bg-blue-500 text-white px-12 py-4 rounded-lg shadow hover:bg-blue-600 w-full sm:w-auto">
+                        Home
+                      </button>
+                    </Link>
                   </div>
                 </>
                 :
@@ -54,10 +56,12 @@ export default function Home() {
                   <h1 className="text-3xl font-bold mb-4"><span className="text-yellow-400">Recueil Musical</span></h1>
                   <div className="flex flex-col sm:flex-row sm:justify-center space-y-4 sm:space-y-0 sm:space-x-4">
                     {/* Bouton accueil */}
-                    <button
-                        className="bg-blue-500 text-white px-12 py-4 rounded-lg shadow hover:bg-blue-600 w-full sm:w-auto">
-                      <Link href="/">Accueil</Link>
-                    </button>
+                    <Link href="/">
+                      <button
+                          className="bg-blue-500 text-white px-12 py-4 rounded-lg shadow hover:bg-blue-600 w-full sm:w-auto">
+                        Accueil
+                      </button>
+                    </Link>
                   </div>
                 </>
           }

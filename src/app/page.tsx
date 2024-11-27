@@ -37,11 +37,11 @@ export default function Home() {
             <button
                 onClick={setFalse}
                 className="bg-yellow-400 text-blue-900 px-6 py-3 rounded-full font-semibold text-lg shadow hover:bg-yellow-500 w-64">
-                <Link href="/welcome">Français</Link>
+                <Link href="/welcome">Français</Link> 🇫🇷
             </button>
             <button
                 onClick={setTrue} className="bg-white text-blue-900 px-6 py-3 rounded-full font-semibold text-lg shadow hover:bg-gray-200 w-64">
-                <Link href="/welcome">English</Link>
+                <Link href="/welcome">English</Link> 🏴󠁧󠁢󠁥󠁮󠁧󠁿
             </button>
 
         </div>
