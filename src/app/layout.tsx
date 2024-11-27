@@ -25,14 +25,24 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+      <html lang="en">
+      <head>
+          <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet"/>
+          <link href="https://fonts.googleapis.com/css2?family=Lavishly+Yours&display=swap" rel="stylesheet"/>
+          <link href="https://fonts.googleapis.com/css2?family=Yesterdays&display=swap" rel="stylesheet"/>
+          <link href="https://fonts.googleapis.com/css2?family=Yesteryears&display=swap" rel="stylesheet"/>
+          <link href="https://fonts.googleapis.com/css2?family=Hurricane&display=swap" rel="stylesheet"/>
+          <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"/>
+
+
+      </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+          className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
       <ClientWrapper>
-        {children}
+          {children}
       </ClientWrapper>
       </body>
-    </html>
+      </html>
   );
 }

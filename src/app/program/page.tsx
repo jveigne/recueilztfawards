@@ -104,7 +104,7 @@ export default function Schedule() {
       {/* Header */}
       <header
         style={{
-          backgroundColor: '#05053B', // Couleur personnalisée pour le fond du header
+          backgroundColor: '#131857', // Couleur personnalisée pour le fond du header
         }}
         className="text-white py-6"
       >
@@ -119,7 +119,7 @@ export default function Schedule() {
 
           <div className="mt-4">
             <Link href="/">
-              <button className="bg-blue-500 text-white px-12 py-4 rounded-lg shadow hover:bg-blue-600">
+              <button className="bg-yellow-400 text-blue-900 px-12 py-4 rounded-lg shadow hover:bg-gray-200">
                 {boolState ? "Home" : "Accueil"}
               </button>
             </Link>

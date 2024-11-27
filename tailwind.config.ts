@@ -11,6 +11,16 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        gold: '#d4af37',
+        orange: '#FFA500',
+      },
+      fontFamily: {
+        poiret: ['Poiret One', 'sans-serif'],
+        lavishly: ['Lavishly Yours', 'cursive'],
+        yesterdays: ['Yesterdays', 'cursive'],
+        yesteryears: ['Yesteryears', 'cursive'],
+        hurricane: ['Hurricane', 'sans-serif'],
+        roboto: ['Roboto', 'sans-serif'],
       },
     },
   },

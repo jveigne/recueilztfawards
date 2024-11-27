@@ -35,7 +35,7 @@ export default function Home() {
       {/* Header */}
       <header
         style={{
-          backgroundColor: '#05053B', // Couleur personnalisée pour le fond du header
+          backgroundColor: '#131857', // Couleur personnalisée pour le fond du header
         }}
         className="text-white p-6 shadow w-full"
       >
