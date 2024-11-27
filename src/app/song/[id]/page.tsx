@@ -13,7 +13,6 @@ type Params = Promise<{ id: string }>;
 export default function SongPage({params}: { params: Params }) {
 
     const { boolState } = useBooleanContext(); // récupère le contexte de la langue fr/en
-
     // Utiliser `use` pour résoudre la promesse côté client
     const resolvedParams = use(params);
     const songId = parseInt(resolvedParams.id, 10);
