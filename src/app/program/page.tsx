@@ -108,17 +108,20 @@ export default function Schedule() {
         <div className="container mx-auto px-4 text-center">
 
           <h1 className="text-4xl font-bold">
-            {boolState ? (
-              <span className="text-yellow-400">Official Schedule of the Day</span>
-            ) : (
-              <span className="text-yellow-400">Programme officiel de la journée</span>
-            )}
+            { boolState ?
+                <span className="text-yellow-400">Official Schedule of the Day</span>
+                :
+                <span className="text-yellow-400">Programme officiel de la journée</span>
+            }
           </h1>
 
           <div className="mt-4">
             <Link href="/">
               <button className="bg-blue-500 text-white px-12 py-4 rounded-lg shadow hover:bg-blue-600">
-                {boolState ? "Home" : "Accueil"}
+                { boolState ?
+                    "Home" :
+                    "Accueil"
+                }
               </button>
             </Link>            
           </div>
@@ -136,13 +139,13 @@ export default function Schedule() {
               className="bg-white shadow-md rounded-lg p-6 border-t-4 transition-transform transform hover:scale-105 hover:shadow-lg"
               style={{
                 borderColor:
-                  event.category === (boolState ? "Praise" : "Louange")
-                    ? "#007bff" // Bleu pour Louange / Praise
-                    : event.category === (boolState ? "preaching & Workshop" : "prédication & Atelier")
-                    ? "#28a745" // Vert pour prédication & Atelier
-                    : event.category === (boolState ? "Fence" : "fin")
-                    ? "#FF0000" // Rouge pour la fin
-                    : "#ffc107", // Jaune par défaut (pauses)
+                    event.category === (boolState ? "Praise" : "Louange")
+                        ? "#007bff" // Bleu pour Louange / Praise
+                        : event.category === (boolState ? "preaching & Workshop" : "prédication & Atelier")
+                            ? "#28a745" // Vert pour prédication & Atelier
+                            : event.category === (boolState ? "Fence" : "fin")
+                                ? "#FF0000" // Rouge pour la fin
+                                : "#ffc107", // Jaune par défaut (pauses)
               }}
             >
               <h2 className="text-lg font-semibold text-blue-900">{event.time}</h2>

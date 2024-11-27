@@ -65,7 +65,7 @@ export default function Home() {
                         <Link href="/program">
                             <button
                                 className="bg-yellow-400 text-blue-900 px-6 py-6 rounded-full font-semibold text-lg shadow hover:bg-yellow-500 w-64">
-                                    Programme du ZTF Awards
+                                    Programme ZTF Awards
                             </button>
                         </Link>
 
