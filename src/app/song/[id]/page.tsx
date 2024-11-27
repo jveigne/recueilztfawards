@@ -5,11 +5,15 @@ import {useRouter} from 'next/navigation';
 import Link from 'next/link';
 import {Song} from '../../../../models/Song';
 import DOMPurify from 'dompurify';
+import { useBooleanContext } from '../../../../context/LanguageContext';
 
 // Définir `params` comme une promesse
 type Params = Promise<{ id: string }>;
 
 export default function SongPage({params}: { params: Params }) {
+
+    const { boolState } = useBooleanContext(); // récupère le contexte de la langue fr/en
+
     // Utiliser `use` pour résoudre la promesse côté client
     const resolvedParams = use(params);
     const songId = parseInt(resolvedParams.id, 10);
@@ -39,12 +43,32 @@ export default function SongPage({params}: { params: Params }) {
     const song = songs.find((s) => s.id === songId);
 
     if (!song) {
-        return (<>
-                <div><p>Chargement...</p></div>
-                <div className="mt-8">
-                    <Link href="/recueil" className="text-blue-600 hover:underline">
-                        Retour à la liste des chansons
-                    </Link>
+        return (
+            <>
+                <div>
+                    {
+                        boolState ?
+                            <>
+                                <div><p>Loading...</p></div>
+                                <div className="mt-8">
+                                    <Link href="/recueil" className="text-blue-600 hover:underline">
+                                        Back to song list
+                                    </Link>
+                                </div>
+
+                            </>
+                            :
+                            <>
+                                <div><p>Chargement...</p></div>
+                                <div className="mt-8">
+                                    <Link href="/recueil" className="text-blue-600 hover:underline">
+                                        Retour à la liste des chansons
+                                    </Link>
+                                </div>
+                            </>
+
+
+                    }
                 </div>
             </>
         );
@@ -64,7 +88,12 @@ export default function SongPage({params}: { params: Params }) {
                         onClick={() => router.push(`/song/${prevSong.id}`)}
                         className="bg-blue-500 text-white px-4 py-2 rounded"
                     >
-                        Précédent
+                        {
+                            boolState ?
+                                "Previous"
+                                :
+                                "Précédent"
+                        }
                     </button>
                 )}
                 {nextSong && (
@@ -72,13 +101,25 @@ export default function SongPage({params}: { params: Params }) {
                         onClick={() => router.push(`/song/${nextSong.id}`)}
                         className="bg-blue-500 text-white px-4 py-2 rounded"
                     >
-                        Suivant
+                        {
+                            boolState ?
+                                "Next"
+                                :
+                                "Suivant"
+
+                        }
                     </button>
                 )}
             </div>
             <div className="mt-8">
                 <Link href="/recueil" className="text-blue-600 hover:underline">
-                    Retour à la liste des chansons
+                    {
+                        boolState ?
+                            "Back to song list"
+                            :
+                            "Retour à la liste des chansons"
+                    }
+
                 </Link>
             </div>
             <br/>

@@ -37,18 +37,6 @@ export default function Home() {
 
             {/* Conteneur avec position relative pour gérer le filigrane et l'image */}
             <div className="relative mb-8 w-full flex justify-center items-center">
-                {/* Filigrane en arrière-plan qui occupe toute la largeur */}
-                <div
-                    className="absolute inset-0 bg-cover bg-center"
-                    style={{
-                        backgroundImage: 'url(/images/banner.png)', // L'image en arrière-plan
-                        backgroundSize: 'cover', // Assure que l'image couvre toute la largeur et la hauteur
-                        backgroundPosition: 'center center', // Centrer l'image
-                        opacity: 0.1, // Filigrane
-                        height: 'auto', // Laisse la hauteur de l'image s'ajuster proportionnellement
-                        width: '100%', // Assure que l'image couvre toute la largeur de l'écran
-                    }}
-                />
                 {/* Image principale au-dessus du filigrane */}
                 <img
                     src="/images/cropped-favicon-270x270.png"
@@ -91,8 +79,8 @@ export default function Home() {
         </Link>
         {/* Icône du drapeau anglais */}
         <img
-            src="/images/usa.png"
-            alt="usa"
+            src="/images/england.png"
+            alt="england"
             className="w-6 h-4 object-contain"
         />
     </button>
