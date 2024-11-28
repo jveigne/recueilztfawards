@@ -111,15 +111,15 @@ export default function Schedule() {
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-4xl font-bold">
             {boolState ? (
-              <span className="text-yellow-400">Official Schedule of the Day</span>
+              <span className="text-orange">Official Schedule of the Day</span>
             ) : (
-              <span className="text-yellow-400">Programme officiel de la journée</span>
+              <span className="text-orange font-montserrat font-bold ">Programme de la Cérémonie</span>
             )}
           </h1>
 
           <div className="mt-4">
             <Link href="/welcome">
-              <button className="bg-yellow-400 text-blue-900 px-12 py-4 rounded-lg shadow hover:bg-gray-200">
+              <button className="bg-orange font-montserrat font-bold text-blue-900 px-12 py-4 rounded-lg shadow hover:bg-blue-600 w-full sm:w-auto">
                 {boolState ? "Home" : "Accueil"}
               </button>
             </Link>
@@ -133,7 +133,7 @@ export default function Schedule() {
           {events.map((event, index) => (
             <div
               key={index}
-              className="bg-white shadow-md rounded-lg p-6 border-t-4 transition-transform transform hover:scale-105 hover:shadow-lg"
+              className="bg-white font-montserrat font-bold shadow-md rounded-lg p-6 border-t-4 transition-transform transform hover:scale-105 hover:shadow-lg"
               style={{
                 borderColor:
                   event.category === (boolState ? "Praise" : "Louange")
