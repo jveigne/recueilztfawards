@@ -100,7 +100,7 @@ export default function Schedule() {
   const events = boolState ? schedule : programme;
 
   return (
-    <div style={{ fontFamily: "'Cinzel', serif" }} className="min-h-screen bg-gray-100"> {/* Application de la police ici */}
+    <div className="min-h-screen bg-gray-100"> {/* Application de la police ici */}
       {/* Header */}
       <header
         style={{
@@ -109,17 +109,17 @@ export default function Schedule() {
         className="text-white py-6"
       >
         <div className="container mx-auto px-4 text-center">
-          <h1 className="text-4xl font-bold">
+          <h1 className="text-5xl text-white font-lavishly font-bold">
             {boolState ? (
-              <span className="text-orange font-montserrat font-bold">Programme of the Ceremony</span>
+              <span>Programme of the Ceremony</span>
             ) : (
-              <span className="text-orange font-montserrat font-bold ">Programme de la Cérémonie</span>
+              <span>Programme de la Cérémonie</span>
             )}
           </h1>
 
           <div className="mt-4">
             <Link href="/welcome">
-              <button className="bg-orange font-montserrat font-bold text-blue-900 px-12 py-4 rounded-lg shadow hover:bg-blue-600 w-full sm:w-auto">
+              <button className="bg-orange font-montserrat font-bold text-blue-900 px-6 py-2 rounded-lg shadow hover:bg-blue-600 sm:w-auto">
                 {boolState ? "Home" : "Accueil"}
               </button>
             </Link>

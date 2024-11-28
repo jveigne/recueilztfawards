@@ -52,7 +52,7 @@ export default function Home() {
                     {/* Bouton Français */}
                     <button
                         onClick={setFalse}
-                        className="flex items-center justify-center bg-orange text-blue-900 px-6 py-3 rounded-full font-montserrat font-semibold  text-3xs shadow hover:bg-yellow-500 w-64 space-x-2"
+                        className="flex items-center justify-center bg-orange text-blue-900 px-6 py-3 rounded-lg font-montserrat font-semibold  text-3xs shadow hover:bg-yellow-500 w-64 space-x-2"
                     >
                         {/* Texte Français */}
                         <Link href="/welcome" className="flex items-center">
@@ -68,7 +68,7 @@ export default function Home() {
                     {/* Bouton English */}
                     <button
                         onClick={setTrue}
-                        className="flex items-center justify-center bg-white text-blue-900 px-6 py-3 rounded-full font-montserrat font-semibold  text-3xs shadow hover:bg-gray-200 w-64 space-x-2"
+                        className="flex items-center justify-center bg-white text-blue-900 px-6 py-3 rounded-lg font-montserrat font-semibold  text-3xs shadow hover:bg-gray-200 w-64 space-x-2"
                     >
                         {/* Texte English */}
                         <Link href="/welcome" className="flex items-center">

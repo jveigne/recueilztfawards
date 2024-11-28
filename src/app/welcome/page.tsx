@@ -50,21 +50,20 @@ export default function Home() {
                         <>
                             <Link href="/program">
                                 <button
-                                    className="bg-orange text-blue-900 px-6 py-1 rounded-full font-montserrat font-semibold text-3xs shadow hover:bg-yellow-500 w-64">
+                                    className="bg-orange text-blue-900 px-6 py-1 rounded-lg font-montserrat font-semibold text-3xs shadow hover:bg-yellow-500 w-64">
                                     Programme of the Ceremony
                                 </button>
                             </Link>
 
                             <Link href="/recueil">
                                 <button
-                                    className="bg-white text-blue-900 px-6 py-4 rounded-full font-montserrat font-semibold text-3xs shadow hover:bg-gray-200 w-64">
+                                    className="bg-white text-blue-900 px-6 py-4 rounded-lg font-montserrat font-semibold text-3xs shadow hover:bg-gray-200 w-64">
                                     Songbook
                                 </button>
                             </Link>
-                            <br/>
                             <Link href="/">
                                 <button
-                                    className="bg-white text-blue-900 px-4 py-2 rounded-full font-montserrat font-semibold text-sm shadow hover:bg-gray-200 w-40">
+                                    className="bg-white text-blue-900 px-4 py-2 rounded-lg font-montserrat font-semibold text-sm shadow hover:bg-gray-200 w-40">
                                     Back
                                 </button>
                             </Link>
@@ -73,21 +72,20 @@ export default function Home() {
                         <>
                             <Link href="/program">
                                 <button
-                                    className="bg-orange text-blue-900 px-6 py-1 rounded-full font-montserrat font-semibold text-3xs shadow hover:bg-yellow-500 w-64">
+                                    className="bg-orange text-blue-900 px-6 py-1 rounded-lg font-montserrat font-semibold text-3xs shadow hover:bg-yellow-500 w-64">
                                     Programme de la Cérémonie
                                 </button>
                             </Link>
 
                             <Link href="/recueil">
                                 <button
-                                    className="bg-white text-blue-900 px-6 py-4 rounded-full font-montserrat font-semibold text-3xs shadow hover:bg-gray-200 w-64">
+                                    className="bg-white text-blue-900 px-6 py-4 rounded-lg font-montserrat font-semibold text-3xs shadow hover:bg-gray-200 w-64">
                                     Recueil Musical
                                 </button>
                             </Link>
-                            <br/>
                             <Link href="/">
                                 <button
-                                    className="bg-white text-blue-900 px-4 py-2 rounded-full font-montserrat font-semibold text-sm shadow hover:bg-gray-200 w-40">
+                                    className="bg-white text-blue-900 px-4 py-2 rounded-lg font-montserrat font-semibold text-sm shadow hover:bg-gray-200 w-40">
                                     Retour
                                 </button>
                             </Link>

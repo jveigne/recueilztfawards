@@ -42,13 +42,13 @@ export default function Home() {
         <div className="text-center">
           {boolState ? (
             <>
-              <h1 className="text-3xl font-montserrat font-bold mb-4">
-                <span className="text-orange font-montserrat font-bold">SongBook</span>
+              <h1>
+                <span className="text-5xl text-white font-lavishly font-bold">SongBook</span>
               </h1>
-              <div className="flex flex-col sm:flex-row sm:justify-center space-y-4 sm:space-y-0 sm:space-x-4">
+              <div className="flex flex-col sm:flex-row sm:justify-center mt-5 space-y-4 sm:space-y-0 sm:space-x-4">
                 {/* Bouton accueil */}
                 <Link href="/welcome">
-                  <button className="bg-orange font-montserrat font-bold text-blue-900 px-12 py-4 rounded-lg shadow hover:bg-blue-600 w-full sm:w-auto">
+                  <button className="bg-orange font-montserrat font-bold text-blue-900 px-6 py-2 rounded-lg shadow hover:bg-blue-600 sm:w-auto">
                     Home
                   </button>
                 </Link>
@@ -56,13 +56,13 @@ export default function Home() {
             </>
           ) : (
             <>
-              <h1 className="text-3xl font-bold mb-4">
-                <span className="text-orange font-montserrat font-bold">Recueil Musical</span>
+              <h1>
+                <span className="text-5xl text-white font-lavishly font-bold">Recueil Musical</span>
               </h1>
-              <div className="flex flex-col sm:flex-row sm:justify-center space-y-4 sm:space-y-0 sm:space-x-4">
+              <div className="flex flex-col sm:flex-row sm:justify-center mt-5 space-y-4 sm:space-y-0 sm:space-x-4">
                 {/* Bouton accueil */}
                 <Link href="/welcome">
-                  <button className="bg-orange font-montserrat font-bold text-blue-900 px-12 py-4 rounded-lg shadow hover:bg-blue-600 w-full sm:w-auto">
+                  <button className="bg-orange font-montserrat font-bold text-blue-900 px-6 py-2 rounded-lg shadow hover:bg-blue-600 sm:w-auto">
                     Accueil
                   </button>
                 </Link>
