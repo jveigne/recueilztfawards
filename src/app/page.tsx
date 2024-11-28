@@ -25,7 +25,7 @@ export default function Home() {
         <>
 
             <div
-                className="flex flex-col items-center justify-center min-h-screen text-white"
+                className="flex flex-col items-center justify-center h-screen"
                 style={{
                     backgroundColor: '#131857',
                     width: '100vw', // Prend la largeur totale de la fenêtre
@@ -34,11 +34,6 @@ export default function Home() {
                     padding: 0, // Supprime les espacements internes par défaut
                 }}
             >
-                <br/>
-                {/* Sous-titre */}
-                <p className="text-lg mb-10 text-center max-w-2xl">
-                    {/* Célébrons ensemble les talents musicaux qui inspirent et touchent nos cœurs. */}
-                </p>
 
                 {/* Conteneur avec position relative pour gérer le filigrane et l'image */}
                 <div className="relative mb-15 w-full flex justify-center items-center border-opacity-1000">
