@@ -111,7 +111,7 @@ export default function Schedule() {
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-4xl font-bold">
             {boolState ? (
-              <span className="text-orange">Official Schedule of the Day</span>
+              <span className="text-orange font-montserrat font-bold">Programme of the Ceremony</span>
             ) : (
               <span className="text-orange font-montserrat font-bold ">Programme de la Cérémonie</span>
             )}
@@ -145,11 +145,11 @@ export default function Schedule() {
                     : "#ffc107", // Jaune par défaut (pauses)
               }}
             >
-              <h2 className="text-lg font-semibold text-blue-900">{event.time}</h2>
-              <p className="text-sm font-bold uppercase text-gray-600">{event.category}</p>
-              <h3 className="text-xl font-semibold mt-2">{event.title}</h3>
-              <p className="text-gray-700 mt-2">{event.description}</p>
-              <p className="mt-4 text-sm font-semibold text-gray-500">📍 {event.location}</p>
+              <h2 className="text-lg font-montserrat font-semibold text-blue-900">{event.time}</h2>
+              <p className="text-sm font-montserrat font-bold uppercase text-gray-600">{event.category}</p>
+              <h3 className="text-xl font-montserrat font-semibold mt-2 text-black">{event.title}</h3>
+              <p className="text-gray-700 font-montserrat mt-2">{event.description}</p>
+              <p className="mt-4 text-sm font-montserrat font-semibold text-gray-500">📍 {event.location}</p>
             </div>
           ))}
         </div>
