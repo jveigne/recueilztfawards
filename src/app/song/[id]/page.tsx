@@ -27,6 +27,7 @@ export default function SongPage({params}: { params: Params }) {
                 const response = await fetch(process.env.NEXT_PUBLIC_ZTF_AWARD_URL + '/api/songs');
                 if (response.ok) {
                     const data: Song[] = await response.json();
+                    console.log(data)
                     setSongs(data);
                 } else {
                     console.error('Erreur lors de la récupération des données');
@@ -73,6 +74,7 @@ export default function SongPage({params}: { params: Params }) {
         );
     }
 
+    songs.sort((a: Song, b: Song) => a.id - b.id);
     const currentIndex = songs.findIndex((s) => s.id === songId);
     const prevSong = songs[currentIndex - 1];
     const nextSong = songs[currentIndex + 1];
