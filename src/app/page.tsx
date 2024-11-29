@@ -3,22 +3,19 @@
 import Link from 'next/link';
 import { useBooleanContext } from '../../context/LanguageContext';
 import { useRouter } from 'next/navigation';
-import { useState } from 'react';
 
 export default function Home() {
     const { setBoolState } = useBooleanContext();
     const router = useRouter();
 
-    const [clickedButton, setClickedButton] = useState(null); // État pour suivre le bouton cliqué
+    const setTrue = () => {
+        setBoolState(true); // Bascule l'état
+        router.push('/welcome'); // Redirige vers une autre page
+    };
 
-    const handleClick = (buttonType) => {
-        setClickedButton(buttonType); // Définit le bouton cliqué
-        if (buttonType === 'fr') {
-            setBoolState(false);
-        } else {
-            setBoolState(true);
-        }
-        router.push('/welcome');
+    const setFalse = () => {
+        setBoolState(false); // Bascule l'état
+        router.push('/welcome'); // Redirige vers une autre page
     };
 
     return (
@@ -38,23 +35,23 @@ export default function Home() {
                 {/* Effet lumineux */}
                 <div className="absolute inset-0 z-10 bg-gradient-to-b from-transparent to-black opacity-50 pointer-events-none"></div>
 
-                {/* Image "diplomeg" en haut à gauche */}
-                {/*<div className="absolute top-0 left-0 z-30">
-                    <img
-                        src="/images/diplomed.png"
-                        alt="Diplomeg"
-                        className="w-24 h-24 object-contain" // Retirée l'animation
-                    />
-                </div>*/}
-
-                {/* Image "diplomed" en haut à droite */}
-                {/*<div className="absolute top-0 right-0 z-30">
-                    <img
-                        src="/images/diplomeg.png"
-                        alt="Diplome"
-                        className="w-24 h-24 object-contain" // Retirée l'animation
-                    />
-                </div>*/}
+                {/* Ajout d'étoiles */}
+                <div className="absolute inset-0 overflow-hidden z-10">
+                    {[...Array(50)].map((_, i) => (
+                        <div
+                            key={i}
+                            className="absolute bg-white rounded-full"
+                            style={{
+                                width: `${Math.random() * 3}px`,
+                                height: `${Math.random() * 3}px`,
+                                top: `${Math.random() * 100}%`,
+                                left: `${Math.random() * 100}%`,
+                                opacity: Math.random(),
+                                animation: `twinkle ${Math.random() * 5 + 2}s infinite ease-in-out`,
+                            }}
+                        ></div>
+                    ))}
+                </div>
 
                 {/* Image "toge" avec animation */}
                 <div className="relative z-30">
@@ -78,14 +75,8 @@ export default function Home() {
                 {/* Boutons interactifs */}
                 <div className="relative z-20 flex flex-col items-center space-y-4 mt-8">
                     {/* Bouton Français */}
-                    <button
-                        onClick={() => handleClick('fr')}
-                        className={`flex items-center justify-center px-6 py-3 rounded-lg font-montserrat font-semibold text-3xs shadow w-64 space-x-2 transition-transform transform hover:scale-105 ${
-                            clickedButton === 'fr'
-                                ? 'bg-yellow-500 text-blue-900'
-                                : 'bg-orange text-blue-900 hover:bg-yellow-400'
-                        }`}
-                    >
+                    <button onClick={setFalse}
+                            className="flex items-center justify-center bg-orange text-blue-900 px-6 py-3 rounded-lg font-montserrat font-semibold  text-3xs shadow hover:bg-yellow-500 w-64 space-x-2">
                         <Link href="/welcome" className="flex items-center">
                             <span className="text-roboto">Français</span>
                         </Link>
@@ -97,14 +88,8 @@ export default function Home() {
                     </button>
 
                     {/* Bouton English */}
-                    <button
-                        onClick={() => handleClick('en')}
-                        className={`flex items-center justify-center px-6 py-3 rounded-lg font-montserrat font-semibold text-3xs shadow w-64 space-x-2 transition-transform transform hover:scale-105 ${
-                            clickedButton === 'en'
-                                ? 'bg-gray-400 text-blue-900'
-                                : 'bg-white text-blue-900 hover:bg-gray-300'
-                        }`}
-                    >
+                    <button onClick={setTrue}
+                            className="flex items-center justify-center bg-white text-blue-900 px-6 py-3 rounded-lg font-montserrat font-semibold  text-3xs shadow hover:bg-yellow-500 w-64 space-x-2">
                         <Link href="/welcome" className="flex items-center">
                             <span className="text-roboto">English</span>
                         </Link>
@@ -116,23 +101,7 @@ export default function Home() {
                     </button>
                 </div>
 
-                {/* Ajout d'étoiles */}
-                <div className="absolute inset-0 overflow-hidden z-10">
-                    {[...Array(50)].map((_, i) => (
-                        <div
-                            key={i}
-                            className="absolute bg-white rounded-full"
-                            style={{
-                                width: `${Math.random() * 3}px`,
-                                height: `${Math.random() * 3}px`,
-                                top: `${Math.random() * 100}%`,
-                                left: `${Math.random() * 100}%`,
-                                opacity: Math.random(),
-                                animation: `twinkle ${Math.random() * 5 + 2}s infinite ease-in-out`,
-                            }}
-                        ></div>
-                    ))}
-                </div>
+
             </div>
 
             {/* Animation CSS */}

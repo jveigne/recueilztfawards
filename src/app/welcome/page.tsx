@@ -10,16 +10,37 @@ export default function Home() {
         <>
             {/* Conteneur principal */}
             <div
-                className="relative flex flex-col items-center justify-center text-white animated-gradient"
+                className="relative flex flex-col items-center justify-center h-screen"
                 style={{
-                    backgroundColor: '#131857', // Couleur de fond d'origine
+                    background: 'linear-gradient(135deg, #131857, #1a215e 50%, #202d73)',
+                    color: 'white',
                     width: '100vw',
                     height: '100vh',
                     margin: 0,
                     padding: 0,
-                    fontFamily: "'Cinzel', serif",
                 }}
             >
+                {/* Effet lumineux */}
+                <div
+                    className="absolute inset-0 z-10 bg-gradient-to-b from-transparent to-black opacity-50 pointer-events-none"></div>
+                {/* Ajout d'étoiles */}
+                <div className="absolute inset-0 overflow-hidden z-10">
+                    {[...Array(50)].map((_, i) => (
+                        <div
+                            key={i}
+                            className="absolute bg-white rounded-full"
+                            style={{
+                                width: `${Math.random() * 3}px`,
+                                height: `${Math.random() * 3}px`,
+                                top: `${Math.random() * 100}%`,
+                                left: `${Math.random() * 100}%`,
+                                opacity: Math.random(),
+                                animation: `twinkle ${Math.random() * 5 + 2}s infinite ease-in-out`,
+                            }}
+                        ></div>
+                    ))}
+                </div>
+
                 {/* Positionner l'image colombe un peu plus bas avec un délai de 2 secondes */}
                 <div className="absolute top-24 z-30 animate-colombe-fade-in">
                     <img
@@ -29,30 +50,6 @@ export default function Home() {
                     />
                 </div>
 
-                {/* Positionner l'image à gauche */}
-                {/*<div className="absolute top-0 left-0 z-20">
-                    <img
-                        src="/images/gauche.png"
-                        alt="Gauche"
-                        className="w-24 h-24 object-contain" // Ajustez la taille de l'image si nécessaire
-                    />
-                </div>*/}
-
-                {/* Positionner l'image à droite */}
-                {/*<div className="absolute top-0 right-0 z-20">
-                    <img
-                        src="/images/droite.png"
-                        alt="Droite"
-                        className="w-24 h-24 object-contain" // Ajustez la taille de l'image si nécessaire
-                    />
-                </div>*/}
-
-                {/* Image en filigrane */}
-                {/*<div className="parallax" style={{ backgroundImage: `url('/images/fr_zack.jpg')` }}></div>*/}
-
-                {/* Étoiles animées */}
-                <div className="stars"></div>
-
                 {/* Contenu principal */}
                 <div className="relative z-10 flex flex-col items-center">
                     {/* Titre principal */}
@@ -60,7 +57,8 @@ export default function Home() {
                         {boolState ? (
                             <>
                                 <h1 className="text-7xl font-lavishly font-bold mb-6 text-center animate-fade-in">Welcome</h1>
-                                <h2 className="text-5xl font-lavishly font-bold mb-6 text-center animate-fade-in">To the</h2>
+                                <h2 className="text-5xl font-lavishly font-bold mb-6 text-center animate-fade-in">To
+                                    the</h2>
                                 <h2 className="text-4xl font-montserrat font-bold mb-6 text-center text-orange animate-fade-in">
                                     ZTF AWARDS 2024
                                 </h2>
@@ -75,24 +73,27 @@ export default function Home() {
                             </>
                         )}
                     </div>
-                            <br/><br/><br/>
+                    <br/><br/><br/>
                     {/* Conteneur des boutons */}
                     <div className="flex flex-col items-center space-y-4">
                         {boolState ? (
                             <>
                                 <Link href="/program">
-                                    <button className="bg-orange text-blue-900 px-6 py-1 rounded-lg btn-transition font-montserrat font-semibold text-3xs shadow hover:bg-yellow-500 w-64">
+                                    <button
+                                        className="bg-orange text-blue-900 px-6 py-1 rounded-lg btn-transition font-montserrat font-semibold text-3xs shadow hover:bg-yellow-500 w-64">
                                         Programme of the Ceremony
                                     </button>
                                 </Link>
 
                                 <Link href="/recueil">
-                                    <button className="bg-white text-blue-900 px-6 py-4 rounded-lg btn-transition font-montserrat font-semibold text-3xs shadow hover:bg-gray-200 w-64">
+                                    <button
+                                        className="bg-white text-blue-900 px-6 py-4 rounded-lg btn-transition font-montserrat font-semibold text-3xs shadow hover:bg-gray-200 w-64">
                                         Songbook
                                     </button>
                                 </Link>
                                 <Link href="/"><br/>
-                                    <button className="bg-white text-blue-900 px-4 py-2 rounded-lg btn-transition font-montserrat font-semibold text-sm shadow hover:bg-gray-200 w-40">
+                                    <button
+                                        className="bg-white text-blue-900 px-4 py-2 rounded-lg btn-transition font-montserrat font-semibold text-sm shadow hover:bg-gray-200 w-40">
                                         Back
                                     </button>
                                 </Link>
@@ -100,18 +101,21 @@ export default function Home() {
                         ) : (
                             <>
                                 <Link href="/program">
-                                    <button className="bg-orange text-blue-900 px-6 py-1 rounded-lg btn-transition font-montserrat font-semibold text-3xs shadow hover:bg-yellow-500 w-64">
+                                    <button
+                                        className="bg-orange text-blue-900 px-6 py-1 rounded-lg btn-transition font-montserrat font-semibold text-3xs shadow hover:bg-yellow-500 w-64">
                                         Programme de la Cérémonie
                                     </button>
                                 </Link>
 
                                 <Link href="/recueil">
-                                    <button className="bg-white text-blue-900 px-6 py-4 rounded-lg btn-transition font-montserrat font-semibold text-3xs shadow hover:bg-gray-200 w-64">
+                                    <button
+                                        className="bg-white text-blue-900 px-6 py-4 rounded-lg btn-transition font-montserrat font-semibold text-3xs shadow hover:bg-gray-200 w-64">
                                         Recueil Musical
                                     </button>
                                 </Link>
                                 <Link href="/"><br/>
-                                    <button className="bg-white text-blue-900 px-4 py-2 rounded-lg btn-transition font-montserrat font-semibold text-sm shadow hover:bg-gray-200 w-40">
+                                    <button
+                                        className="bg-white text-blue-900 px-4 py-2 rounded-lg btn-transition font-montserrat font-semibold text-sm shadow hover:bg-gray-200 w-40">
                                         Retour
                                     </button>
                                 </Link>
