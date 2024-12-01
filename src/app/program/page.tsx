@@ -103,29 +103,62 @@ export default function Schedule() {
     <div className="min-h-screen bg-gray-100"> {/* Application de la police ici */}
       {/* Header */}
       <header
+  style={{
+    backgroundColor: '#131857', // Couleur personnalisée pour le fond du header
+  }}
+  className="relative text-white py-6 overflow-hidden" // Ajout de "relative" et "overflow-hidden"
+>
+  {/* Conteneur des étoiles */}
+  <div className="absolute inset-0 overflow-hidden z-0">
+    {[...Array(50)].map((_, i) => (
+      <div
+        key={i}
+        className="absolute bg-white rounded-full"
         style={{
-          backgroundColor: '#131857', // Couleur personnalisée pour le fond du header
+          width: `${Math.random() * 3}px`,
+          height: `${Math.random() * 3}px`,
+          top: `${Math.random() * 100}%`,
+          left: `${Math.random() * 100}%`,
+          opacity: Math.random(),
+          animation: `twinkle ${Math.random() * 5 + 2}s infinite ease-in-out`,
         }}
-        className="text-white py-6"
-      >
-        <div className="container mx-auto px-4 text-center">
-          <h1 className="text-5xl text-white font-lavishly font-bold">
-            {boolState ? (
-              <span>Programme of the Ceremony</span>
-            ) : (
-              <span>Programme de la Cérémonie</span>
-            )}
-          </h1>
+      ></div>
+    ))}
+  </div>
 
-          <div className="mt-4">
-            <Link href="/welcome">
-              <button className="bg-orange font-montserrat font-bold text-blue-900 px-6 py-2 rounded-lg shadow hover:bg-blue-600 sm:w-auto">
-                {boolState ? "Home" : "Accueil"}
-              </button>
-            </Link>
-          </div>
-        </div>
-      </header>
+  <style jsx>{`
+@keyframes twinkle {
+  0%, 100% {
+    opacity: 0.2;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.5);
+  }
+}
+  `}</style>
+
+  {/* Contenu principal du header */}
+  <div className="relative container mx-auto px-4 text-center z-10">
+    <h1 className="text-5xl text-white font-lavishly font-bold">
+      {boolState ? (
+        <span>Programme of the Ceremony</span>
+      ) : (
+        <span>Programme de la Cérémonie</span>
+      )}
+    </h1>
+
+    <div className="mt-4">
+      <Link href="/welcome">
+        <button className="bg-orange font-montserrat font-bold text-blue-900 px-6 py-2 rounded-lg shadow sm:w-auto">
+          {boolState ? "Home" : "Accueil"}
+        </button>
+      </Link>
+    </div>
+  </div>
+</header>
+
 
       {/* Contenu */}
       <div className="container mx-auto px-4 py-8">

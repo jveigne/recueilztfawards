@@ -8,6 +8,42 @@ export default function Home() {
 
     return (
         <>
+        <style jsx>{`
+                @keyframes twinkle {
+                    0%,
+                    100% {
+                        opacity: 0.3;
+                    }
+                    50% {
+                        opacity: 1;
+                    }
+                }
+
+                /* Animation du logo et "toge.png" (flottement et pulsation) */
+                @keyframes float {
+                    0%,
+                    100% {
+                        transform: translateY(0);
+                    }
+                    50% {
+                        transform: translateY(-20px);
+                    }
+                }
+
+                @keyframes pulse {
+                    0%,
+                    100% {
+                        transform: scale(1);
+                    }
+                    50% {
+                        transform: scale(1.1);
+                    }
+                }
+
+                .animate-float-pulse {
+                    animation: float 3s ease-in-out infinite, pulse 2s ease-in-out infinite;
+                }
+            `}</style>
             {/* Conteneur principal */}
             <div
                 className="relative flex flex-col items-center justify-center h-screen"
@@ -19,7 +55,9 @@ export default function Home() {
                     margin: 0,
                     padding: 0,
                 }}
+                
             >
+                
                 {/* Effet lumineux */}
                 <div
                     className="absolute inset-0 z-10 bg-gradient-to-b from-transparent to-black opacity-50 pointer-events-none"></div>
@@ -40,15 +78,32 @@ export default function Home() {
                         ></div>
                     ))}
                 </div>
+                
 
                 {/* Positionner l'image colombe un peu plus bas avec un délai de 2 secondes */}
-                <div className="absolute top-24 z-30 animate-colombe-fade-in">
+                <div className="absolute top-4 z-40 animate-colombe-fade-in">
                     <img
                         src="/images/colombe.png"
                         alt="Colombe"
                         className="w-32 h-32 object-contain" // Ajustez la taille de l'image si nécessaire
                     />
                 </div>
+                
+                <div
+    className="absolute inset-0 flex items-center justify-center z-0"
+    style={{
+        opacity: 0.2,
+        pointerEvents: 'none',
+        transform: 'translateY(-180px)', // Décale l'image vers le haut de 50px
+    }}
+>
+    <img
+        src="/images/toge_.png"
+        alt="Filigrane"
+        className="w-[120%] h-auto max-w-screen-md"
+    />
+</div>
+
 
                 {/* Contenu principal */}
                 <div className="relative z-10 flex flex-col items-center">
