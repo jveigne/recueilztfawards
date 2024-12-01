@@ -27,7 +27,6 @@ export default function SongPage({params}: { params: Params }) {
                 const response = await fetch(process.env.NEXT_PUBLIC_ZTF_AWARD_URL + '/api/songs');
                 if (response.ok) {
                     const data: Song[] = await response.json();
-                    console.log(data)
                     setSongs(data);
                 } else {
                     console.error('Erreur lors de la récupération des données');
