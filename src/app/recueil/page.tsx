@@ -34,43 +34,74 @@ export default function Home() {
     <div style={{ fontFamily: "'Cinzel', serif" }}> {/* Application de la police ici */}
       {/* Header */}
       <header
+  style={{
+    backgroundColor: '#131857', // Couleur personnalisée pour le fond du header
+  }}
+  className="relative text-white p-6 shadow w-full overflow-hidden"
+>
+  {/* Etoiles animées */}
+  <div className="absolute inset-0 overflow-hidden z-0">
+    {[...Array(50)].map((_, i) => (
+      <div
+        key={i}
+        className="absolute bg-white rounded-full"
         style={{
-          backgroundColor: '#131857', // Couleur personnalisée pour le fond du header
+          width: `${Math.random() * 3}px`,
+          height: `${Math.random() * 3}px`,
+          top: `${Math.random() * 100}%`,
+          left: `${Math.random() * 100}%`,
+          opacity: Math.random(),
+          animation: `twinkle ${Math.random() * 5 + 2}s infinite ease-in-out`,
         }}
-        className="text-white p-6 shadow w-full"
-      >
-        <div className="text-center">
-          {boolState ? (
-            <>
-              <h1>
-                <span className="text-5xl text-white font-lavishly font-bold">SongBook</span>
-              </h1>
-              <div className="flex flex-col sm:flex-row sm:justify-center mt-5 space-y-4 sm:space-y-0 sm:space-x-4">
-                {/* Bouton accueil */}
-                <Link href="/welcome">
-                  <button className="bg-orange font-montserrat font-bold text-blue-900 px-6 py-2 rounded-lg shadow hover:bg-blue-600 sm:w-auto">
-                    Home
-                  </button>
-                </Link>
-              </div>
-            </>
-          ) : (
-            <>
-              <h1>
-                <span className="text-5xl text-white font-lavishly font-bold">Recueil Musical</span>
-              </h1>
-              <div className="flex flex-col sm:flex-row sm:justify-center mt-5 space-y-4 sm:space-y-0 sm:space-x-4">
-                {/* Bouton accueil */}
-                <Link href="/welcome">
-                  <button className="bg-orange font-montserrat font-bold text-blue-900 px-6 py-2 rounded-lg shadow hover:bg-blue-600 sm:w-auto">
-                    Accueil
-                  </button>
-                </Link>
-              </div>
-            </>
-          )}
+      ></div>
+    ))}
+  </div>
+
+  {/* Contenu principal */}
+  <div className="relative z-10 text-center">
+    {boolState ? (
+      <>
+        <h1>
+          <span className="text-5xl text-white font-lavishly font-bold">SongBook</span>
+        </h1>
+        <div className="flex flex-col sm:flex-row sm:justify-center mt-5 space-y-4 sm:space-y-0 sm:space-x-4">
+          {/* Bouton accueil */}
+          <Link href="/welcome">
+            <button className="bg-orange font-montserrat font-bold text-blue-900 px-6 py-2 rounded-lg shadow sm:w-auto">
+              Home
+            </button>
+          </Link>
         </div>
-      </header>
+      </>
+    ) : (
+      <>
+        <h1>
+          <span className="text-5xl text-white font-lavishly font-bold">Recueil Musical</span>
+        </h1>
+        <div className="flex flex-col sm:flex-row sm:justify-center mt-5 space-y-4 sm:space-y-0 sm:space-x-4">
+          {/* Bouton accueil */}
+          <Link href="/welcome">
+            <button className="bg-orange font-montserrat font-bold text-blue-900 px-6 py-2 rounded-lg shadow sm:w-auto">
+              Accueil
+            </button>
+          </Link>
+        </div>
+      </>
+    )}
+  </div>
+
+  {/* Styles pour l'animation des étoiles */}
+  <style jsx>{`
+    @keyframes twinkle {
+      0%, 100% {
+        opacity: 0.3;
+      }
+      50% {
+        opacity: 1;
+      }
+    }
+  `}</style>
+</header>
 
       {/* Liste des chansons */}
       <div className="container mx-auto p-4">

@@ -76,7 +76,7 @@ export default function Home() {
                 <div className="relative z-20 flex flex-col items-center space-y-4 mt-8">
                     {/* Bouton Français */}
                     <button onClick={setFalse}
-                            className="flex items-center justify-center bg-orange text-blue-900 px-6 py-3 rounded-lg font-montserrat font-semibold  text-3xs shadow hover:bg-yellow-500 w-64 space-x-2">
+                            className="flex items-center justify-center bg-orange text-blue-900 px-6 py-3 rounded-lg font-montserrat font-semibold  text-3xs shadow w-64 space-x-2">
                         <Link href="/welcome" className="flex items-center">
                             <span className="text-roboto">Français</span>
                         </Link>
@@ -89,7 +89,7 @@ export default function Home() {
 
                     {/* Bouton English */}
                     <button onClick={setTrue}
-                            className="flex items-center justify-center bg-white text-blue-900 px-6 py-3 rounded-lg font-montserrat font-semibold  text-3xs shadow hover:bg-yellow-500 w-64 space-x-2">
+                            className="flex items-center justify-center bg-white text-blue-900 px-6 py-3 rounded-lg font-montserrat font-semibold  text-3xs shadow w-64 space-x-2">
                         <Link href="/welcome" className="flex items-center">
                             <span className="text-roboto">English</span>
                         </Link>
