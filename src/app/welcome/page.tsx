@@ -41,8 +41,28 @@ export default function Home() {
                     ))}
                 </div>
 
+
+                <div
+    className="absolute inset-0 flex items-center justify-center z-0"
+    style={{
+        opacity: 0.2,
+        top: '-100px', // Ajuste la position verticale
+        pointerEvents: 'none',
+        transform: 'translateY(-50px)', // Décale l'image vers le haut de 50px
+    }}
+>
+    <img
+        src="/images/toge_.png"
+        alt="Filigrane"
+        className="w-[120%] h-auto max-w-screen-md"
+    />
+</div>
+
+
+                
+
                 {/* Positionner l'image colombe un peu plus bas avec un délai de 2 secondes */}
-                <div className="absolute top-24 z-30 animate-colombe-fade-in">
+                <div className="absolute top-3 z-30 animate-colombe-fade-in">
                     <img
                         src="/images/colombe.png"
                         alt="Colombe"
@@ -54,10 +74,11 @@ export default function Home() {
                 <div className="relative z-10 flex flex-col items-center">
                     {/* Titre principal */}
                     <div>
+                        
                         {boolState ? (
                             <>
-                                <h1 className="text-7xl font-lavishly font-bold mb-6 text-center animate-fade-in">Welcome</h1>
-                                <h2 className="text-5xl font-lavishly font-bold mb-6 text-center animate-fade-in">To
+                                <h1 className="text-7xl font-roboto font-bold mb-6 text-center animate-fade-in">Welcome</h1>
+                                <h2 className="text-5xl font-roboto font-bold mb-6 text-center animate-fade-in">To
                                     the</h2>
                                 <h2 className="text-4xl font-montserrat font-bold mb-6 text-center text-orange animate-fade-in">
                                     ZTF AWARDS 2024
@@ -65,14 +86,15 @@ export default function Home() {
                             </>
                         ) : (
                             <>
-                                <h1 className="text-7xl font-lavishly font-bold mb-6 text-center animate-fade-in">Bienvenue</h1>
-                                <h2 className="text-5xl font-lavishly font-bold mb-6 text-center animate-fade-in">Aux</h2>
-                                <h2 className="text-4xl font-montserrat font-bold mb-6 text-center text-orange animate-fade-in">
+                                <h1 className="text-7xl font-roboto font-bold mb-6 text-center animate-fade-in">Bienvenue</h1>
+                                <h2 className="text-5xl font-roboto font-bold mb-6 text-center animate-fade-in">Aux</h2>
+                                <h1 className="text-4xl font-montserrat font-bold mb-6 text-center text-orange animate-fade-in">
                                     ZTF AWARDS 2024
-                                </h2>
+                                </h1>
                             </>
                         )}
                     </div>
+                    
                     <br/><br/><br/>
                     {/* Conteneur des boutons */}
                     <div className="flex flex-col items-center space-y-4">
@@ -80,20 +102,20 @@ export default function Home() {
                             <>
                                 <Link href="/program">
                                     <button
-                                        className="bg-orange text-blue-900 px-6 py-1 rounded-lg btn-transition font-montserrat font-semibold text-3xs shadow hover:bg-yellow-500 w-64">
+                                        className="bg-orange text-blue-900 px-6 py-1 rounded-lg btn-transition font-montserrat font-semibold text-3xs shadow w-64">
                                         Programme of the Ceremony
                                     </button>
                                 </Link>
 
                                 <Link href="/recueil">
                                     <button
-                                        className="bg-white text-blue-900 px-6 py-4 rounded-lg btn-transition font-montserrat font-semibold text-3xs shadow hover:bg-gray-200 w-64">
+                                        className="bg-white text-blue-900 px-6 py-4 rounded-lg btn-transition font-montserrat font-semibold text-3xs shadow w-64">
                                         Songbook
                                     </button>
                                 </Link>
                                 <Link href="/"><br/>
                                     <button
-                                        className="bg-white text-blue-900 px-4 py-2 rounded-lg btn-transition font-montserrat font-semibold text-sm shadow hover:bg-gray-200 w-40">
+                                        className="bg-white text-blue-900 px-4 py-2 rounded-lg btn-transition font-montserrat font-semibold text-sm shadow w-40">
                                         Back
                                     </button>
                                 </Link>
@@ -102,20 +124,20 @@ export default function Home() {
                             <>
                                 <Link href="/program">
                                     <button
-                                        className="bg-orange text-blue-900 px-6 py-1 rounded-lg btn-transition font-montserrat font-semibold text-3xs shadow hover:bg-yellow-500 w-64">
+                                        className="bg-orange text-blue-900 px-6 py-1 rounded-lg btn-transition font-montserrat font-semibold text-3xs shadow w-64">
                                         Programme de la Cérémonie
                                     </button>
                                 </Link>
 
                                 <Link href="/recueil">
                                     <button
-                                        className="bg-white text-blue-900 px-6 py-4 rounded-lg btn-transition font-montserrat font-semibold text-3xs shadow hover:bg-gray-200 w-64">
+                                        className="bg-white text-blue-900 px-6 py-4 rounded-lg btn-transition font-montserrat font-semibold text-3xs shadow w-64">
                                         Recueil Musical
                                     </button>
                                 </Link>
                                 <Link href="/"><br/>
                                     <button
-                                        className="bg-white text-blue-900 px-4 py-2 rounded-lg btn-transition font-montserrat font-semibold text-sm shadow hover:bg-gray-200 w-40">
+                                        className="bg-white text-blue-900 px-4 py-2 rounded-lg btn-transition font-montserrat font-semibold text-sm shadow w-40">
                                         Retour
                                     </button>
                                 </Link>
@@ -127,66 +149,39 @@ export default function Home() {
 
             {/* Styles globaux */}
             <style jsx>{`
-                /* Animation du ciel étoilé */
-                .stars {
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    width: 100%;
-                    height: 100%;
-                    background: url('/images/stars.png') repeat;
-                    animation: moveStars 50s linear infinite;
-                    z-index: -2;
-                }
-
-                @keyframes moveStars {
-                    0% {
-                        transform: translate(0, 0);
-                    }
+                @keyframes twinkle {
+                    0%,
                     100% {
-                        transform: translate(-100%, 0);
+                        opacity: 0.3;
                     }
-                }
-
-                /* Animation d'apparition avec fondu */
-                @keyframes fadeIn {
-                    0% {
-                        opacity: 0;
-                        transform: translateY(20px);
-                    }
-                    100% {
+                    50% {
                         opacity: 1;
+                    }
+                }
+
+                /* Animation du logo et "toge.png" (flottement et pulsation) */
+                @keyframes float {
+                    0%,
+                    100% {
                         transform: translateY(0);
                     }
-                }
-
-                .animate-fade-in {
-                    animation: fadeIn 1.5s ease-out forwards;
-                }
-
-                /* Animation d'apparition de la colombe avec un délai de 2 secondes */
-                @keyframes colombeFadeIn {
-                    0% {
-                        opacity: 0;
+                    50% {
+                        transform: translateY(-20px);
                     }
+                }
+
+                @keyframes pulse {
+                    0%,
                     100% {
-                        opacity: 1;
+                        transform: scale(1);
+                    }
+                    50% {
+                        transform: scale(1.1);
                     }
                 }
 
-                .animate-colombe-fade-in {
-                    animation: colombeFadeIn 1.5s ease-out forwards;
-                    animation-delay: 0.1s; /* délai de 2 secondes */
-                }
-
-                /* Transition des boutons */
-                .btn-transition {
-                    transition: background-color 0.3s ease, transform 0.3s ease;
-                }
-
-                .btn-transition:hover {
-                    transform: scale(1.05);
-                    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+                .animate-float-pulse {
+                    animation: float 3s ease-in-out infinite, pulse 2s ease-in-out infinite;
                 }
             `}</style>
         </>

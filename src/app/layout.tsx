@@ -27,7 +27,6 @@ export default function RootLayout({
   return (
       <html lang="en">
       <head>
-          <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet"/>
           <link href="https://fonts.googleapis.com/css2?family=Lavishly+Yours&display=swap" rel="stylesheet"/>
           <link href="https://fonts.googleapis.com/css2?family=Yesterdays&display=swap" rel="stylesheet"/>
           <link href="https://fonts.googleapis.com/css2?family=Yesteryears&display=swap" rel="stylesheet"/>

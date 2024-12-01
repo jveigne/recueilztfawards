@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import { useBooleanContext } from '../../../context/LanguageContext';
-import React from "react";
+import React from 'react';
 
 const programme = [
   {
@@ -14,7 +14,7 @@ const programme = [
   },
   {
     time: "10:45 - 12:15",
-    category: "prédication & Atelier",
+    category: "Prédication & Atelier",
     title: "Session Interactive",
     description: "Partage de la parole",
     location: "Monsieur Patrice Nyamy",
@@ -35,14 +35,14 @@ const programme = [
   },
   {
     time: "15:45 - 17:15",
-    category: "prédication & Atelier",
+    category: "Prédication & Atelier",
     title: "Présentation des livres ZTF",
     description: "Sessions pratiques en petits groupes",
     location: "Monsieur Patrice Nyamy",
   },
   {
     time: "17:30 - 18:00",
-    category: "fin",
+    category: "Fin",
     title: "Clôture",
     description: "Bilan de la journée et perspectives",
     location: "Monsieur Patrice Nyamy",
@@ -59,7 +59,7 @@ const schedule = [
   },
   {
     time: "10:45 - 12:15",
-    category: "prédication & Atelier",
+    category: "Preaching & Workshop",
     title: "Interactive Session",
     description: "Sharing the word",
     location: "Mr Patrice Nyamy",
@@ -80,15 +80,15 @@ const schedule = [
   },
   {
     time: "15:45 - 17:15",
-    category: "preaching & Workshop",
+    category: "Preaching & Workshop",
     title: "ZTF books presentation",
     description: "Practical sessions in small groups",
     location: "Mr Patrice Nyamy",
   },
   {
     time: "17:30 - 18:00",
-    category: "fin",
-    title: "Fence",
+    category: "End",
+    title: "Closure",
     description: "Day in review and outlook",
     location: "Mr Patrice Nyamy",
   },
@@ -100,26 +100,47 @@ export default function Schedule() {
   const events = boolState ? schedule : programme;
 
   return (
-    <div className="min-h-screen bg-gray-100"> {/* Application de la police ici */}
+    <div className="min-h-screen bg-gray-100">
       {/* Header */}
       <header
         style={{
-          backgroundColor: '#131857', // Couleur personnalisée pour le fond du header
+          backgroundColor: '#131857',
+          position: 'relative', // Nécessaire pour placer les étoiles en absolu
+          overflow: 'hidden',
         }}
         className="text-white py-6"
       >
-        <div className="container mx-auto px-4 text-center">
-          <h1 className="text-5xl text-white font-lavishly font-bold">
+        {/* Animation des étoiles */}
+        <div className="absolute inset-0 z-0 overflow-hidden">
+          {[...Array(50)].map((_, i) => (
+            <div
+              key={i}
+              className="absolute bg-white rounded-full"
+              style={{
+                width: `${Math.random() * 3}px`,
+                height: `${Math.random() * 3}px`,
+                top: `${Math.random() * 100}%`,
+                left: `${Math.random() * 100}%`,
+                opacity: Math.random(),
+                animation: `twinkle ${Math.random() * 5 + 2}s infinite ease-in-out`,
+              }}
+            ></div>
+          ))}
+        </div>
+
+        {/* Contenu du header */}
+        <div className="container mx-auto px-4 text-center relative z-10">
+          <h1 className="text-5xl text-white font-Lavishly font-bold text-center">
             {boolState ? (
-              <span>Programme of the Ceremony</span>
+              <span>Programme <br/> of the Ceremony</span>
             ) : (
-              <span>Programme de la Cérémonie</span>
+              <span>Programme <br/> de la Cérémonie</span>
             )}
           </h1>
 
           <div className="mt-4">
             <Link href="/welcome">
-              <button className="bg-orange font-montserrat font-bold text-blue-900 px-6 py-2 rounded-lg shadow hover:bg-blue-600 sm:w-auto">
+              <button className="bg-orange font-montserrat font-bold text-blue-900 px-6 py-2 rounded-lg shadow sm:w-auto">
                 {boolState ? "Home" : "Accueil"}
               </button>
             </Link>
@@ -138,9 +159,9 @@ export default function Schedule() {
                 borderColor:
                   event.category === (boolState ? "Praise" : "Louange")
                     ? "#007bff" // Bleu pour Louange / Praise
-                    : event.category === (boolState ? "preaching & Workshop" : "prédication & Atelier")
+                    : event.category === (boolState ? "Preaching & Workshop" : "Prédication & Atelier")
                     ? "#28a745" // Vert pour prédication & Atelier
-                    : event.category === (boolState ? "Fence" : "fin")
+                    : event.category === (boolState ? "End" : "Fin")
                     ? "#FF0000" // Rouge pour la fin
                     : "#ffc107", // Jaune par défaut (pauses)
               }}
@@ -154,6 +175,19 @@ export default function Schedule() {
           ))}
         </div>
       </div>
+
+      {/* Animation CSS */}
+      <style jsx>{`
+        @keyframes twinkle {
+          0%,
+          100% {
+            opacity: 0.3;
+          }
+          50% {
+            opacity: 1;
+          }
+        }
+      `}</style>
     </div>
   );
 }
