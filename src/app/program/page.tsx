@@ -129,8 +129,8 @@ export default function Schedule() {
         </div>
 
         {/* Contenu du header */}
-        <div className="container mx-auto px-4 text-center relative z-10">
-          <h1 className="text-5xl text-white font-Lavishly font-bold text-center">
+        <div className="container mx-auto px-4 text-center font-Montserrat relative z-10">
+          <h1 className="text-5xl text-white font-lavishly font-bold text-center">
             {boolState ? (
               <span>Programme <br/> of the Ceremony</span>
             ) : (
@@ -140,7 +140,7 @@ export default function Schedule() {
 
           <div className="mt-4">
             <Link href="/welcome">
-              <button className="bg-orange font-montserrat font-bold text-blue-900 px-6 py-2 rounded-lg shadow sm:w-auto">
+              <button className="bg-orange font-Montserrat font-bold text-blue-900 px-6 py-2 rounded-lg shadow sm:w-auto">
                 {boolState ? "Home" : "Accueil"}
               </button>
             </Link>

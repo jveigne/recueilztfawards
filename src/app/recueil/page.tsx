@@ -64,7 +64,7 @@ export default function Home() {
           {boolState ? (
             <>
               <h1>
-                <span className="text-5xl text-white font-Lavishly font-bold">SongBook</span>
+                <span className="text-5xl text-white font-lavishly font-bold">SongBook</span>
               </h1>
               <div className="flex flex-col sm:flex-row sm:justify-center mt-5 space-y-4 sm:space-y-0 sm:space-x-4">
                 {/* Bouton accueil */}
@@ -78,7 +78,7 @@ export default function Home() {
           ) : (
             <>
               <h1>
-                <span className="text-5xl text-white font-Lavishly font-bold">Recueil Musical</span>
+                <span className="text-5xl text-white font-lavishly font-bold">Recueil Musical</span>
               </h1>
               <div className="flex flex-col sm:flex-row sm:justify-center mt-5 space-y-4 sm:space-y-0 sm:space-x-4">
                 {/* Bouton accueil */}

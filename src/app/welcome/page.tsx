@@ -77,8 +77,8 @@ export default function Home() {
                         
                         {boolState ? (
                             <>
-                                <h1 className="text-7xl font-roboto font-bold mb-6 text-center animate-fade-in">Welcome</h1>
-                                <h2 className="text-5xl font-roboto font-bold mb-6 text-center animate-fade-in">To
+                                <h1 className="text-7xl font-lavishly font-bold mb-6 text-center animate-fade-in">Welcome</h1>
+                                <h2 className="text-5xl font-lavishly font-bold mb-6 text-center animate-fade-in">To
                                     the</h2>
                                 <h2 className="text-4xl font-montserrat font-bold mb-6 text-center text-orange animate-fade-in">
                                     ZTF AWARDS 2024
@@ -86,9 +86,9 @@ export default function Home() {
                             </>
                         ) : (
                             <>
-                                <h1 className="text-7xl font-roboto font-bold mb-6 text-center animate-fade-in">Bienvenue</h1>
-                                <h2 className="text-5xl font-roboto font-bold mb-6 text-center animate-fade-in">Aux</h2>
-                                <h1 className="text-4xl font-montserrat font-bold mb-6 text-center text-orange animate-fade-in">
+                                <h1 className="text-7xl font-lavishly font-bold mb-6 text-center animate-fade-in">Bienvenue</h1>
+                                <h2 className="text-5xl font-lavishly font-bold mb-6 text-center animate-fade-in">Aux</h2>
+                                <h1 className="text-4xl font-roboto font-bold mb-6 text-center text-orange animate-fade-in">
                                     ZTF AWARDS 2024
                                 </h1>
                             </>
