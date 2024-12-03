@@ -12,7 +12,6 @@ export default function Home() {
         setBoolState(true); // Bascule l'état
         router.push('/welcome'); // Redirige vers une autre page
     };
-
     const setFalse = () => {
         setBoolState(false); // Bascule l'état
         router.push('/welcome'); // Redirige vers une autre page
