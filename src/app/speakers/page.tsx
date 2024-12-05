@@ -3,47 +3,86 @@
 import Link from 'next/link';
 import {useBooleanContext} from '../../../context/LanguageContext';
 
-const speakers = [
+const intervenants = [
     {
         id: '1',
         name: 'Steve Njouonkep',
-        title: 'Mph,Phd student - Clermont Auvergne University/ Montréal University',
-        description: 'From crisis to innovation: Science role in pandemic solution',
-        image: '/images/steve.jpg',
+        title: 'Doctorant - Université de Clermont Auvergne/ Université de Montréal',
+        description: 'Santé globale, innovation scientifique, recherche transdisciplinaire, pandémie',
+        image: '/images/logorouge.png',
     },
     {
         id: '2',
         name: 'Josiane Tamo',
-        title: 'PhD',
-        description: 'On going post doc',
-        image: '/images/josiane.jpg',
+        title: 'Docteur',
+        description: 'Post Doctorat',
+        image: '/images/logorouge.png',
     },
     {
         id: '3',
         name: 'Anicet Fangwa',
-        title: 'PhD Assistant Professor - McGill University Desautels Faculty of Management',
-        description: 'Peut on être croyant et scientifique ?s',
-        image: '/images/josiane.jpg',
+        title: 'Docteur - Professeur assistant - Université de McGill - Canada',
+        description: 'Peut on être croyant et scientifique ?',
+        image: '/images/logorouge.png',
     },
     {
         id: '4',
         name: 'Dieudonnée Ndjamen',
         title: 'Professeur Titulaire des Universités - Université de Yaoundé 1 - Recteur Université ZTF',
-        description: 'Une réflexion sur l education',
-        image: '/images/dieudonnee.jpg',
+        description: 'Une réflexion sur l éducation',
+        image: '/images/logorouge.png',
     },
     {
         id: '5',
         name: 'Patrice Nyamy',
         title: 'Ingénieur Informatique - PDG de plusieurs entreprises',
         description: 'Dieu, la Bible, la Science',
-        image: '/images/josiane.jpg',
+        image: '/images/logorouge.png',
+    }
+];
+const speakers = [
+    {
+        id: '1',
+        name: 'Steve Njouonkep',
+        title: 'Mph,Phd student - Clermont Auvergne University/ Montréal University',
+        description: 'From crisis to innovation: Science role in pandemic solution',
+        image: '/images/logorouge.png',
+    },
+    {
+        id: '2',
+        name: 'Josiane Tamo',
+        title: 'PhD',
+        description: 'On going post doc',
+        image: '/images/logorouge.png',
+    },
+    {
+        id: '3',
+        name: 'Anicet Fangwa',
+        title: 'PhD Assistant Professor - McGill University Desautels Faculty of Management - Canada',
+        description: 'Can we be a believer and a scientist ?',
+        image: '/images/logorouge.png',
+    },
+    {
+        id: '4',
+        name: 'Dieudonnée Ndjamen',
+        title: 'Professor - Université de Yaoundé 1 University - Rector ZTF University',
+        description: 'A reflexion on education',
+        image: '/images/logorouge.png',
+    },
+    {
+        id: '5',
+        name: 'Patrice Nyamy',
+        title: 'Software Engineer - CEO',
+        description: 'God, The Bible, Science',
+        image: '/images/logorouge.png',
     }
 ];
 
 export default function SpeakersPage() {
 
-    const {boolState} = useBooleanContext(); // récupère le contexte de la langue fr/en
+    const { boolState } = useBooleanContext(); // récupère le contexte de la langue fr/en
+    // Choix des données en fonction de la langue fr/en
+    const events = boolState ? speakers : intervenants;
 
     return (<div style={{fontFamily: "'Cinzel', serif"}}> {/* Application de la police ici */}
             {/* Header */}
@@ -124,28 +163,27 @@ export default function SpeakersPage() {
             <div className="min-h-screen bg-white text-black">
                 <div className="container mx-auto p-6">
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                        {speakers.map((speaker) => (
+                        {events.map((event) => (
                             <div
-                                key={speaker.id}
+                                key={event.id}
                                 className="border border-yellow-300 rounded-lg shadow-lg p-6 bg-white hover:shadow-xl transition-shadow"
                             >
                                 <img
-                                    src={speaker.image}
-                                    alt={speaker.name}
+                                    src={event.image}
                                     className="w-32 h-32 rounded-full mx-auto mb-4 border-2 border-yellow-300"/>
                                 <h2 className="text-2xl font-bold text-center text-yellow-700">
-                                    {speaker.name}
+                                    {event.name}
                                 </h2>
-                                <p className="text-center text-gray-600 italic">{speaker.title}</p>
-                                <p className="mt-4 text-gray-700">{speaker.description}</p>
-                                <div className="text-center mt-6">
-                                    <Link href={`/speakers/${speaker.id}`}>
+                                <p className="text-center text-gray-600 italic">{event.title}</p>
+                                <p className="mt-4 text-gray-700">{event.description}</p>
+                                {/*<div className="text-center mt-6">
+                                    <Link href={`/speakers/${event.id}`}>
                                         <button
                                             className="px-6 py-2 bg-yellow-600 text-white rounded-md hover:bg-yellow-700 transition-colors">
                                             Voir le profil
                                         </button>
                                     </Link>
-                                </div>
+                                </div>*/}
                             </div>
                         ))}
                     </div>
