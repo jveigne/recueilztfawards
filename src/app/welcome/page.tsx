@@ -133,6 +133,13 @@ export default function Home() {
                     <div className="flex flex-col items-center space-y-4">
                         {boolState ? (
                             <>
+                                <Link href="/speakers">
+                                    <button
+                                        className="bg-orange text-blue-900 px-6 py-4 rounded-lg btn-transition font-montserrat font-semibold text-3xs shadow hover:bg-yellow-500 w-64">
+                                        Speakers
+                                    </button>
+                                </Link>
+
                                 <Link href="/program">
                                     <button
                                         className="bg-orange text-blue-900 px-6 py-1 rounded-lg btn-transition font-montserrat font-semibold text-3xs shadow hover:bg-yellow-500 w-64">
@@ -142,7 +149,7 @@ export default function Home() {
 
                                 <Link href="/recueil">
                                     <button
-                                        className="bg-white text-blue-900 px-6 py-4 rounded-lg btn-transition font-montserrat font-semibold text-3xs shadow hover:bg-gray-200 w-64">
+                                        className="bg-orange text-blue-900 px-6 py-4 rounded-lg btn-transition font-montserrat font-semibold text-3xs shadow hover:bg-yellow-500 w-64">
                                         Songbook
                                     </button>
                                 </Link>
@@ -155,6 +162,14 @@ export default function Home() {
                             </>
                         ) : (
                             <>
+
+                                <Link href="/speakers">
+                                    <button
+                                        className="bg-orange text-blue-900 px-6 py-4 rounded-lg btn-transition font-montserrat font-semibold text-3xs shadow hover:bg-yellow-500 w-64">
+                                        Intervenants
+                                    </button>
+                                </Link>
+
                                 <Link href="/program">
                                     <button
                                         className="bg-orange text-blue-900 px-6 py-1 rounded-lg btn-transition font-montserrat font-semibold text-3xs shadow hover:bg-yellow-500 w-64">
@@ -164,7 +179,7 @@ export default function Home() {
 
                                 <Link href="/recueil">
                                     <button
-                                        className="bg-white text-blue-900 px-6 py-4 rounded-lg btn-transition font-montserrat font-semibold text-3xs shadow hover:bg-gray-200 w-64">
+                                        className="bg-orange text-blue-900 px-6 py-4 rounded-lg btn-transition font-montserrat font-semibold text-3xs shadow hover:bg-yellow-500 w-64">
                                         Recueil Musical
                                     </button>
                                 </Link>
