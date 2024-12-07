@@ -30,7 +30,7 @@ const intervenants = [
         name: 'Josiane Tamo',
         title: 'Docteur Ingénieur - Chercheur à TU Berlin',
         description: 'Comportement humain mobile: disponibilité, exploitation et lutte contre les attaques sur la vie privée',
-        image: '/images/logorouge.png',
+        image: '/images/josiane.jpg',
     },
     {
         id: '5',
@@ -75,7 +75,7 @@ const speakers = [
         name: 'Josiane Tamo',
         title: 'Engineer Doctor - Researcher at TU Berlin',
         description: 'Mobile Human Behavior: Availability, Exploitation, and Fighting Privacy Attacks',
-        image: '/images/logorouge.png',
+        image: '/images/josiane.jpg',
     },
     {
         id: '5',
