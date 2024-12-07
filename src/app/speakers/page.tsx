@@ -27,7 +27,7 @@ const intervenants = [
     },
     {
         id: '4',
-        name: 'Dieudonnée Ndjamen',
+        name: 'Dieudonné Ndjamen',
         title: 'Professeur Titulaire des Universités - Université de Yaoundé 1 - Recteur Université ZTF',
         description: 'Une réflexion sur l éducation',
         image: '/images/logorouge.png',
