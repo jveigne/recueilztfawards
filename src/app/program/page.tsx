@@ -152,7 +152,7 @@ const schedule = [
   {
     time: "10:55 - 11:05",
     title: "A Reflection on Education",
-    description: "Prof. Dr. Dieudonné NDJAMEN - Senior Professor, Director of the ZTF Research Center," +
+    description: "Prof. Dr. Dieudonné NDJAMEN - Full Professor, Director of the ZTF Research Center," +
         " Rector of the Polytechnic and Health University Institute PROCCL Libreville, Gabon"
   },
   {
