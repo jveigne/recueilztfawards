@@ -46,7 +46,7 @@ const programme = [
   {
     time: "10:35 - 10:45",
     title: "Comportement humain mobile: disponibilité, exploitation et lutte contre les attaques sur la vie privée",
-    description: "Ing. Dr Anne Josiane KOUAM - Doctorant - Chercheur à TU Berlin",
+    description: "Ing. Dr Anne Josiane KOUAM - Chercheur à TU Berlin",
   },
   {
     time: "10:45 - 10:55",
@@ -142,7 +142,7 @@ const schedule = [
   {
     time: "10:35 - 10:45",
     title: "Mobile Human Behavior: Availability, Exploitation, and Fighting Privacy Attacks",
-    description: "Eng. Dr. Anne Josiane KOUAM - PhD Candidate - Researcher at TU Berlin"
+    description: "Eng. Dr. Anne Josiane KOUAM - Researcher at TU Berlin"
   },
   {
     time: "10:45 - 10:55",

@@ -6,75 +6,90 @@ import {useBooleanContext} from '../../../context/LanguageContext';
 const intervenants = [
     {
         id: '1',
-        name: 'Steve Njouonkep',
-        title: 'Doctorant - Université de Clermont Auvergne/ Université de Montréal',
-        description: 'Santé globale, innovation scientifique, recherche transdisciplinaire, pandémie',
-        image: '/images/logorouge.png',
-    },
-    {
-        id: '2',
-        name: 'Josiane Tamo',
-        title: 'Docteur',
-        description: 'Post Doctorat',
-        image: '/images/logorouge.png',
-    },
-    {
-        id: '3',
-        name: 'Anicet Fangwa',
-        title: 'Docteur - Professeur assistant - Université de McGill - Canada',
-        description: 'Peut on être croyant et scientifique ?',
-        image: '/images/logorouge.png',
-    },
-    {
-        id: '4',
         name: 'Dieudonné Ndjamen',
         title: 'Professeur Titulaire des Universités - Université de Yaoundé 1 - Recteur Université ZTF',
         description: 'Une réflexion sur l éducation',
+        image: '/images/dieudonne.jpg',
+    },
+    {
+        id: '2',
+        name: 'Patrice Nyamy',
+        title: 'Ingénieur Informatique - PDG de plusieurs entreprises',
+        description: 'Dieu, la Bible, la Science',
+        image: '/images/patrice.jpg',
+    },
+    {
+        id: '3',
+        name: 'Steve Njouonkep',
+        title: 'Doctorant - Université de Clermont Auvergne/ Université de Montréal',
+        description: 'Santé globale, innovation scientifique, recherche transdisciplinaire, pandémie',
+        image: '/images/steve.jpg',
+    },
+    {
+        id: '4',
+        name: 'Josiane Tamo',
+        title: 'Docteur Ingénieur - Chercheur à TU Berlin',
+        description: 'Comportement humain mobile: disponibilité, exploitation et lutte contre les attaques sur la vie privée',
         image: '/images/logorouge.png',
     },
     {
         id: '5',
-        name: 'Patrice Nyamy',
-        title: 'Ingénieur Informatique - PDG de plusieurs entreprises',
-        description: 'Dieu, la Bible, la Science',
-        image: '/images/logorouge.png',
-    }
+        name: 'Anicet Fangwa',
+        title: 'Docteur - Professeur assistant - Université de McGill - Canada',
+        description: 'Peut on être croyant et scientifique ?',
+        image: '/images/anicet.jpg',
+    },
+    {
+        id: '6',
+        name: 'Gilles Tagne',
+        title: 'Professeur associé en Robotique - JUNIA - Université de Lille France',
+        description: 'La robotique dans notre société d\'aujourd\'hui et de demain',
+        image: '/images/gilles.jpg',
+    },
+
 ];
 const speakers = [
     {
         id: '1',
-        name: 'Steve Njouonkep',
-        title: 'Mph,Phd student - Clermont Auvergne University/ Montréal University',
-        description: 'From crisis to innovation: Science role in pandemic solution',
-        image: '/images/logorouge.png',
-    },
-    {
-        id: '2',
-        name: 'Josiane Tamo',
-        title: 'PhD',
-        description: 'On going post doc',
-        image: '/images/logorouge.png',
-    },
-    {
-        id: '3',
-        name: 'Anicet Fangwa',
-        title: 'PhD Assistant Professor - McGill University Desautels Faculty of Management - Canada',
-        description: 'Can we be a believer and a scientist ?',
-        image: '/images/logorouge.png',
-    },
-    {
-        id: '4',
         name: 'Dieudonnée Ndjamen',
         title: 'Professor - Université de Yaoundé 1 University - Rector ZTF University',
         description: 'A reflexion on education',
+        image: '/images/dieudonne.jpg',
+    },
+    {
+        id: '2',
+        name: 'Patrice Nyamy',
+        title: 'Software Engineer - CEO',
+        description: 'God, The Bible, Science',
+        image: '/images/patrice.jpg',
+    },
+    {
+        id: '3',
+        name: 'Steve Njouonkep',
+        title: 'Mph,Phd student - Clermont Auvergne University/ Montréal University',
+        description: 'From crisis to innovation: Science role in pandemic solution',
+        image: '/images/steve.jpg',
+    },
+    {
+        id: '4',
+        name: 'Josiane Tamo',
+        title: 'Engineer Doctor - Researcher at TU Berlin',
+        description: 'Mobile Human Behavior: Availability, Exploitation, and Fighting Privacy Attacks',
         image: '/images/logorouge.png',
     },
     {
         id: '5',
-        name: 'Patrice Nyamy',
-        title: 'Software Engineer - CEO',
-        description: 'God, The Bible, Science',
-        image: '/images/logorouge.png',
+        name: 'Anicet Fangwa',
+        title: 'PhD Assistant Professor - McGill University Desautels Faculty of Management - Canada',
+        description: 'Can we be a believer and a scientist ?',
+        image: '/images/anicet.jpg',
+    },
+    {
+        id: '6',
+        name: 'Gilles Tagne',
+        title: 'Associate Professor in Robotics - JUNIA - University of Lille, France',
+        description: 'Robotics in Our Society Today and Tomorrow',
+        image: '/images/gilles.jpg',
     }
 ];
 
@@ -175,7 +190,7 @@ export default function SpeakersPage() {
                                     {event.name}
                                 </h2>
                                 <p className="text-center text-gray-600 italic">{event.title}</p>
-                                <p className="mt-4 text-gray-700">{event.description}</p>
+                                <p className="mt-4 text-gray-700 text-center">{event.description}</p>
                                 {/*<div className="text-center mt-6">
                                     <Link href={`/speakers/${event.id}`}>
                                         <button
