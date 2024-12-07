@@ -6,92 +6,194 @@ import React from "react";
 
 const programme = [
   {
-    time: "09:00 - 10:30",
-    category: "Louange",
-    title: "Ouverture du ZTF Awards",
-    description: "Présentation des objectifs et du déroulement de la journée",
-    location: "Monsieur Patrice Nyamy",
+    time: "07:00 - 09:00",
+    title: "ACCUEIL",
+    description: "Arrivées et installation des participants",
   },
   {
-    time: "10:45 - 12:15",
-    category: "prédication & Atelier",
-    title: "Session Interactive",
-    description: "Partage de la parole",
-    location: "Monsieur Patrice Nyamy",
+    time: "09:00 - 09:15",
+    title: "ACCUEIL",
+    description: "Arrivées et installation des panélistes",
   },
   {
-    time: "12:15 - 13:45",
-    category: "Pause",
-    title: "Debrief",
-    description: "Moment d'échange et de partage entre les participants",
-    location: "Monsieur Patrice Nyamy",
+    time: "09:15 - 09:25",
+    title: "ACCUEIL",
+    description: "Arrivées et installation des spéciaux",
   },
   {
-    time: "14:00 - 15:30",
-    category: "Louange",
-    title: "Courte louange",
-    description: "blabla blablabla blablabla blablabla blabla",
-    location: "Monsieur Patrice Nyamy",
+    time: "09:25 - 10:00",
+    title: "Intermède musicale",
   },
   {
-    time: "15:45 - 17:15",
-    category: "prédication & Atelier",
-    title: "Présentation des livres ZTF",
-    description: "Sessions pratiques en petits groupes",
-    location: "Monsieur Patrice Nyamy",
+    time: "10:00 - 10:05",
+    title: "Hymne du Prix d'Excellence",
   },
   {
-    time: "17:30 - 18:00",
-    category: "fin",
-    title: "Clôture",
-    description: "Bilan de la journée et perspectives",
-    location: "Monsieur Patrice Nyamy",
+    time: "10:05 - 10:15",
+    title: "Discours d'ouverture",
+    description: "M. Jean Claude AWALA - Conseiller Technique à la Présidence de la République",
+  },
+  {
+    time: "10:15 - 10:25",
+    title: "Leçon inaugurale sur le Professeur FOMUM",
+    description: "M. Georges TIMBA - Président du Tribunal de Première Instance de Yaoundé",
+  },
+  {
+    time: "10:25 - 10:35",
+    title: "De la crise à l’innovation: le rôle de la science dans la solution à la pandémie",
+    description: "M. Steve NJOUONKEP - Doctorant - Université Clermont Auvergne / Université de Montréal",
+  },
+  {
+    time: "10:35 - 10:45",
+    title: "Comportement humain mobile: disponibilité, exploitation et lutte contre les attaques sur la vie privée",
+    description: "Ing. Dr Anne Josiane KOUAM - Doctorant - Chercheur à TU Berlin",
+  },
+  {
+    time: "10:45 - 10:55",
+    title: "La robotique dans notre société d'aujourd'hui et de demain",
+    description: "Dr Gilles TAGNE - Professeur associé en Robotique - JUNIA - Université de Lille France",
+  },
+  {
+    time: "10:55 - 11:05",
+    title: "Une réflexion sur l'éducation",
+    description: "Prof. Dr. Dieudonné NDJAMEN - Professeur Hors Echelle des Universités, Directeur du centre de recherche ZTF" +
+        " Recteur de l'Institut Universitaire de la santé et Polytechnique PROCCL Libreville Gabon",
+  },
+  {
+    time: "11:05 - 11:15",
+    title: "L'art de travailler dur dans l'excellence académique",
+    description: "M. Joseph NGANDEU - Consultant international",
+  },
+  {
+    time: "11:15 - 11:25",
+    title: "Science et Foi. Peut on être croyant et scientifique ?",
+    description: "Dr. Anicet FANGWA - Professeur assistant - Université de McGill - Canada",
+  },
+  {
+    time: "11:25 - 11:35",
+    title: "Intermède musicale",
+  },
+  {
+    time: "11:35 - 11:45",
+    title: "Dieu, la Bible, la Science",
+    description: "M. Patrice NYAMY Ingénieur Informatique - PDG de plusieurs entreprises",
+  },
+  {
+    time: "11:45 - 11:55",
+    title: "Intermède musicale",
+  },
+  {
+    time: "11:55 - 12:05",
+    title: "Echanges",
+  },
+  {
+    time: "12:05 - 12:45",
+    title: "Remise des prix",
+  },
+  {
+    time: "12:45 - 13:00",
+    title: "Discours de clôture",
+  },
+  {
+    time: "13:00 - 13:20",
+    title: "Photo de famille",
   },
 ];
 
 const schedule = [
   {
-    time: "09:00 - 10:30",
-    category: "Praise",
-    title: "Opening of the ZTF Awards",
-    description: "Presentation of the day's objectives and schedule",
-    location: "Mr Patrice Nyamy",
+    time: "07:00 - 09:00",
+    title: "WELCOME",
+    description: "Arrivals and participant setup"
   },
   {
-    time: "10:45 - 12:15",
-    category: "prédication & Atelier",
-    title: "Interactive Session",
-    description: "Sharing the word",
-    location: "Mr Patrice Nyamy",
+    time: "09:00 - 09:15",
+    title: "WELCOME",
+    description: "Arrivals and panelist setup"
   },
   {
-    time: "12:15 - 13:45",
-    category: "Break",
-    title: "Débriefing",
-    description: "A moment of exchange and sharing between participants",
-    location: "Mr Patrice Nyamy",
+    time: "09:15 - 09:25",
+    title: "WELCOME",
+    description: "Arrivals and special guest setup"
   },
   {
-    time: "14:00 - 15:30",
-    category: "Praise",
-    title: "Short praise",
-    description: "blabla blablabla blablabla blablabla blabla",
-    location: "Mr Patrice Nyamy",
+    time: "09:25 - 10:00",
+    title: "Musical Interlude"
   },
   {
-    time: "15:45 - 17:15",
-    category: "preaching & Workshop",
-    title: "ZTF books presentation",
-    description: "Practical sessions in small groups",
-    location: "Mr Patrice Nyamy",
+    time: "10:00 - 10:05",
+    title: "Hymn of the Prize of Excellence"
   },
   {
-    time: "17:30 - 18:00",
-    category: "fin",
-    title: "Fence",
-    description: "Day in review and outlook",
-    location: "Mr Patrice Nyamy",
+    time: "10:05 - 10:15",
+    title: "Opening Speech",
+    description: "Mr. Jean Claude AWALA - Technical Advisor at the Presidency of the Republic"
   },
+  {
+    time: "10:15 - 10:25",
+    title: "Inaugural Lesson on Professor FOMUM",
+    description: "Mr. Georges TIMBA - President of the Court of First Instance of Yaoundé"
+  },
+  {
+    time: "10:25 - 10:35",
+    title: "From Crisis to Innovation: The Role of Science in Solving the Pandemic",
+    description: "Mr. Steve NJOUONKEP - PhD Candidate - Clermont Auvergne University / University of Montreal"
+  },
+  {
+    time: "10:35 - 10:45",
+    title: "Mobile Human Behavior: Availability, Exploitation, and Fighting Privacy Attacks",
+    description: "Eng. Dr. Anne Josiane KOUAM - PhD Candidate - Researcher at TU Berlin"
+  },
+  {
+    time: "10:45 - 10:55",
+    title: "Robotics in Our Society Today and Tomorrow",
+    description: "Dr. Gilles TAGNE - Associate Professor in Robotics - JUNIA - University of Lille, France"
+  },
+  {
+    time: "10:55 - 11:05",
+    title: "A Reflection on Education",
+    description: "Prof. Dr. Dieudonné NDJAMEN - Senior Professor, Director of the ZTF Research Center," +
+        " Rector of the Polytechnic and Health University Institute PROCCL Libreville, Gabon"
+  },
+  {
+    time: "11:05 - 11:15",
+    title: "The Art of Hard Work in Academic Excellence",
+    description: "Mr. Joseph NGANDEU - International Consultant"
+  },
+  {
+    time: "11:15 - 11:25",
+    title: "Science and Faith. Can One Be a Believer and a Scientist?",
+    description: "Dr. Anicet FANGWA - Assistant Professor - McGill University, Canada"
+  },
+  {
+    time: "11:25 - 11:35",
+    title: "Musical Interlude"
+  },
+  {
+    time: "11:35 - 11:45",
+    title: "God, the Bible, Science",
+    description: "Mr. Patrice NYAMY - Computer Engineer - CEO of Multiple Companies"
+  },
+  {
+    time: "11:45 - 11:55",
+    title: "Musical Interlude"
+  },
+  {
+    time: "11:55 - 12:05",
+    title: "Discussions"
+  },
+  {
+    time: "12:05 - 12:45",
+    title: "Prize giving"
+  },
+  {
+    time: "12:45 - 13:00",
+    title: "Closing Speech"
+  },
+  {
+    time: "13:00 - 13:20",
+    title: "Group Photo"
+  }
 ];
 
 export default function Schedule() {
@@ -168,21 +270,12 @@ export default function Schedule() {
               key={index}
               className="bg-white font-montserrat font-bold shadow-md rounded-lg p-6 border-t-4 transition-transform transform hover:scale-105 hover:shadow-lg"
               style={{
-                borderColor:
-                  event.category === (boolState ? "Praise" : "Louange")
-                    ? "#007bff" // Bleu pour Louange / Praise
-                    : event.category === (boolState ? "preaching & Workshop" : "prédication & Atelier")
-                    ? "#28a745" // Vert pour prédication & Atelier
-                    : event.category === (boolState ? "Fence" : "fin")
-                    ? "#FF0000" // Rouge pour la fin
-                    : "#ffc107", // Jaune par défaut (pauses)
+                borderColor: "#ffc107", // Jaune par défaut (pauses)
               }}
             >
               <h2 className="text-lg font-montserrat font-semibold text-blue-900">{event.time}</h2>
-              <p className="text-sm font-montserrat font-bold uppercase text-gray-600">{event.category}</p>
               <h3 className="text-xl font-montserrat font-semibold mt-2 text-black">{event.title}</h3>
               <p className="text-gray-700 font-montserrat mt-2">{event.description}</p>
-              <p className="mt-4 text-sm font-montserrat font-semibold text-gray-500">📍 {event.location}</p>
             </div>
           ))}
         </div>

@@ -135,21 +135,21 @@ export default function Home() {
                             <>
                                 <Link href="/speakers">
                                     <button
-                                        className="bg-orange text-blue-900 px-6 py-4 rounded-lg btn-transition font-montserrat font-semibold text-3xs shadow hover:bg-yellow-500 w-64">
+                                        className="bg-white text-blue-900 px-6 py-4 rounded-lg btn-transition font-montserrat font-semibold text-3xs shadow hover:bg-yellow-500 w-64">
                                         Speakers
                                     </button>
                                 </Link>
 
                                 <Link href="/program">
                                     <button
-                                        className="bg-orange text-blue-900 px-6 py-1 rounded-lg btn-transition font-montserrat font-semibold text-3xs shadow hover:bg-yellow-500 w-64">
+                                        className="bg-white text-blue-900 px-6 py-1 rounded-lg btn-transition font-montserrat font-semibold text-3xs shadow hover:bg-yellow-500 w-64">
                                         Programme of the Ceremony
                                     </button>
                                 </Link>
 
                                 <Link href="/recueil">
                                     <button
-                                        className="bg-orange text-blue-900 px-6 py-4 rounded-lg btn-transition font-montserrat font-semibold text-3xs shadow hover:bg-yellow-500 w-64">
+                                        className="bg-white text-blue-900 px-6 py-4 rounded-lg btn-transition font-montserrat font-semibold text-3xs shadow hover:bg-yellow-500 w-64">
                                         Songbook
                                     </button>
                                 </Link>
@@ -165,21 +165,21 @@ export default function Home() {
 
                                 <Link href="/speakers">
                                     <button
-                                        className="bg-orange text-blue-900 px-6 py-4 rounded-lg btn-transition font-montserrat font-semibold text-3xs shadow hover:bg-yellow-500 w-64">
+                                        className="bg-white text-blue-900 px-6 py-4 rounded-lg btn-transition font-montserrat font-semibold text-3xs shadow hover:bg-yellow-500 w-64">
                                         Intervenants
                                     </button>
                                 </Link>
 
                                 <Link href="/program">
                                     <button
-                                        className="bg-orange text-blue-900 px-6 py-1 rounded-lg btn-transition font-montserrat font-semibold text-3xs shadow hover:bg-yellow-500 w-64">
+                                        className="bg-white text-blue-900 px-6 py-1 rounded-lg btn-transition font-montserrat font-semibold text-3xs shadow hover:bg-yellow-500 w-64">
                                         Programme de la Cérémonie
                                     </button>
                                 </Link>
 
                                 <Link href="/recueil">
                                     <button
-                                        className="bg-orange text-blue-900 px-6 py-4 rounded-lg btn-transition font-montserrat font-semibold text-3xs shadow hover:bg-yellow-500 w-64">
+                                        className="bg-white text-blue-900 px-6 py-4 rounded-lg btn-transition font-montserrat font-semibold text-3xs shadow hover:bg-yellow-500 w-64">
                                         Recueil Musical
                                     </button>
                                 </Link>
