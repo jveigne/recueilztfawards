@@ -51,7 +51,7 @@ const intervenants = [
 const speakers = [
     {
         id: '1',
-        name: 'Dieudonnée Ndjamen',
+        name: 'Dieudonné Ndjamen',
         title: 'Professor - Université de Yaoundé 1 University - Rector ZTF University',
         description: 'A reflexion on education',
         image: '/images/dieudonne.jpg',
