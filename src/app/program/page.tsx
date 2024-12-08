@@ -31,7 +31,7 @@ const programme = [
   {
     time: "10:05 - 10:15",
     title: "Discours d'ouverture",
-    description: "M. Jean Claude AWALA - Conseiller Technique à la Présidence de la République",
+    description: "M. Jean Claude AWALA - Conseiller Technique à la Présidence de la République du Cameroun",
   },
   {
     time: "10:15 - 10:25",
@@ -127,7 +127,7 @@ const schedule = [
   {
     time: "10:05 - 10:15",
     title: "Opening Speech",
-    description: "Mr. Jean Claude AWALA - Technical Advisor at the Presidency of the Republic"
+    description: "Mr. Jean Claude AWALA - Technical Advisor at the Presidency of the Republic of Cameroon"
   },
   {
     time: "10:15 - 10:25",

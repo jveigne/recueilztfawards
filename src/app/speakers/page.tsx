@@ -21,8 +21,7 @@ const intervenants = [
     {
         id: '3',
         name: 'Jean Claude AWALA',
-        title: 'Professeur Titulaire des Universités - Université de Yaoundé 1 - Recteur Université ZTF',
-        description: 'Une réflexion sur l éducation',
+        title: 'Conseiller Technique à la Présidence de la République du Cameroun',
         image: '/images/claude.jpg',
     },
     {
@@ -87,8 +86,7 @@ const speakers = [
     {
         id: "3",
         name: "Jean Claude AWALA",
-        title: "Full Professor - University of Yaoundé 1 - Rector of ZTF University",
-        description: "A Reflection on Education",
+        title: "Technical Advisor at the Presidency of the Republic of Cameroon",
         image: "/images/claude.jpg"
     },
     {
