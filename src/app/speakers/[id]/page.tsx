@@ -4,11 +4,6 @@ import Link from "next/link";
 import { use } from "react";
 import { useBooleanContext } from "../../../../context/LanguageContext";
 
-const speakers2 = [
-    { id: 1, name: 'John Doe', title: 'Développeur Frontend', bio: 'Spécialiste en React et Next.js.', image: '/images/john.jpg', skills: ['React', 'Next.js', 'JavaScript'] },
-    { id: 2, name: 'Jane Smith', title: 'Spécialiste IA', bio: 'Experte en intelligence artificielle.', image: '/images/jane.jpg', skills: ['Python', 'Machine Learning', 'IA'] },
-    { id: 3, name: 'Paul Dupont', title: 'Designer UX/UI', bio: 'Designer d’expériences utilisateur.', image: '/images/paul.jpg', skills: ['Figma', 'UX/UI Design', 'Prototypage'] },
-];
 
 const speakers = [
     {
