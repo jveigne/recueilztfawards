@@ -15,7 +15,7 @@ const intervenants = [
         id: '2',
         name: 'Georges TIMBA',
         title: 'Président du Tribunal de Première Instance de Yaoundé',
-        description: 'Leçon inaugurale sur le Professeur FOMUM',
+        description: 'Présentation du Professeur FOMUM',
         image: '/images/georges.jpg',
     },
     {
@@ -80,7 +80,7 @@ const speakers = [
         id: "2",
         name: "Georges TIMBA",
         title: "President of the Court of First Instance of Yaoundé",
-        description: "Inaugural Lesson on Professor FOMUM",
+        description: "Presentation of Professor FOMUM",
         image: "/images/georges.jpg"
     },
     {
