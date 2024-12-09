@@ -11,6 +11,7 @@ const intervenants = [
         description: 'Une réflexion sur l éducation',
         image: '/images/dieudonne.jpg',
     },
+    
     {
         id: '2',
         name: 'Georges TIMBA',
