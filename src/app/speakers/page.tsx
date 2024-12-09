@@ -232,7 +232,7 @@ export default function SpeakersPage() {
                                 <p className="text-center text-gray-600 italic">{event.title}</p>
                                 <p className="mt-4 text-gray-700 text-center">{event.description}</p>
                                 <div className="text-center mt-6">
-                                    <Link href={`/speakers`}>
+                                    <Link href={`/speakers/${event.id}`}>
                                         <button
                                             className="px-6 py-2 bg-yellow-600 text-white rounded-md hover:bg-yellow-700 transition-colors">
                                             Voir le profil
