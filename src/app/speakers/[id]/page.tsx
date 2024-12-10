@@ -8,7 +8,61 @@ import { useBooleanContext } from "../../../../context/LanguageContext";
 const speakers = [
     {
         id: 1,
-        name: "Dieudonné Njamén",
+        name: "Jean Claude AWALA",
+        title: "Cybersecurity Expert",
+        email: "pierre.morel@gmail.com",
+        phone: "+33 6 98 76 54 32",
+        bio: "Cybersecurity expert with deep experience in audits and risk management.",
+        skills: ["Cybersecurity", "Auditing", "Risk Management"],
+        experience: [
+            {
+                poste: "Cybersecurity Manager",
+                entreprise: "TechSecure",
+                periode: "2020 - Present",
+                description: "Managing security risks and implementing cybersecurity policies."
+            },
+            {
+                poste: "Cybersecurity Auditor",
+                entreprise: "CyberAudit",
+                periode: "2015 - 2020",
+                description: "Auditing information systems and identifying vulnerabilities."
+            }
+        ],
+        education: [
+            {
+                diplome: "Master's in Computer Security",
+                etablissement: "University of Technology of Compiègne",
+                annee: "2014"
+            }
+        ]
+    },
+    {
+        id: 2,
+        name: "Georges TIMBA",
+        title: "Leadership Coach",
+        email: "marie.leroy@gmail.com",
+        phone: "+33 7 89 12 34 56",
+        bio: "Certified coach specializing in leadership and personal development.",
+        skills: ["Leadership", "Coaching", "Change Management"],
+        experience: [
+            {
+                poste: "Leadership Coach",
+                entreprise: "Independent",
+                periode: "2016 - Present",
+                description: "Supporting executives and leaders in developing their leadership skills."
+            }
+        ],
+        education: [
+            {
+                diplome: "Professional Coaching Certification",
+                etablissement: "ICF",
+                annee: "2015"
+            }
+        ]
+    },
+    {
+        id: 3,
+        name: "Pr Dieudonné Njamen",
         title: "Full Professor",
         email: "dieudonne.njamen@gmail.com",
         phone: "+33 6 12 34 56 78",
@@ -65,60 +119,6 @@ const speakers = [
                 diplome: "Licence in Life Sciences (Zoology)",
                 etablissement: "University of Yaoundé I",
                 annee: "1991"
-            }
-        ]
-    },
-    {
-        id: 2,
-        name: "Georges TIMBA",
-        title: "Leadership Coach",
-        email: "marie.leroy@gmail.com",
-        phone: "+33 7 89 12 34 56",
-        bio: "Certified coach specializing in leadership and personal development.",
-        skills: ["Leadership", "Coaching", "Change Management"],
-        experience: [
-            {
-                poste: "Leadership Coach",
-                entreprise: "Independent",
-                periode: "2016 - Present",
-                description: "Supporting executives and leaders in developing their leadership skills."
-            }
-        ],
-        education: [
-            {
-                diplome: "Professional Coaching Certification",
-                etablissement: "ICF",
-                annee: "2015"
-            }
-        ]
-    },
-    {
-        id: 3,
-        name: "Jean Claude AWALA",
-        title: "Cybersecurity Expert",
-        email: "pierre.morel@gmail.com",
-        phone: "+33 6 98 76 54 32",
-        bio: "Cybersecurity expert with deep experience in audits and risk management.",
-        skills: ["Cybersecurity", "Auditing", "Risk Management"],
-        experience: [
-            {
-                poste: "Cybersecurity Manager",
-                entreprise: "TechSecure",
-                periode: "2020 - Present",
-                description: "Managing security risks and implementing cybersecurity policies."
-            },
-            {
-                poste: "Cybersecurity Auditor",
-                entreprise: "CyberAudit",
-                periode: "2015 - 2020",
-                description: "Auditing information systems and identifying vulnerabilities."
-            }
-        ],
-        education: [
-            {
-                diplome: "Master's in Computer Security",
-                etablissement: "University of Technology of Compiègne",
-                annee: "2014"
             }
         ]
     },
@@ -244,7 +244,7 @@ const speakers = [
     },
     {
         id: 7,
-        name: "Clément FOGUE",
+        name: "Dr Anne Josiane KOUAM",
         title: "Consultant, Data Science, and Machine Learning Expert",
         email: "clement.fogue@gmail.com",
         phone: "+33 7 89 65 43 21",
@@ -265,7 +265,80 @@ const speakers = [
                 annee: "2018"
             }
         ]
-    }
+    },
+    {
+        id: 8,
+        name: "Dr Anicet FANGWA",
+        title: "Consultant, Data Science, and Machine Learning Expert",
+        email: "clement.fogue@gmail.com",
+        phone: "+33 7 89 65 43 21",
+        bio: "Consultant in Data Science and Machine Learning, with expertise in AI, Big Data, and blockchain.",
+        skills: ["Data Science", "Machine Learning", "Blockchain", "Big Data"],
+        experience: [
+            {
+                poste: "Data Science Consultant",
+                entreprise: "Data Consultancy",
+                periode: "2019 - Present",
+                description: "Advising businesses on using data technologies to enhance performance."
+            }
+        ],
+        education: [
+            {
+                diplome: "Master's in Data Science",
+                etablissement: "University Pierre and Marie Curie",
+                annee: "2018"
+            }
+        ]
+    },
+    {
+        id: 9,
+        name: "Dr Gilles Tagne",
+        title: "Consultant, Data Science, and Machine Learning Expert",
+        email: "clement.fogue@gmail.com",
+        phone: "+33 7 89 65 43 21",
+        bio: "Consultant in Data Science and Machine Learning, with expertise in AI, Big Data, and blockchain.",
+        skills: ["Data Science", "Machine Learning", "Blockchain", "Big Data"],
+        experience: [
+            {
+                poste: "Data Science Consultant",
+                entreprise: "Data Consultancy",
+                periode: "2019 - Present",
+                description: "Advising businesses on using data technologies to enhance performance."
+            }
+        ],
+        education: [
+            {
+                diplome: "Master's in Data Science",
+                etablissement: "University Pierre and Marie Curie",
+                annee: "2018"
+            }
+        ]
+    },
+    {
+        id: 10,
+        name: "Pr Moïse ADAMOU",
+        title: "Consultant, Data Science, and Machine Learning Expert",
+        email: "clement.fogue@gmail.com",
+        phone: "+33 7 89 65 43 21",
+        bio: "Consultant in Data Science and Machine Learning, with expertise in AI, Big Data, and blockchain.",
+        skills: ["Data Science", "Machine Learning", "Blockchain", "Big Data"],
+        experience: [
+            {
+                poste: "Data Science Consultant",
+                entreprise: "Data Consultancy",
+                periode: "2019 - Present",
+                description: "Advising businesses on using data technologies to enhance performance."
+            }
+        ],
+        education: [
+            {
+                diplome: "Master's in Data Science",
+                etablissement: "University Pierre and Marie Curie",
+                annee: "2018"
+            }
+        ]
+    },
+
 ];
 
 
@@ -273,7 +346,61 @@ const speakers = [
 const intervenants = [
     {
         id: 1,
-        name: "Dieudonné Njamén",
+        name: "Jean Claude AWALA",
+        title: "Expert en Cybersécurité",
+        email: "pierre.morel@gmail.com",
+        phone: "+33 6 98 76 54 32",
+        bio: "Expert en cybersécurité avec une expérience approfondie en audit et en gestion des risques.",
+        skills: ["Cybersécurité", "Audit", "Gestion des risques"],
+        experience: [
+            {
+                poste: "Responsable Cybersécurité",
+                entreprise: "TechSecure",
+                periode: "2020 - Présent",
+                description: "Gestion des risques de sécurité et mise en œuvre des politiques de cybersécurité."
+            },
+            {
+                poste: "Auditeur en Cybersécurité",
+                entreprise: "CyberAudit",
+                periode: "2015 - 2020",
+                description: "Audit des systèmes d'information et identification des vulnérabilités."
+            }
+        ],
+        education: [
+            {
+                diplome: "Master en Sécurité Informatique",
+                etablissement: "Université de Technologie de Compiègne",
+                annee: "2014"
+            }
+        ]
+    },
+    {
+        id: 2,
+        name: "Georges TIMBA",
+        title: "Coach en Leadership",
+        email: "marie.leroy@gmail.com",
+        phone: "+33 7 89 12 34 56",
+        bio: "Coach certifié spécialisé en leadership et développement personnel.",
+        skills: ["Leadership", "Coaching", "Gestion du changement"],
+        experience: [
+            {
+                poste: "Coach en Leadership",
+                entreprise: "Indépendant",
+                periode: "2016 - Présent",
+                description: "Accompagnement des cadres et dirigeants dans le développement de leur leadership."
+            }
+        ],
+        education: [
+            {
+                diplome: "Certification en Coaching Professionnel",
+                etablissement: "ICF",
+                annee: "2015"
+            }
+        ]
+    },
+    {
+        id: 3,
+        name: "Prof Dieudonné Njamen",
         title: "Professeur titulaire",
         email: "dieudonne.njamen@gmail.com",
         phone: "+33 6 12 34 56 78",
@@ -330,60 +457,6 @@ const intervenants = [
                 diplome: "Licence en Sciences de la Vie (Zoologie)",
                 etablissement: "Université de Yaoundé I",
                 annee: "1991"
-            }
-        ]
-    },
-    {
-        id: 2,
-        name: "Georges TIMBA",
-        title: "Coach en Leadership",
-        email: "marie.leroy@gmail.com",
-        phone: "+33 7 89 12 34 56",
-        bio: "Coach certifié spécialisé en leadership et développement personnel.",
-        skills: ["Leadership", "Coaching", "Gestion du changement"],
-        experience: [
-            {
-                poste: "Coach en Leadership",
-                entreprise: "Indépendant",
-                periode: "2016 - Présent",
-                description: "Accompagnement des cadres et dirigeants dans le développement de leur leadership."
-            }
-        ],
-        education: [
-            {
-                diplome: "Certification en Coaching Professionnel",
-                etablissement: "ICF",
-                annee: "2015"
-            }
-        ]
-    },
-    {
-        id: 3,
-        name: "Jean Claude AWALA",
-        title: "Expert en Cybersécurité",
-        email: "pierre.morel@gmail.com",
-        phone: "+33 6 98 76 54 32",
-        bio: "Expert en cybersécurité avec une expérience approfondie en audit et en gestion des risques.",
-        skills: ["Cybersécurité", "Audit", "Gestion des risques"],
-        experience: [
-            {
-                poste: "Responsable Cybersécurité",
-                entreprise: "TechSecure",
-                periode: "2020 - Présent",
-                description: "Gestion des risques de sécurité et mise en œuvre des politiques de cybersécurité."
-            },
-            {
-                poste: "Auditeur en Cybersécurité",
-                entreprise: "CyberAudit",
-                periode: "2015 - 2020",
-                description: "Audit des systèmes d'information et identification des vulnérabilités."
-            }
-        ],
-        education: [
-            {
-                diplome: "Master en Sécurité Informatique",
-                etablissement: "Université de Technologie de Compiègne",
-                annee: "2014"
             }
         ]
     },
@@ -509,28 +582,100 @@ const intervenants = [
     },
     {
         id: 7,
-        name: "Clément FOGUE",
-        title: "Consultant, expert en science des données et en apprentissage automatique",
+        name: "Dr Anne Josiane KOUAM",
+        title: "Consultant, Data Science, and Machine Learning Expert",
         email: "clement.fogue@gmail.com",
         phone: "+33 7 89 65 43 21",
-        bio: "Consultant en science des données et apprentissage automatique, avec une expertise en IA, Big Data et blockchain..",
-        skills: ["Science des données", "Apprentissage automatique", "Blockchain", "Big Data"],
+        bio: "Consultant in Data Science and Machine Learning, with expertise in AI, Big Data, and blockchain.",
+        skills: ["Data Science", "Machine Learning", "Blockchain", "Big Data"],
         experience: [
             {
-                poste: "Consultant en science des données",
-                entreprise: "Conseil en données",
-                periode: "2019 - aujourd'hui",
-                description: "Conseiller les entreprises sur l'utilisation des technologies de l'information pour améliorer leurs performances."
+                poste: "Data Science Consultant",
+                entreprise: "Data Consultancy",
+                periode: "2019 - Present",
+                description: "Advising businesses on using data technologies to enhance performance."
             }
         ],
         education: [
             {
-                diplome: "Master en science des données",
-                etablissement: "Université Pierre et Marie Curie",
+                diplome: "Master's in Data Science",
+                etablissement: "University Pierre and Marie Curie",
                 annee: "2018"
             }
         ]
-    }
+    },
+    {
+        id: 8,
+        name: "Dr Anicet FANGWA",
+        title: "Consultant, Data Science, and Machine Learning Expert",
+        email: "clement.fogue@gmail.com",
+        phone: "+33 7 89 65 43 21",
+        bio: "Consultant in Data Science and Machine Learning, with expertise in AI, Big Data, and blockchain.",
+        skills: ["Data Science", "Machine Learning", "Blockchain", "Big Data"],
+        experience: [
+            {
+                poste: "Data Science Consultant",
+                entreprise: "Data Consultancy",
+                periode: "2019 - Present",
+                description: "Advising businesses on using data technologies to enhance performance."
+            }
+        ],
+        education: [
+            {
+                diplome: "Master's in Data Science",
+                etablissement: "University Pierre and Marie Curie",
+                annee: "2018"
+            }
+        ]
+    },
+    {
+        id: 9,
+        name: "Dr Gilles Tagne",
+        title: "Consultant, Data Science, and Machine Learning Expert",
+        email: "clement.fogue@gmail.com",
+        phone: "+33 7 89 65 43 21",
+        bio: "Consultant in Data Science and Machine Learning, with expertise in AI, Big Data, and blockchain.",
+        skills: ["Data Science", "Machine Learning", "Blockchain", "Big Data"],
+        experience: [
+            {
+                poste: "Data Science Consultant",
+                entreprise: "Data Consultancy",
+                periode: "2019 - Present",
+                description: "Advising businesses on using data technologies to enhance performance."
+            }
+        ],
+        education: [
+            {
+                diplome: "Master's in Data Science",
+                etablissement: "University Pierre and Marie Curie",
+                annee: "2018"
+            }
+        ]
+    },
+    {
+        id: 10,
+        name: "Pr Moïse ADAMOU",
+        title: "Consultant, Data Science, and Machine Learning Expert",
+        email: "clement.fogue@gmail.com",
+        phone: "+33 7 89 65 43 21",
+        bio: "Consultant in Data Science and Machine Learning, with expertise in AI, Big Data, and blockchain.",
+        skills: ["Data Science", "Machine Learning", "Blockchain", "Big Data"],
+        experience: [
+            {
+                poste: "Data Science Consultant",
+                entreprise: "Data Consultancy",
+                periode: "2019 - Present",
+                description: "Advising businesses on using data technologies to enhance performance."
+            }
+        ],
+        education: [
+            {
+                diplome: "Master's in Data Science",
+                etablissement: "University Pierre and Marie Curie",
+                annee: "2018"
+            }
+        ]
+    },
 ];
 
 
