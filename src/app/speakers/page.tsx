@@ -6,132 +6,128 @@ import {useBooleanContext} from '../../../context/LanguageContext';
 const intervenants = [
     {
         id: '1',
-        name: 'Dieudonné NDJAMEN',
-        title: 'Professeur Titulaire des Universités - Université de Yaoundé 1 - Recteur Université ZTF',
-        description: 'Une réflexion sur l éducation',
-        image: '/images/dieudonne.jpg',
+        name: 'Jean Claude AWALA',
+        title: 'Magistrat Hors Echelle - Conseiller Technique à la Présidence de la République du Cameroun',
+        image: '/images/claude.jpg',
     },
-    
     {
         id: '2',
         name: 'Georges TIMBA',
-        title: 'Président du Tribunal de Première Instance de Yaoundé',
-        description: 'Présentation du Professeur FOMUM',
+        title: 'Magistrat - Président du Tribunal de Première Instance de Yaoundé Cameroun',
         image: '/images/georges.jpg',
     },
     {
         id: '3',
-        name: 'Jean Claude AWALA',
-        title: 'Conseiller Technique à la Présidence de la République du Cameroun',
-        image: '/images/claude.jpg',
+        name: 'Prof Dieudonné NDJAMEN',
+        title: 'Professeur Titulaire des Universités - Université de Yaoundé 1 - Recteur Université ZTF Cameroun',
+        image: '/images/dieudonne.jpg',
     },
     {
         id: '4',
         name: 'Joseph NGANDEU',
-        title: 'Consultant international',
-        description: 'L\'art de travailler dur dans l\'excellence académique',
+        title: 'Consultant international - Cameroun',
         image: '/images/joseph.jpg',
     },
     {
         id: '5',
         name: 'Patrice NYAMY',
-        title: 'Ingénieur Informatique - PDG de plusieurs entreprises',
-        description: 'Dieu, la Bible, la Science',
+        title: 'Ingénieur Informatique - PDG de plusieurs entreprises - France',
         image: '/images/patrice.jpg',
     },
     {
         id: '6',
         name: 'Steve NJOUONKEP',
-        title: 'Doctorant - Université de Clermont Auvergne/ Université de Montréal',
-        description: 'Santé globale, innovation scientifique, recherche transdisciplinaire, pandémie',
+        title: 'Doctorant - Université de Clermont Auvergne/ Université de Montréal - France',
         image: '/images/steve.jpg',
     },
     {
         id: '7',
         name: 'Anne Josiane KOUAM',
-        title: 'Docteur Ingénieur - Chercheur à TU Berlin',
-        description: 'Comportement humain mobile: disponibilité, exploitation et lutte contre les attaques sur la vie privée',
+        title: 'Docteur Ingénieur - Chercheur à TU Berlin - Allemagne',
         image: '/images/josiane.jpg',
     },
     {
         id: '8',
         name: 'Anicet FANGWA',
         title: 'Docteur - Professeur assistant - Université de McGill - Canada',
-        description: 'Peut on être croyant et scientifique ?',
         image: '/images/anicet.jpg',
     },
     {
         id: '9',
         name: 'Gilles TAGNE',
         title: 'Professeur associé en Robotique - JUNIA - Université de Lille France',
-        description: 'La robotique dans notre société d\'aujourd\'hui et de demain',
         image: '/images/gilles.jpg',
+    },
+    {
+        id: '10',
+        name: 'Moïse ADAMOU',
+        title: 'Professeur - Université de Ngaoundéré - Vice Doyen chargé de la recherche et de la coopération université de Garoua Cameroun',
+        image: '/images/adamou.jpg',
     },
 
 ];
 const speakers = [
     {
-        id: '1',
-        name: 'Dieudonné NDJAMEN',
-        title: 'Professor - Université de Yaoundé 1 University - Rector ZTF University',
-        description: 'A reflexion on education',
-        image: '/images/dieudonne.jpg',
+        id: "1",
+        name: "Jean Claude AWALA",
+        title: "Off-scale magistrate - Technical Advisor at the Presidency of the Republic of Cameroon",
+        image: "/images/claude.jpg"
     },
     {
         id: "2",
         name: "Georges TIMBA",
-        title: "President of the Court of First Instance of Yaoundé",
-        description: "Presentation of Professor FOMUM",
+        title: "Magistrate - President of the Court of First Instance of Yaoundé Cameroon",
         image: "/images/georges.jpg"
     },
     {
-        id: "3",
-        name: "Jean Claude AWALA",
-        title: "Technical Advisor at the Presidency of the Republic of Cameroon",
-        image: "/images/claude.jpg"
+        id: '3',
+        name: 'Dieudonné NDJAMEN',
+        title: 'Professor - Yaoundé 1 University - Rector ZTF University Cameroon',
+        image: '/images/dieudonne.jpg',
     },
     {
         id: "4",
         name: "Joseph NGANDEU",
-        title: "International Consultant",
-        description: "The Art of Hard Work in Academic Excellence",
+        title: "International Consultant - Cameroon",
         image: "/images/joseph.jpg"
     },
     {
         id: '5',
         name: 'Patrice NYAMY',
-        title: 'Software Engineer - CEO',
-        description: 'God, The Bible, Science',
+        title: 'Software Engineer - CEO - France',
         image: '/images/patrice.jpg',
     },
     {
         id: '6',
         name: 'Steve NJOUONKEP',
-        title: 'Mph,Phd student - Clermont Auvergne University/ Montréal University',
-        description: 'From crisis to innovation: Science role in pandemic solution',
+        title: 'Mph,Phd student - Clermont Auvergne University/ Montréal University - France',
         image: '/images/steve.jpg',
     },
     {
         id: '7',
         name: 'Anne Josiane KOUAM',
-        title: 'Engineer Doctor - Researcher at TU Berlin',
-        description: 'Mobile Human Behavior: Availability, Exploitation, and Fighting Privacy Attacks',
+        title: 'Engineer Doctor - Researcher at TU Berlin - Germany',
         image: '/images/josiane.jpg',
     },
     {
         id: '8',
         name: 'Anicet FANGWA',
         title: 'PhD Assistant Professor - McGill University Desautels Faculty of Management - Canada',
-        description: 'Can we be a believer and a scientist ?',
         image: '/images/anicet.jpg',
     },
     {
         id: '9',
         name: 'Gilles TAGNE',
         title: 'Associate Professor in Robotics - JUNIA - University of Lille, France',
-        description: 'Robotics in Our Society Today and Tomorrow',
         image: '/images/gilles.jpg',
+    },
+    {
+        id: '10',
+        name: 'Moïse ADAMOU',
+        title: 'Professor - University of Ngaoundéré - Vice-Dean in charge of research and cooperation at the University of Garoua, Cameroon',
+        image: '/images/adamou.jpg',
     }
+
 ];
 
 export default function SpeakersPage() {
@@ -231,7 +227,6 @@ export default function SpeakersPage() {
                                     {event.name}
                                 </h2>
                                 <p className="text-center text-gray-600 italic">{event.title}</p>
-                                <p className="mt-4 text-gray-700 text-center">{event.description}</p>
                                 <div className="text-center mt-6">
                                     <Link href={`/speakers/${event.id}`}>
                                         <button
