@@ -4,7 +4,6 @@ import Link from "next/link";
 import { use } from "react";
 import { useBooleanContext } from "../../../../context/LanguageContext";
 
-
 const speakers = [
     {
         id: 1,
