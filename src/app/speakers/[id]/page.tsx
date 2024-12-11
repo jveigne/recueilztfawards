@@ -125,29 +125,29 @@ const speakers = [
     {
         id: 4,
         name: "Joseph NGANDEU",
-        title: "CEO, International Consultant, and Environmental Urban Planner",
+        title: "CEO, International Consultant, Urban Planner and Environmental Expert",
         email: "joseph.ngandeu@gmail.com",
         phone: "+33 6 45 23 67 89",
-        bio: "CEO of Consortium Global IT Smart Solutions, international consultant in leadership, and expert in economic and environmental geography, with rich experience in international project coordination and environmental protection.",
-        skills: ["Leadership", "Urban Planning", "Economic Geography", "Environmental Protection", "International Consulting"],
+        bio: "CEO of the Global IT Smart Solutions Consortium, international leadership consultant, and expert in economic and environmental geography, with extensive experience in managing international projects and environmental protection.",
+        skills: ["Leadership", "Urban Planning", "Economic Geography", "Environmental Protection", "International Consultancy"],
         experience: [
             {
                 poste: "CEO",
-                entreprise: "Consortium Global IT Smart Solutions",
+                entreprise: "Global IT Smart Solutions Consortium",
                 periode: "Since 2012",
-                description: "Strategic and operational leadership of the consortium with a focus on IT solutions and international project management."
+                description: "Strategic and operational leadership of the consortium, focusing on IT solutions and managing international projects."
             },
             {
                 poste: "International Consultant",
                 entreprise: "Barri and Partners",
                 periode: "Since 2012",
-                description: "Providing strategic guidance for international projects in sustainable development and youth leadership."
+                description: "Providing strategic advice for international projects focusing on sustainable development and youth leadership."
             },
             {
                 poste: "Founder President",
                 entreprise: "CARRE.GEO",
                 periode: "2004 - 2010",
-                description: "Advocated for environmental protection in collaboration with the French Cultural Center and other international organizations."
+                description: "Advocacy for environmental protection in partnership with the French Cultural Center and other international organizations."
             },
             {
                 poste: "Lecturer",
@@ -158,12 +158,26 @@ const speakers = [
         ],
         education: [
             {
-                diplome: "Doctoral Candidate in Economic Geography and Development",
+                diplome: "PhD Candidate in Economic Geography and Development",
                 etablissement: "University of Yaoundé I",
                 annee: "Ongoing"
             }
-        ]
+        ],
+        additional_info: {
+            panelist_years: ["2022", "2023"],
+            biography_details: [
+                "CEO of Global IT Smart Solutions Consortium; International Consultant; Urban Planner-Environmentalist, Expert-Researcher.",
+                "Joseph NGANDEU has been an international consultant in leadership, working with youth and students in 141 nations. He coordinates international camps gathering over 5000 youth and students from all continents since 2012.",
+                "He is an expert in geography and has delivered numerous environmental conferences at the French Cultural Center (CCF).",
+                "Founder President of CARRE.GEO (an association advocating for environmental protection and promoting actions in partnership with the French Cultural Center and the International Center for Waste Recovery, CIPRE) from 2004-2010.",
+                "Lecturer at ICT University from 2016-2018, Joseph NGANDEU is known as an excellent communicator, a skilled researcher, methodical, dynamic, loyal, daring, with a strong team spirit."
+            ],
+            awards_and_recognition: [
+                "Zacharias Tanee Fomum Excellence Award."
+            ]
+        }
     },
+    
     {
         id: 5,
         name: "Patrice NYAMY",
@@ -174,10 +188,16 @@ const speakers = [
         skills: ["Artificial Intelligence", "Machine Learning", "Data Science"],
         experience: [
             {
-                poste: "Data Scientist",
-                entreprise: "AI Tech",
+                poste: "Data Science",
+                entreprise: "AI Technology",
                 periode: "2021 - Present",
                 description: "Developing AI models for applied research projects."
+            },
+            {
+                poste: "Computer Engineer",
+                entreprise: "World Bank, Thales, Oxiane, Qualigraf, Secretariat General for European Affairs",
+                periode: "Before 2020",
+                description: "Worked for several major organizations and companies in France."
             }
         ],
         education: [
@@ -185,63 +205,100 @@ const speakers = [
                 diplome: "PhD in Artificial Intelligence",
                 etablissement: "INRIA",
                 annee: "2020"
+            },
+            {
+                diplome: "Degree in Computer Science",
+                institution: "University Paris 6",
+                annee: "Before 2020"
             }
-        ]
+        ],
+        additional_info: {
+            panelist_years: ["2021", "2022", "2023"],
+            entrepreneurial_experience: "In 2020, Patrice Nyamy ventured into entrepreneurship and is now leading several businesses in various fields: IT, literary publishing, book production, and event services."
+        }
     },
+    
     {
         id: 6,
         name: "Steve NJOUONKEP",
-        title: "Epidemiologist, Doctoral Researcher in Molecular Epidemiology",
+        title: "Molecular Epidemiologist, Doctoral Researcher in Molecular Epidemiology",
         email: "steve.njouonkep@gmail.com",
         phone: "+33 6 87 54 32 10",
-        bio: "Doctoral researcher in molecular epidemiology, studying modifiable risk factors for cardiometabolic and chronic non-communicable diseases. Combines integrative approaches to discover blood biomarkers predictive of silent metabolic disorders.",
+        bio: "Steve is an epidemiologist studying modifiable risk factors for cardiometabolic/non-communicable chronic diseases. His ongoing PhD research focuses on the comorbidity of metabolic syndrome, a precursor to diabetes and cardiovascular diseases, and frailty syndrome. He uses an integrative approach combining metabolomics with clinical, sociodemographic, and dietary data from large patient cohorts. The goal is to identify blood biomarkers that reflect silent metabolic disorders, enabling the prediction of disease occurrence at least 5 years before the first clinical symptoms appear.",
         skills: ["Molecular Epidemiology", "Biostatistics", "Nutrition", "Clinical Research"],
         experience: [
             {
-                poste: "Doctoral Researcher",
+                poste: "Doctoral Researcher in Molecular Epidemiology",
                 entreprise: "INRAE / Montreal Geriatric University Institute",
                 periode: "2023 - Present",
-                description: "Researching comorbidities of metabolic syndrome and frailty syndrome using clinical, metabolomic, and nutritional data."
+                description: "Research on comorbidities of metabolic syndrome and frailty syndrome using clinical, metabolomic, and nutritional data."
             },
             {
                 poste: "Research Collaborator",
-                entreprise: "University Sorbonne Paris North",
+                entreprise: "Université Sorbonne Paris Nord",
                 periode: "2021 - 2023",
-                description: "Contributing to studies on the relationship between diet and chronic diseases in the NutriNet-Santé cohort."
+                description: "Contributing to studies on the relationship between diet and chronic diseases within the NutriNet-Santé cohort."
             }
         ],
         education: [
             {
-                diplome: "PhD Candidate in Molecular Epidemiology",
-                etablissement: "University of Clermont-Ferrand / University of Montreal",
-                annee: "2023 - Present"
+                diplome: "PhD in Molecular Epidemiology (Scholar)",
+                etablissement: "INRAE / University of Montreal",
+                annee: "2023 - ongoing"
             },
             {
                 diplome: "Master's in Biostatistics",
-                etablissement: "University Paris-Saclay",
+                etablissement: "Université Paris-Saclay",
                 annee: "2023"
             },
             {
                 diplome: "Master's in Nutritional Epidemiology",
-                etablissement: "University Sorbonne Paris North",
+                etablissement: "Université Sorbonne Paris Nord",
                 annee: "2021"
             }
         ],
-        publications: [
+        activities_and_publications: [
             {
-                title: "Prevalence and Determinants of Metabolic Syndrome and Pre-Frailty Comorbidity",
-                authors: "Njouonkep S et al",
-                annee: 2024,
-                source: "Whitehall II Study"
+                titre: "Prevalence and determinant of metabolic syndrome and pre-frailty comorbidity: results from the Whitehall II study",
+                annee: "2024"
             },
             {
-                title: "N-Glycolylneuraminic Acid (Neu5Gc) and Cardiovascular Disease Risk",
-                authors: "Njouonkep S et al",
-                annee: 2023,
-                source: "NutriNet-Santé Cohort"
+                titre: "N-glycolylneuraminic acid (Neu5Gc) and risk of cardiovascular diseases: A longitudinal analysis in the French NutriNet-Santé cohort",
+                annee: "2022"
+            },
+            {
+                titre: "Associations between ultra-processed food intakes and asthma symptoms or asthma control among the participants of the NutriNet-santé study",
+                annee: "2022"
+            }
+        ],
+        scientific_conferences: [
+            {
+                titre: "Metabolic phenotypes of metabolic syndrome and pre-frailty comorbidity in older adults",
+                conference: "NutriNor conference",
+                annee: "2024",
+                lieu: "Oslo, Norway"
+            },
+            {
+                titre: "Prevalence and determinant of metabolic syndrome and pre-frailty comorbidity: results from the Whitehall II study",
+                conference: "World conference of epidemiology",
+                annee: "2024",
+                lieu: "Cape Town, South Africa"
+            },
+            {
+                titre: "Quality of life related to health for people living with type 2 diabetes at the National Center for Hypertension and Diabetes in Yaoundé",
+                conference: "French Society of Diabetes Congress",
+                annee: "2019",
+                lieu: "Marseille, France"
+            },
+            {
+                titre: "Quality of life related to health for people living with type 2 diabetes at the National Center for Hypertension and Diabetes in Yaoundé",
+                conference: "African Diabetes Congress",
+                annee: "2019",
+                lieu: "Yaoundé, Cameroon"
             }
         ]
     },
+    
     {
         id: 7,
         name: "Dr Anne Josiane KOUAM",
@@ -269,51 +326,170 @@ const speakers = [
     {
         id: 8,
         name: "Dr Anicet FANGWA",
-        title: "Consultant, Data Science, and Machine Learning Expert",
+        title: "Assistant Professor, Strategy and Organization Expert, Consultant in Data Science and Machine Learning",
         email: "clement.fogue@gmail.com",
         phone: "+33 7 89 65 43 21",
-        bio: "Consultant in Data Science and Machine Learning, with expertise in AI, Big Data, and blockchain.",
-        skills: ["Data Science", "Machine Learning", "Blockchain", "Big Data"],
+        bio: "Anicet Fangwa Nantcho is an Assistant Professor in Strategy and Organization at McGill Desautels Faculty of Management. His research focuses on understanding how organizational governance affects the achievement of the United Nations' Sustainable Development Goals (SDGs), including promoting good health, gender equality, and sustainable cities. He argues that implementing management theories focused on governance and managerial practices is key to addressing inadequate healthcare issues and tackling poverty, gender inequality, climate change, humanitarian crises, professional integration, and access to clean water and sanitation.",
+        skills: ["Data Science", "Machine Learning", "Blockchain", "Big Data", "Sustainable Development", "Strategy", "Organizational Governance"],
         experience: [
             {
-                poste: "Data Science Consultant",
-                entreprise: "Data Consultancy",
-                periode: "2019 - Present",
-                description: "Advising businesses on using data technologies to enhance performance."
+                poste: "Assistant Professor in Strategy and Organization",
+                entreprise: "Desautels Faculty of Management, McGill University",
+                periode: "Present",
+                description: "Research on the impact of organizational governance on achieving SDGs, with a focus on healthcare, poverty, gender inequality, and environmental issues."
+            },
+            {
+                poste: "Post-doctoral Researcher focusing on Sustainability",
+                entreprise: "Society and Organization Institute, HEC Paris",
+                periode: "Past",
+                description: "Research on sustainability in organizational governance and its role in addressing societal challenges."
+            },
+            {
+                poste: "Lecturer, Research and Teaching Assistant",
+                entreprise: "HEC Paris",
+                periode: "Past",
+                description: "Teaching and conducting research in strategy and sustainability."
+            },
+            {
+                poste: "Founder and Head of API and Platforms",
+                entreprise: "HrFlow (ex. Riminder), Paris, France",
+                periode: "Past",
+                description: "Built an integrated system leveraging Machine Learning and NLP for research and sentiment analysis."
+            },
+            {
+                poste: "Business Analyst",
+                entreprise: "L.E.K. Consulting, Paris, France",
+                periode: "Past",
+                description: "Worked on strategy projects across various industries, including healthcare, retail, life sciences, and telecommunications."
+            },
+            {
+                poste: "Yield Management Business Analyst",
+                entreprise: "Air France KLM, Paris, France",
+                periode: "Past",
+                description: "Developed key performance indicators to assess market share, revenue, and performance, reporting directly to the executive committee."
             }
         ],
         education: [
             {
-                diplome: "Master's in Data Science",
-                etablissement: "University Pierre and Marie Curie",
-                annee: "2018"
+                diplome: "Ph.D. in Strategy and Business Policy",
+                etablissement: "HEC Paris",
+                annee: "Ongoing"
+            },
+            {
+                diplome: "Master’s Degree in Corporate Strategy and Consulting",
+                etablissement: "ESCP Europe, Paris, France",
+                annee: "Past"
+            },
+            {
+                diplome: "Master of Science in Applied Mathematics",
+                etablissement: "Ecole CentraleSupélec (ex. Centrale Paris), Paris, France",
+                annee: "Past"
+            }
+        ],
+        awards_and_honors: [
+            {
+                titre: "HEC Foundation Excellence Awards for the Ph.D. program",
+                annee: "Past"
+            },
+            {
+                titre: "French Ministry of Research, ECODEC, 'Laboratoire d’Excellence' grant",
+                annee: "Past"
+            },
+            {
+                titre: "GREGHEC grant (800€) for data collection in Kinshasa",
+                annee: "Past"
+            }
+        ],
+        publications: [
+            {
+                titre: "Governance and Achievement of SDGs: Insights from Organizational Theory",
+                annee: "2023"
+            },
+            {
+                titre: "The Role of Management Theories in Addressing Global Health Challenges",
+                annee: "2023"
             }
         ]
     },
+    
     {
         id: 9,
         name: "Dr Gilles Tagne",
-        title: "Consultant, Data Science, and Machine Learning Expert",
+        title: "Associate Professor in Robotics, Expert in Data Science and Machine Learning",
         email: "clement.fogue@gmail.com",
         phone: "+33 7 89 65 43 21",
-        bio: "Consultant in Data Science and Machine Learning, with expertise in AI, Big Data, and blockchain.",
-        skills: ["Data Science", "Machine Learning", "Blockchain", "Big Data"],
+        bio: "After an outstanding academic career, Gilles turned to applied research in robotics and industry. His current work focuses on modeling and controlling robotic systems, with applications in the future industry, connected/robotic agriculture, and the development of intelligent devices to improve the autonomy of people with disabilities.",
+        skills: ["Mobile Robotics", "Industrial Robotics", "Automation", "Future Industry", "Industrial Computing"],
         experience: [
             {
-                poste: "Data Science Consultant",
-                entreprise: "Data Consultancy",
-                periode: "2019 - Present",
-                description: "Advising businesses on using data technologies to enhance performance."
+                poste: "Research Professor in Robotics",
+                entreprise: "JUNIA, Lille, France",
+                periode: "09/2016 - Present",
+                description: "Responsible for Robotics & Mechatronics-robotics since 2020. Member of the CRIStAL laboratory. Supervising PhD theses."
+            },
+            {
+                poste: "Post-doctoral researcher in Human-Robot Interaction",
+                entreprise: "LORIA Laboratory, France",
+                periode: "09/2015 - 08/2016",
+                description: "Research on human-robot interaction."
+            },
+            {
+                poste: "PhD Student and ATER in Command and Trajectory Planning",
+                entreprise: "UTC, France",
+                periode: "09/2011 - 08/2015",
+                description: "Command and trajectory planning for autonomous vehicle navigation."
             }
         ],
         education: [
             {
-                diplome: "Master's in Data Science",
-                etablissement: "University Pierre and Marie Curie",
-                annee: "2018"
+                diplome: "PhD in Robotics",
+                etablissement: "Université de Technologie de Compiègne (UTC), France",
+                annee: "2015"
+            },
+            {
+                diplome: "Master's in Automation & Industrial Computing Research",
+                etablissement: "ENSISA, Mulhouse, France",
+                annee: "2011"
+            },
+            {
+                diplome: "Bachelor's in Industrial Engineering & Maintenance",
+                etablissement: "IUT of Douala, Cameroon",
+                annee: "2006"
+            },
+            {
+                diplome: "BTS in Electronics",
+                etablissement: "Cameroon",
+                annee: "2005"
+            }
+        ],
+        awards_and_honors: [
+            {
+                titre: "Thesis Nominated for the Guy Deniélou Award at UTC",
+                annee: "2015"
+            },
+            {
+                titre: "Scholarship for participation in the European summer school EECI School 2013",
+                annee: "2013"
+            },
+            {
+                titre: "Award for Best in Class, Engineer in Automation & Systems at ENSISA",
+                annee: "2011"
+            },
+            {
+                titre: "Best in Class, Master's Research in Automation & Industrial Computing at ENSISA",
+                annee: "2011"
+            },
+            {
+                titre: "Best in Class, Bachelor's in Industrial Engineering & Maintenance, IUT of Douala, Cameroon",
+                annee: "2006"
+            },
+            {
+                titre: "National Best in Class, BTS in Electronics, Cameroon",
+                annee: "2005"
             }
         ]
     },
+    
     {
         id: 10,
         name: "Pr Moïse ADAMOU",
@@ -463,10 +639,10 @@ const intervenants = [
     {
         id: 4,
         name: "Joseph NGANDEU",
-        title: "PDG, Consultant International et Urbaniste-Environnementaliste",
+        title: "PDG, Consultant International, Urbaniste et Expert-Environnementaliste",
         email: "joseph.ngandeu@gmail.com",
-        telephone: "+33 6 45 23 67 89",
-        bio: "PDG du Consortium Global IT Smart Solutions, consultant international en leadership et expert en géographie économique et environnementale, avec une riche expérience dans la coordination de projets internationaux et la protection de l'environnement.",
+        phone: "+33 6 45 23 67 89",
+        bio: "PDG du Consortium Global IT Smart Solutions, consultant international en leadership et expert en géographie économique et environnementale, avec une riche expérience dans la gestion de projets internationaux et la protection de l'environnement.",
         skills: ["Leadership", "Urbanisme", "Géographie économique", "Protection de l'environnement", "Consultation internationale"],
         experience: [
             {
@@ -479,13 +655,13 @@ const intervenants = [
                 poste: "Consultant International",
                 entreprise: "Barri and Partners",
                 periode: "Depuis 2012",
-                description: "Accompagnement et conseils stratégiques pour des projets internationaux touchant au développement durable et au leadership des jeunes."
+                description: "Fourniture de conseils stratégiques pour des projets internationaux touchant au développement durable et au leadership des jeunes."
             },
             {
                 poste: "Président Fondateur",
                 entreprise: "CARRE.GEO",
                 periode: "2004 - 2010",
-                description: "Militant pour la protection de l’environnement en partenariat avec le Centre Culturel Français et d’autres organisations internationales."
+                description: "Militant pour la protection de l'environnement en partenariat avec le Centre Culturel Français et d'autres organisations internationales."
             },
             {
                 poste: "Enseignant",
@@ -500,8 +676,22 @@ const intervenants = [
                 etablissement: "Université de Yaoundé I",
                 annee: "En cours"
             }
-        ]
+        ],
+        additional_info: {
+            panelist_years: ["2022", "2023"],
+            biography_details: [
+                "PDG du Consortium Global IT Smart Solutions ; Consultant International ; Urbaniste-Environnementaliste, Expert-Chercheur.",
+                "Joseph NGANDEU est consultant international en leadership, travaillant avec les jeunes et les étudiants dans 141 pays. Il coordonne depuis 2012 des camps internationaux rassemblant plus de 5000 jeunes et étudiants venus de tous les continents.",
+                "C'est un expert en géographie et a animé plusieurs conférences sur l'environnement au Centre Culturel Français (CCF).",
+                "Président Fondateur de CARRE.GEO (une association militante pour la protection de l'environnement et la promotion d'actions en partenariat avec le Centre Culturel Français et le Centre International pour la Récupération des Déchets, CIPRE) de 2004 à 2010.",
+                "Enseignant à ICT University de 2016 à 2018, Joseph NGANDEU est reconnu comme un excellent communicant, un chercheur habile, méthodique, dynamique, loyal, audacieux, avec un fort esprit d'équipe."
+            ],
+            awards_and_recognition: [
+                "Prix d'Excellence Zacharias Tanee Fomum."
+            ]
+        }
     },
+    
     {
         id: 5,
         name: "Patrice NYAMY",
@@ -516,6 +706,12 @@ const intervenants = [
                 entreprise: "Technologie de l'IA",
                 periode: "2021 - aujourd'hui",
                 description: "Développement de modèles d'IA pour des projets de recherche appliquée."
+            },
+            {
+                poste: "Ingénieur en Informatique",
+                entreprise: "Banque Mondiale, Thales, Oxiane, Qualigraf, Secrétariat général aux affaires européennes",
+                periode: "Avant 2020",
+                description: "Travail pour plusieurs grandes organisations et entreprises en France."
             }
         ],
         education: [
@@ -523,63 +719,100 @@ const intervenants = [
                 diplome: "Doctorat en intelligence artificielle",
                 etablissement: "INRIA",
                 annee: "2020"
+            },
+            {
+                diplome: "Diplôme en informatique",
+                etablissement: "Université Paris 6",
+                annee: "Avant 2020"
             }
-        ]
+        ],
+        additional_info: {
+            panelist_years: ["2021", "2022", "2023"],
+            entrepreneurial_experience: "En 2020, Patrice Nyamy s'est lancé dans l'entrepreneuriat et est désormais à la tête de plusieurs entreprises dans les secteurs de l'informatique, de l'édition littéraire, de la production de livres et de services événementiels."
+        }
     },
+    
     {
-        id: 6,
-        name: "Steve NJOUONKEP",
-        title: "Épidémiologiste, chercheur doctorant en épidémiologie moléculaire",
-        email: "steve.njouonkep@gmail.com",
-        phone: "+33 6 87 54 32 10",
-        bio: "Chercheur doctorant en épidémiologie moléculaire, étudiant les facteurs de risque modifiables pour les maladies cardiométaboliques et les maladies chroniques non transmissibles. Il combine des approches intégratives pour découvrir des biomarqueurs sanguins prédictifs de troubles métaboliques silencieux.",
-        skills: ["Molecular Epidemiology", "Biostatistics", "Nutrition", "Clinical Research"],
-        experience: [
-            {
-                poste: "Doctoral Researcher",
-                entreprise: "INRAE / Montreal Geriatric University Institute",
-                periode: "2023 - Aujourd'hui",
-                description: "Recherche des comorbidités du syndrome métabolique et du syndrome de fragilité à l'aide de données cliniques, métabolomiques et nutritionnelles."
-            },
-            {
-                poste: "Collaborateur de recherche",
-                entreprise: "Université Sorbonne Paris Nord ",
-                periode: "2021 - 2023",
-                description: "Contribuer aux études sur la relation entre l'alimentation et les maladies chroniques dans la cohorte NutriNet-Santé."
-            }
-        ],
-        education: [
-            {
-                diplome: "Doctorant en épidémiologie moléculaire",
-                etablissement: "Université de Clermont-Ferrand / Université de Montréal ",
-                annee: "2023 - Aujourd'hui"
-            },
-            {
-                diplome: "Master en biostatistique",
-                etablissement: "Université de Paris-Saclay",
-                annee: "2023"
-            },
-            {
-                diplome: "Master en épidémiologie nutritionnelle",
-                etablissement: "Université Sorbonne Paris Nord ",
-                annee: "2021"
-            }
-        ],
-        publications: [
-            {
-                title: "Prévalence et déterminants du syndrome métabolique et de la comorbidité pré-fragilité",
-                authors: "Njouonkep S et al",
-                annee: 2024,
-                source: "Étude Whitehall II"
-            },
-            {
-                title: "Acide N-Glycolylneuraminique (Neu5Gc) et risque de maladie cardiovasculaire",
-                authors: "Njouonkep S et al",
-                annee: 2023,
-                source: "NutriNet-Santé Cohort"
-            }
-        ]
-    },
+            id: 6,
+            name: "Steve NJOUONKEP",
+            title: "Épidémiologiste, chercheur doctorant en épidémiologie moléculaire",
+            email: "steve.njouonkep@gmail.com",
+            phone: "+33 6 87 54 32 10",
+            bio: "Steve est épidémiologiste, et étudie les facteurs de risques modifiables des maladies cardiométaboliques/chroniques non transmissibles. Sa thèse en cours porte sur la comorbidité du syndrome métabolique, précurseur du diabète et des maladies cardiovasculaires, et le syndrome de fragilité. Il utilise une approche intégrative combinant la métabolomique, avec les données cliniques, sociodémographiques et les habitudes alimentaires provenant de larges cohortes de patients. L’objectif est de découvrir des biomarqueurs sanguins qui reflètent des désordres métaboliques silencieux, permettant de prédire la survenue des maladies au moins 5 ans avant l'apparition des premiers symptômes cliniques.",
+            skills: ["Épidémiologie moléculaire", "Biostatistiques", "Nutrition", "Recherche clinique"],
+            experience: [
+                {
+                    poste: "Doctorant en épidémiologie moléculaire",
+                    entreprise: "INRAE / Institut universitaire de gériatrie de Montréal",
+                    periode: "2023 - Aujourd'hui",
+                    description: "Recherche sur les comorbidités du syndrome métabolique et du syndrome de fragilité à l'aide de données cliniques, métabolomiques et nutritionnelles."
+                },
+                {
+                    poste: "Collaborateur de recherche",
+                    entreprise: "Université Sorbonne Paris Nord",
+                    periode: "2021 - 2023",
+                    description: "Contribuer aux études sur la relation entre l'alimentation et les maladies chroniques dans la cohorte NutriNet-Santé."
+                }
+            ],
+            education: [
+                {
+                    diplome: "Doctorant en épidémiologie moléculaire (Boursier)",
+                    etablissement: "INRAE / Université de Montréal",
+                    annee: "2023 - en cours"
+                },
+                {
+                    diplome: "Master en Biostatistiques",
+                    etablissement: "Université Paris-Saclay",
+                    annee: "2023"
+                },
+                {
+                    diplome: "Master en Épidémiologie Nutritionnelle",
+                    etablissement: "Université Sorbonne Paris Nord",
+                    annee: "2021"
+                }
+            ],
+            activities_and_publications: [
+                {
+                    titre: "Prevalence and determinant of metabolic syndrome and pre-frailty comorbidity: results from the Whitehall II study",
+                    annee: "2024"
+                },
+                {
+                    titre: "N-glycolylneuraminic acid (Neu5Gc) and risk of cardiovascular diseases: A longitudinal analysis in the French NutriNet-Santé cohort",
+                    annee: "2022"
+                },
+                {
+                    titre: "Associations between ultra-processed food intakes and asthma symptoms or asthma control among the participants of the NutriNet-santé study",
+                    annee: "2022"
+                }
+            ],
+            scientific_conferences: [
+                {
+                    titre: "Metabolic phenotypes of metabolic syndrome and pre-frailty comorbidity in older adults",
+                    conference: "NutriNor conference",
+                    annee: "2024",
+                    lieu: "Oslo, Norvège"
+                },
+                {
+                    titre: "Prevalence and determinant of metabolic syndrome and pre-frailty comorbidity: results from the Whitehall II study",
+                    conference: "World conference of epidemiology",
+                    annee: "2024",
+                    lieu: "Cap-Town, Afrique du Sud"
+                },
+                {
+                    titre: "Qualité de vie liée à la santé des personnes vivant avec le diabète de type 2 au Centre national d’hypertension et de diabète de Yaoundé",
+                    conference: "Congrès de la Société Francophone du Diabète",
+                    annee: "2019",
+                    lieu: "Marseille, France"
+                },
+                {
+                    titre: "Qualité de vie liée à la santé des personnes vivant avec le diabète de type 2 au Centre national d’hypertension et de diabète de Yaoundé",
+                    conference: "Congrès africain diabète",
+                    annee: "2019",
+                    lieu: "Yaoundé, Cameroun"
+                }
+            ]
+        },
+        
     {
         id: 7,
         name: "Dr Anne Josiane KOUAM",
@@ -604,54 +837,174 @@ const intervenants = [
             }
         ]
     },
+
     {
         id: 8,
         name: "Dr Anicet FANGWA",
-        title: "Consultant, Data Science, and Machine Learning Expert",
+        title: "Professeur Assistant, Expert en Stratégie et Organisation, Consultant en Data Science et Machine Learning",
         email: "clement.fogue@gmail.com",
         phone: "+33 7 89 65 43 21",
-        bio: "Consultant in Data Science and Machine Learning, with expertise in AI, Big Data, and blockchain.",
-        skills: ["Data Science", "Machine Learning", "Blockchain", "Big Data"],
+        bio: "Anicet Fangwa Nantcho est professeur assistant en stratégie et organisation à la Faculté de gestion Desautels de l'Université McGill. Ses recherches portent sur la compréhension de l'impact de la gouvernance des organisations sur la réalisation des Objectifs de Développement Durable (ODD) des Nations Unies, tels que la promotion de la santé, l'égalité des genres et les villes durables. Il soutient que la mise en œuvre des théories de gestion qui se concentrent sur la gouvernance organisationnelle et les pratiques managériales est essentielle pour résoudre les problèmes de soins de santé insuffisants et lutter contre la pauvreté, les inégalités de genre, le changement climatique, les crises humanitaires, l'intégration professionnelle et l'accès à l'eau potable et à l'assainissement.",
+        skills: ["Data Science", "Machine Learning", "Blockchain", "Big Data", "Développement durable", "Stratégie", "Gouvernance organisationnelle"],
         experience: [
             {
-                poste: "Data Science Consultant",
-                entreprise: "Data Consultancy",
-                periode: "2019 - Present",
-                description: "Advising businesses on using data technologies to enhance performance."
+                poste: "Professeur Assistant en Stratégie et Organisation",
+                entreprise: "Faculté de gestion Desautels, Université McGill",
+                periode: "Actuel",
+                description: "Recherche sur l'impact de la gouvernance organisationnelle sur la réalisation des ODD, avec un accent sur les soins de santé, la pauvreté, l'égalité des genres et les problèmes environnementaux."
+            },
+            {
+                poste: "Chercheur post-doctoral axé sur la durabilité",
+                entreprise: "Institut Société et Organisation, HEC Paris",
+                periode: "Passé",
+                description: "Recherche sur la durabilité dans la gouvernance des organisations et son rôle pour résoudre les défis sociétaux."
+            },
+            {
+                poste: "Chargé de cours, Assistant de recherche et d'enseignement",
+                entreprise: "HEC Paris",
+                periode: "Passé",
+                description: "Enseignement et recherche en stratégie et durabilité."
+            },
+            {
+                poste: "Fondateur et Responsable des API et des Plates-formes",
+                entreprise: "HrFlow (ex. Riminder), Paris, France",
+                periode: "Passé",
+                description: "Création d'un système intégré utilisant l'apprentissage automatique et le traitement du langage naturel pour la recherche et l'analyse des sentiments."
+            },
+            {
+                poste: "Analyste commercial",
+                entreprise: "L.E.K. Consulting, Paris, France",
+                periode: "Passé",
+                description: "Travail sur des projets de stratégie dans divers secteurs, dont la santé, le commerce de détail, les sciences de la vie et les télécommunications."
+            },
+            {
+                poste: "Analyste en gestion du rendement",
+                entreprise: "Air France KLM, Paris, France",
+                periode: "Passé",
+                description: "Développement des principaux indicateurs de performance pour évaluer la part de marché, les revenus et la performance, en rapportant directement au comité exécutif."
             }
         ],
         education: [
             {
-                diplome: "Master's in Data Science",
-                etablissement: "University Pierre and Marie Curie",
-                annee: "2018"
+                diplome: "Ph.D. en Stratégie et Politique des Affaires",
+                etablissement: "HEC Paris",
+                annee: "En cours"
+            },
+            {
+                diplome: "Master en Stratégie et Consulting d'Entreprise",
+                etablissement: "ESCP Europe, Paris, France",
+                annee: "Passé"
+            },
+            {
+                diplome: "Master en Sciences Appliquées en Mathématiques",
+                etablissement: "Ecole CentraleSupélec (ex. Centrale Paris), Paris, France",
+                annee: "Passé"
+            }
+        ],
+        awards_and_honors: [
+            {
+                titre: "Prix d'Excellence de la Fondation HEC pour le programme de Ph.D.",
+                annee: "Passé"
+            },
+            {
+                titre: "Subvention du Ministère français de la Recherche, ECODEC, 'Laboratoire d'Excellence'",
+                annee: "Passé"
+            },
+            {
+                titre: "Bourse GREGHEC (800€) pour la collecte de données à Kinshasa",
+                annee: "Passé"
+            }
+        ],
+        publications: [
+            {
+                titre: "Gouvernance et réalisation des ODD : Perspectives issues de la théorie organisationnelle",
+                annee: "2023"
+            },
+            {
+                titre: "Le rôle des théories de gestion pour résoudre les défis mondiaux de santé",
+                annee: "2023"
             }
         ]
     },
+    
     {
         id: 9,
         name: "Dr Gilles Tagne",
-        title: "Consultant, Data Science, and Machine Learning Expert",
+        title: "Professeur Associé en Robotique, Expert en Data Science et Machine Learning",
         email: "clement.fogue@gmail.com",
         phone: "+33 7 89 65 43 21",
-        bio: "Consultant in Data Science and Machine Learning, with expertise in AI, Big Data, and blockchain.",
-        skills: ["Data Science", "Machine Learning", "Blockchain", "Big Data"],
+        bio: "Après un brillant parcours académique, Gilles s’est orienté vers la recherche appliquée à la robotique et l’industrie. Ses travaux actuels portent sur la modélisation et le contrôle des systèmes de systèmes robotiques, avec des applications dans l'industrie du futur, l'agriculture robotisée/connectée, et le développement de dispositifs intelligents pour améliorer l’autonomie des personnes handicapées.",
+        skills: ["Robotique mobile", "Robotique industrielle", "Automatique", "Industrie du futur", "Informatique industrielle"],
         experience: [
             {
-                poste: "Data Science Consultant",
-                entreprise: "Data Consultancy",
-                periode: "2019 - Present",
-                description: "Advising businesses on using data technologies to enhance performance."
+                poste: "Enseignant Chercheur en Robotique",
+                entreprise: "JUNIA, Lille, France",
+                periode: "09/2016 - Aujourd'hui",
+                description: "Responsable des domaines Robotique & Mécatronique-robotique depuis 2020. Membre du laboratoire CRIStAL. Encadrement de thèses de doctorat."
+            },
+            {
+                poste: "Post-doctorant en Interaction Homme-Robot",
+                entreprise: "Laboratoire LORIA, France",
+                periode: "09/2015 - 08/2016",
+                description: "Recherche sur l'interaction entre les humains et les robots."
+            },
+            {
+                poste: "Doctorant et ATER en Commande et Planification de Trajectoires",
+                entreprise: "UTC, France",
+                periode: "09/2011 - 08/2015",
+                description: "Commande et planification de trajectoires pour la navigation de véhicules autonomes."
             }
         ],
         education: [
             {
-                diplome: "Master's in Data Science",
-                etablissement: "University Pierre and Marie Curie",
-                annee: "2018"
+                diplome: "Doctorat en Robotique",
+                etablissement: "Université de Technologie de Compiègne (UTC), France",
+                annee: "2015"
+            },
+            {
+                diplome: "Master Recherche en Automatique & Informatique Industrielle",
+                etablissement: "ENSISA, Mulhouse, France",
+                annee: "2011"
+            },
+            {
+                diplome: "Licence en Génie Industriel & Maintenance",
+                etablissement: "IUT de Douala, Cameroun",
+                annee: "2006"
+            },
+            {
+                diplome: "BTS en Électronique",
+                etablissement: "Cameroun",
+                annee: "2005"
+            }
+        ],
+        awards_and_honors: [
+            {
+                titre: "Thèse nominée au prix de thèse Guy Deniélou de l'UTC",
+                annee: "2015"
+            },
+            {
+                titre: "Bourse pour la participation à l'école d'été européenne EECI School 2013",
+                annee: "2013"
+            },
+            {
+                titre: "Prix du Major de la Promotion 2011, Ingénieur en Automatique & Systèmes à l'ENSISA",
+                annee: "2011"
+            },
+            {
+                titre: "Major de la Promotion, Master Recherche en Automatique & Informatique Industrielle à l'ENSISA",
+                annee: "2011"
+            },
+            {
+                titre: "Major de la Promotion, Licence en Génie Industriel & Maintenance, IUT de Douala, Cameroun",
+                annee: "2006"
+            },
+            {
+                titre: "Major national, BTS en électronique, Cameroun",
+                annee: "2005"
             }
         ]
     },
+    
     {
         id: 10,
         name: "Pr Moïse ADAMOU",
