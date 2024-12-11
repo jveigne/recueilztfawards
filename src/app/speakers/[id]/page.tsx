@@ -162,9 +162,7 @@ const speakers = [
         education: [
         ],
         additional_info: {
-            panelist_years: ["2021", "2022", "2023"],
-            entrepreneurial_experience: "In 2020, Patrice Nyamy ventured into entrepreneurship and is now leading several businesses in various fields: IT, literary publishing, book production, and event services."
-        }
+         }
     },
     
     {
@@ -428,20 +426,56 @@ const speakers = [
             }
         ]
     },
-    
+
     {
         id: 10,
-        name: "Pr Moïse ADAMOU",
-        title: "",
+        name: "Prof. Moïse ADAMOU",
+        title: "Professor - University of Ngaoundéré - Vice-Dean in charge of research and cooperation at the University of Garoua, Cameroon",
         email: "",
         phone: "",
         bio: "",
         skills: [],
         experience: [
+            {
+                poste: "Entomologist, Bio-Ecologist, and Beekeeper",
+                entreprise: "",
+                periode: "",
+                description: ""
+            },
+            {
+                poste: "Lecturer-Researcher",
+                entreprise: "University of Ngaoundéré",
+                periode: "",
+                description: ""
+            },
+            {
+                poste: "Vice-Dean in charge of research and cooperation",
+                entreprise: "Faculty of Medicine and Biomedical Sciences, University of Garoua",
+                periode: "",
+                description: ""
+            },
+            {
+                poste: "Vice-President of the Scientific Advisory Committee of the Faculty of Medicine and Biomedical Sciences",
+                entreprise: "University of Garoua",
+                periode: "",
+                description: ""
+            },
+            {
+                poste: "President of the Scientific Committee of the ZTF Excellence Award",
+                entreprise: "",
+                periode: "",
+                description: ""
+            },
+            {
+                poste: "Focal Point of the Academy of Young Researchers of Cameroon in the North",
+                entreprise: "",
+                periode: "",
+                description: ""
+            }
         ],
-        education: [
-        ]
-    },
+        education: []
+    }
+
 
 ];
 
@@ -456,59 +490,31 @@ const intervenants = [
         phone: "",
         bio: "Premier avocat général au parquet général près de la Cour Suprême, M AWALA Wodougue Jean Claude est un magistrat Hors hiérarchie" +
             " au parcours professionel exceptionnel",
-        skills: ["Cybersécurité", "Audit", "Gestion des risques"],
+        skills: [],
         experience: [
-            {
-                poste: "Responsable Cybersécurité",
-                entreprise: "TechSecure",
-                periode: "2020 - Présent",
-                description: "Gestion des risques de sécurité et mise en œuvre des politiques de cybersécurité."
-            },
-            {
-                poste: "Auditeur en Cybersécurité",
-                entreprise: "CyberAudit",
-                periode: "2015 - 2020",
-                description: "Audit des systèmes d'information et identification des vulnérabilités."
-            }
         ],
         education: [
-            {
-                diplome: "Master en Sécurité Informatique",
-                etablissement: "Université de Technologie de Compiègne",
-                annee: "2014"
-            }
         ]
     },
     {
         id: 2,
         name: "Georges TIMBA",
-        title: "Coach en Leadership",
-        email: "marie.leroy@gmail.com",
-        phone: "+33 7 89 12 34 56",
-        bio: "Coach certifié spécialisé en leadership et développement personnel.",
-        skills: ["Leadership", "Coaching", "Gestion du changement"],
+        title: "Magistrat - Président du Tribunal de Première Instance de Yaoundé Cameroun",
+        email: "",
+        phone: "",
+        bio: "",
+        skills: [],
         experience: [
-            {
-                poste: "Coach en Leadership",
-                entreprise: "Indépendant",
-                periode: "2016 - Présent",
-                description: "Accompagnement des cadres et dirigeants dans le développement de leur leadership."
-            }
         ],
         education: [
-            {
-                diplome: "Certification en Coaching Professionnel",
-                etablissement: "ICF",
-                annee: "2015"
-            }
         ]
     },
     {
         id: 3,
         name: "Prof Dieudonné Njamen",
         title: "Professeur titulaire",
-        email: "dieudonne.njamen@gmail.com",
-        phone: "+33 6 12 34 56 78",
+        email: "",
+        phone: "",
         bio: "Professeur titulaire en biologie et physiologie animales avec une grande expérience de la recherche en physiologie moléculaire et en pharmacologie.",
         skills: ["Physiologie", "Pharmacologie", "Supervision de la recherche", "Leadership académique"],
         experience: [
@@ -624,49 +630,25 @@ const intervenants = [
     {
         id: 5,
         name: "Patrice NYAMY",
-        title: "Spécialiste de l'intelligence artificielle",
-        email: "thomas.bernard@gmail.com",
-        phone: "+33 6 78 34 12 45",
-        bio: "Expert en intelligence artificielle et en apprentissage automatique.",
-        skills: ["Intelligence artificielle", "Apprentissage automatique", "Science des données"],
+        title: "Ingénieur Informatique - PDG de plusieurs entreprises",
+        email: "",
+        phone: "",
+        bio: "",
+        skills: [],
         experience: [
-            {
-                poste: "Science des données",
-                entreprise: "Technologie de l'IA",
-                periode: "2021 - aujourd'hui",
-                description: "Développement de modèles d'IA pour des projets de recherche appliquée."
-            },
-            {
-                poste: "Ingénieur en Informatique",
-                entreprise: "Banque Mondiale, Thales, Oxiane, Qualigraf, Secrétariat général aux affaires européennes",
-                periode: "Avant 2020",
-                description: "Travail pour plusieurs grandes organisations et entreprises en France."
-            }
         ],
         education: [
-            {
-                diplome: "Doctorat en intelligence artificielle",
-                etablissement: "INRIA",
-                annee: "2020"
-            },
-            {
-                diplome: "Diplôme en informatique",
-                etablissement: "Université Paris 6",
-                annee: "Avant 2020"
-            }
         ],
         additional_info: {
-            panelist_years: ["2021", "2022", "2023"],
-            entrepreneurial_experience: "En 2020, Patrice Nyamy s'est lancé dans l'entrepreneuriat et est désormais à la tête de plusieurs entreprises dans les secteurs de l'informatique, de l'édition littéraire, de la production de livres et de services événementiels."
-        }
+      }
     },
     
     {
             id: 6,
             name: "Steve NJOUONKEP",
             title: "Épidémiologiste, chercheur doctorant en épidémiologie moléculaire",
-            email: "steve.njouonkep@gmail.com",
-            phone: "+33 6 87 54 32 10",
+            email: "",
+            phone: "",
             bio: "Steve est épidémiologiste, et étudie les facteurs de risques modifiables des maladies cardiométaboliques/chroniques non transmissibles. Sa thèse en cours porte sur la comorbidité du syndrome métabolique, précurseur du diabète et des maladies cardiovasculaires, et le syndrome de fragilité. Il utilise une approche intégrative combinant la métabolomique, avec les données cliniques, sociodémographiques et les habitudes alimentaires provenant de larges cohortes de patients. L’objectif est de découvrir des biomarqueurs sanguins qui reflètent des désordres métaboliques silencieux, permettant de prédire la survenue des maladies au moins 5 ans avant l'apparition des premiers symptômes cliniques.",
             skills: ["Épidémiologie moléculaire", "Biostatistiques", "Nutrition", "Recherche clinique"],
             experience: [
@@ -745,25 +727,14 @@ const intervenants = [
     {
         id: 7,
         name: "Dr Anne Josiane KOUAM",
-        title: "Consultant, Data Science, and Machine Learning Expert",
-        email: "clement.fogue@gmail.com",
-        phone: "+33 7 89 65 43 21",
-        bio: "Consultant in Data Science and Machine Learning, with expertise in AI, Big Data, and blockchain.",
-        skills: ["Data Science", "Machine Learning", "Blockchain", "Big Data"],
+        title: "Docteur Ingénieur - Chercheur à TU Berlin",
+        email: "",
+        phone: "",
+        bio: "",
+        skills: [],
         experience: [
-            {
-                poste: "Data Science Consultant",
-                entreprise: "Data Consultancy",
-                periode: "2019 - Present",
-                description: "Advising businesses on using data technologies to enhance performance."
-            }
         ],
         education: [
-            {
-                diplome: "Master's in Data Science",
-                etablissement: "University Pierre and Marie Curie",
-                annee: "2018"
-            }
         ]
     },
 
@@ -771,8 +742,8 @@ const intervenants = [
         id: 8,
         name: "Dr Anicet FANGWA",
         title: "Professeur Assistant, Expert en Stratégie et Organisation, Consultant en Data Science et Machine Learning",
-        email: "clement.fogue@gmail.com",
-        phone: "+33 7 89 65 43 21",
+        email: "",
+        phone: "",
         bio: "Anicet Fangwa Nantcho est professeur assistant en stratégie et organisation à la Faculté de gestion Desautels de l'Université McGill. Ses recherches portent sur la compréhension de l'impact de la gouvernance des organisations sur la réalisation des Objectifs de Développement Durable (ODD) des Nations Unies, tels que la promotion de la santé, l'égalité des genres et les villes durables. Il soutient que la mise en œuvre des théories de gestion qui se concentrent sur la gouvernance organisationnelle et les pratiques managériales est essentielle pour résoudre les problèmes de soins de santé insuffisants et lutter contre la pauvreté, les inégalités de genre, le changement climatique, les crises humanitaires, l'intégration professionnelle et l'accès à l'eau potable et à l'assainissement.",
         skills: ["Data Science", "Machine Learning", "Blockchain", "Big Data", "Développement durable", "Stratégie", "Gouvernance organisationnelle"],
         experience: [
@@ -860,8 +831,8 @@ const intervenants = [
         id: 9,
         name: "Dr Gilles Tagne",
         title: "Professeur Associé en Robotique, Expert en Data Science et Machine Learning",
-        email: "clement.fogue@gmail.com",
-        phone: "+33 7 89 65 43 21",
+        email: "",
+        phone: "",
         bio: "Après un brillant parcours académique, Gilles s’est orienté vers la recherche appliquée à la robotique et l’industrie. Ses travaux actuels portent sur la modélisation et le contrôle des systèmes de systèmes robotiques, avec des applications dans l'industrie du futur, l'agriculture robotisée/connectée, et le développement de dispositifs intelligents pour améliorer l’autonomie des personnes handicapées.",
         skills: ["Robotique mobile", "Robotique industrielle", "Automatique", "Industrie du futur", "Informatique industrielle"],
         experience: [
@@ -933,29 +904,53 @@ const intervenants = [
             }
         ]
     },
-    
     {
         id: 10,
         name: "Pr Moïse ADAMOU",
-        title: "Consultant, Data Science, and Machine Learning Expert",
-        email: "clement.fogue@gmail.com",
-        phone: "+33 7 89 65 43 21",
-        bio: "Consultant in Data Science and Machine Learning, with expertise in AI, Big Data, and blockchain.",
-        skills: ["Data Science", "Machine Learning", "Blockchain", "Big Data"],
+        title: "Professeur - Université de Ngaoundéré - Vice Doyen chargé de la recherche et de la coopération université de Garoua Cameroun",
+        email: "",
+        phone: "",
+        bio: "",
+        skills: [],
         experience: [
             {
-                poste: "Data Science Consultant",
-                entreprise: "Data Consultancy",
-                periode: "2019 - Present",
-                description: "Advising businesses on using data technologies to enhance performance."
+                poste: "Entomologue, Bio- Ecologue et Apiculteur",
+                entreprise: "",
+                periode: "",
+                description: ""
+            },
+            {
+                poste: "Enseignant Chercheur",
+                entreprise: "Université de Ngaoundere",
+                periode: "",
+                description: ""
+            },
+            {
+                poste: "Vice Doyen, chargé de la recherche et de la coopération",
+                entreprise: "Faculté de Médecine et des Sciences Biomédicales de l'Université de Garoua",
+                periode: "",
+                description: ""
+            },
+            {
+                poste: "Vice président du comité Scientifique Consultatif de la Faculté de Médecine et des Sciences Biomédicales",
+                entreprise: "Université de Garoua",
+                periode: "",
+                description: ""
+            },
+            {
+                poste: "Président du comité Scientifique du Prix d'Excellence ZTF",
+                entreprise: "",
+                periode: "",
+                description: ""
+            },
+            {
+                poste: "Point focal de l'Académie des Jeunes Chercheurs du Cameroun au Nord",
+                entreprise: "",
+                periode: "",
+                description: ""
             }
         ],
         education: [
-            {
-                diplome: "Master's in Data Science",
-                etablissement: "University Pierre and Marie Curie",
-                annee: "2018"
-            }
         ]
     },
 ];
@@ -1162,7 +1157,7 @@ export default function SpeakerProfilePage({params}: { params: Params }) {
                         {speaker.experience.map((experience, index) => (
                             <div key={index} className="mb-4">
                                 <h4 className="font-semibold">{experience.poste}</h4>
-                                <p>{experience.entreprise} | {experience.periode}</p>
+                                <p>{experience.entreprise} {experience.periode}</p>
                                 <p>{experience.description}</p>
                             </div>
                         ))}
@@ -1173,7 +1168,7 @@ export default function SpeakerProfilePage({params}: { params: Params }) {
                         {speaker.education.map((education, index) => (
                             <div key={index} className="mb-2">
                                 <h4 className="font-semibold">{education.diplome}</h4>
-                                <p>{education.etablissement} | {education.annee}</p>
+                                <p>{education.etablissement}  {education.annee}</p>
                             </div>
                         ))}
                     </section>
