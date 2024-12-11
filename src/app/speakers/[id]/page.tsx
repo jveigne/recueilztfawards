@@ -8,63 +8,35 @@ const speakers = [
     {
         id: 1,
         name: "Jean Claude AWALA",
-        title: "Cybersecurity Expert",
-        email: "pierre.morel@gmail.com",
-        phone: "+33 6 98 76 54 32",
-        bio: "Cybersecurity expert with deep experience in audits and risk management.",
-        skills: ["Cybersecurity", "Auditing", "Risk Management"],
+        title: "Off-scale magistrate - Technical Advisor at the Presidency of the Republic of Cameroon",
+        email: "",
+        phone: "",
+        bio: "First Advocate General at the General Prosecutor's Office near the Supreme Court, Mr. AWALA Wodougue Jean Claude is a magistrate of exceptional professional career and outside the traditional hierarchy.",
+        skills: [],
         experience: [
-            {
-                poste: "Cybersecurity Manager",
-                entreprise: "TechSecure",
-                periode: "2020 - Present",
-                description: "Managing security risks and implementing cybersecurity policies."
-            },
-            {
-                poste: "Cybersecurity Auditor",
-                entreprise: "CyberAudit",
-                periode: "2015 - 2020",
-                description: "Auditing information systems and identifying vulnerabilities."
-            }
         ],
         education: [
-            {
-                diplome: "Master's in Computer Security",
-                etablissement: "University of Technology of Compiègne",
-                annee: "2014"
-            }
         ]
     },
     {
         id: 2,
         name: "Georges TIMBA",
-        title: "Leadership Coach",
-        email: "marie.leroy@gmail.com",
-        phone: "+33 7 89 12 34 56",
-        bio: "Certified coach specializing in leadership and personal development.",
-        skills: ["Leadership", "Coaching", "Change Management"],
+        title: "Magistrate - President of the Court of First Instance of Yaoundé Cameroon",
+        email: "",
+        phone: "",
+        bio: "",
+        skills: [],
         experience: [
-            {
-                poste: "Leadership Coach",
-                entreprise: "Independent",
-                periode: "2016 - Present",
-                description: "Supporting executives and leaders in developing their leadership skills."
-            }
         ],
         education: [
-            {
-                diplome: "Professional Coaching Certification",
-                etablissement: "ICF",
-                annee: "2015"
-            }
         ]
     },
     {
         id: 3,
         name: "Pr Dieudonné Njamen",
         title: "Full Professor",
-        email: "dieudonne.njamen@gmail.com",
-        phone: "+33 6 12 34 56 78",
+        email: "",
+        phone: "",
         bio: "Full Professor in animal biology and physiology with extensive experience in molecular physiology and pharmacology research.",
         skills: ["Physiology", "Pharmacology", "Research Supervision", "Academic Leadership"],
         experience: [
@@ -125,8 +97,8 @@ const speakers = [
         id: 4,
         name: "Joseph NGANDEU",
         title: "CEO, International Consultant, Urban Planner and Environmental Expert",
-        email: "joseph.ngandeu@gmail.com",
-        phone: "+33 6 45 23 67 89",
+        email: "",
+        phone: "",
         bio: "CEO of the Global IT Smart Solutions Consortium, international leadership consultant, and expert in economic and environmental geography, with extensive experience in managing international projects and environmental protection.",
         skills: ["Leadership", "Urban Planning", "Economic Geography", "Environmental Protection", "International Consultancy"],
         experience: [
@@ -180,36 +152,14 @@ const speakers = [
     {
         id: 5,
         name: "Patrice NYAMY",
-        title: "Artificial Intelligence Specialist",
-        email: "thomas.bernard@gmail.com",
-        phone: "+33 6 78 34 12 45",
-        bio: "Expert in artificial intelligence and machine learning.",
-        skills: ["Artificial Intelligence", "Machine Learning", "Data Science"],
+        title: "Software Engineer - CEO",
+        email: "",
+        phone: "",
+        bio: "",
+        skills: [],
         experience: [
-            {
-                poste: "Data Science",
-                entreprise: "AI Technology",
-                periode: "2021 - Present",
-                description: "Developing AI models for applied research projects."
-            },
-            {
-                poste: "Computer Engineer",
-                entreprise: "World Bank, Thales, Oxiane, Qualigraf, Secretariat General for European Affairs",
-                periode: "Before 2020",
-                description: "Worked for several major organizations and companies in France."
-            }
         ],
         education: [
-            {
-                diplome: "PhD in Artificial Intelligence",
-                etablissement: "INRIA",
-                annee: "2020"
-            },
-            {
-                diplome: "Degree in Computer Science",
-                institution: "University Paris 6",
-                annee: "Before 2020"
-            }
         ],
         additional_info: {
             panelist_years: ["2021", "2022", "2023"],
@@ -301,33 +251,23 @@ const speakers = [
     {
         id: 7,
         name: "Dr Anne Josiane KOUAM",
-        title: "Consultant, Data Science, and Machine Learning Expert",
-        email: "clement.fogue@gmail.com",
-        phone: "+33 7 89 65 43 21",
-        bio: "Consultant in Data Science and Machine Learning, with expertise in AI, Big Data, and blockchain.",
-        skills: ["Data Science", "Machine Learning", "Blockchain", "Big Data"],
+        title: "",
+        email: "",
+        phone: "",
+        bio: "",
+        skills: [],
         experience: [
-            {
-                poste: "Data Science Consultant",
-                entreprise: "Data Consultancy",
-                periode: "2019 - Present",
-                description: "Advising businesses on using data technologies to enhance performance."
-            }
         ],
         education: [
-            {
-                diplome: "Master's in Data Science",
-                etablissement: "University Pierre and Marie Curie",
-                annee: "2018"
-            }
+ 
         ]
     },
     {
         id: 8,
         name: "Dr Anicet FANGWA",
         title: "Assistant Professor, Strategy and Organization Expert, Consultant in Data Science and Machine Learning",
-        email: "clement.fogue@gmail.com",
-        phone: "+33 7 89 65 43 21",
+        email: "",
+        phone: "",
         bio: "Anicet Fangwa Nantcho is an Assistant Professor in Strategy and Organization at McGill Desautels Faculty of Management. His research focuses on understanding how organizational governance affects the achievement of the United Nations' Sustainable Development Goals (SDGs), including promoting good health, gender equality, and sustainable cities. He argues that implementing management theories focused on governance and managerial practices is key to addressing inadequate healthcare issues and tackling poverty, gender inequality, climate change, humanitarian crises, professional integration, and access to clean water and sanitation.",
         skills: ["Data Science", "Machine Learning", "Blockchain", "Big Data", "Sustainable Development", "Strategy", "Organizational Governance"],
         experience: [
@@ -415,8 +355,8 @@ const speakers = [
         id: 9,
         name: "Dr Gilles Tagne",
         title: "Associate Professor in Robotics, Expert in Data Science and Machine Learning",
-        email: "clement.fogue@gmail.com",
-        phone: "+33 7 89 65 43 21",
+        email: "",
+        phone: "",
         bio: "After an outstanding academic career, Gilles turned to applied research in robotics and industry. His current work focuses on modeling and controlling robotic systems, with applications in the future industry, connected/robotic agriculture, and the development of intelligent devices to improve the autonomy of people with disabilities.",
         skills: ["Mobile Robotics", "Industrial Robotics", "Automation", "Future Industry", "Industrial Computing"],
         experience: [
@@ -492,25 +432,14 @@ const speakers = [
     {
         id: 10,
         name: "Pr Moïse ADAMOU",
-        title: "Consultant, Data Science, and Machine Learning Expert",
-        email: "clement.fogue@gmail.com",
-        phone: "+33 7 89 65 43 21",
-        bio: "Consultant in Data Science and Machine Learning, with expertise in AI, Big Data, and blockchain.",
-        skills: ["Data Science", "Machine Learning", "Blockchain", "Big Data"],
+        title: "",
+        email: "",
+        phone: "",
+        bio: "",
+        skills: [],
         experience: [
-            {
-                poste: "Data Science Consultant",
-                entreprise: "Data Consultancy",
-                periode: "2019 - Present",
-                description: "Advising businesses on using data technologies to enhance performance."
-            }
         ],
         education: [
-            {
-                diplome: "Master's in Data Science",
-                etablissement: "University Pierre and Marie Curie",
-                annee: "2018"
-            }
         ]
     },
 
@@ -522,10 +451,11 @@ const intervenants = [
     {
         id: 1,
         name: "Jean Claude AWALA",
-        title: "Expert en Cybersécurité",
-        email: "pierre.morel@gmail.com",
-        phone: "+33 6 98 76 54 32",
-        bio: "Expert en cybersécurité avec une expérience approfondie en audit et en gestion des risques.",
+        title: "Magistrat Hors Echelle - Conseiller Technique à la Présidence de la République du Cameroun",
+        email: "",
+        phone: "",
+        bio: "Premier avocat général au parquet général près de la Cour Suprême, M AWALA Wodougue Jean Claude est un magistrat Hors hiérarchie" +
+            " au parcours professionel exceptionnel",
         skills: ["Cybersécurité", "Audit", "Gestion des risques"],
         experience: [
             {
