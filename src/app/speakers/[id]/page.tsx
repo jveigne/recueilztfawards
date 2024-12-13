@@ -1,8 +1,8 @@
 'use client';
 
 import Link from "next/link";
-import { use } from "react";
-import { useBooleanContext } from "../../../../context/LanguageContext";
+import {use} from "react";
+import {useBooleanContext} from "../../../../context/LanguageContext";
 
 const speakers = [
     {
@@ -13,10 +13,8 @@ const speakers = [
         phone: "",
         bio: "First Advocate General at the General Prosecutor's Office near the Supreme Court, Mr. AWALA Wodougue Jean Claude is a magistrate of exceptional professional career and outside the traditional hierarchy.",
         skills: [],
-        experience: [
-        ],
-        education: [
-        ]
+        experience: [],
+        education: []
     },
     {
         id: 2,
@@ -26,14 +24,12 @@ const speakers = [
         phone: "",
         bio: "",
         skills: [],
-        experience: [
-        ],
-        education: [
-        ]
+        experience: [],
+        education: []
     },
     {
         id: 3,
-        name: "Pr Dieudonné Njamen",
+        name: "Pr Dieudonné NJAMEN",
         title: "Full Professor",
         email: "",
         phone: "",
@@ -148,23 +144,35 @@ const speakers = [
             ]
         }
     },
-    
+
     {
         id: 5,
         name: "Patrice NYAMY",
         title: "Software Engineer - CEO",
         email: "",
         phone: "",
-        bio: "",
+        bio: "After his computer science degree at the University of Paris 6 (France), Mr. Nyamy worked for several large organizations and companies in France such as the World Bank, " +
+            "Thalès, Orange, Qualigraf and the General Secretariat for European Affairs",
         skills: [],
         experience: [
+            {
+                poste: "Entrepreneur",
+                entreprise: "",
+                periode: "",
+                description: "In 2020, he decided to launch into entrepreneurship. He is today at the head of several companies " +
+                    "in various fields: IT, literary publishing and book production and event services."
+            },
         ],
         education: [
+            {
+                diplome: "Computer Science",
+                etablissement: "University of Paris 6 ",
+                annee: ""
+            }
         ],
-        additional_info: {
-         }
+        additional_info: {}
     },
-    
+
     {
         id: 6,
         name: "Steve NJOUONKEP",
@@ -245,19 +253,79 @@ const speakers = [
             }
         ]
     },
-    
     {
         id: 7,
         name: "Dr Anne Josiane KOUAM",
-        title: "",
+        title: "Doctor Engineer - Researcher at TU Berlin",
         email: "",
         phone: "",
-        bio: "",
-        skills: [],
+        bio: "Experienced researcher in fraud detection, data anonymization, and mobility behavior analysis. Expertise in programming, machine learning, and academic supervision.",
+        skills: [
+            "Data analysis",
+            "Fraud detection",
+            "Machine learning",
+            "Research and development in telecommunications",
+            "Mobility data modeling",
+            "Python",
+            "C/C++",
+            "Java",
+            "Shell",
+            "French (native)",
+            "English (advanced)",
+            "German (intermediate)",
+            "Spanish (basic)"
+        ],
         experience: [
+            {
+                poste: "Supervision of students",
+                description: "Supervision of master's and PhD students at TU Berlin on projects related to privacy, fraud detection, and mobility data analysis.",
+                periode: "Oct 2024 - present",
+                entreprise: ""
+            },
+            {
+                poste: "Researcher",
+                description: "Expertise in fraud detection, anonymization, and modeling of cellular and mobility data.",
+                periode: "2019 - present",
+                entreprise: ""
+            },
+            {
+                poste: "Organization of scientific events",
+                description: "Organization of hackathons, panels, and conferences related to network security and innovation.",
+                periode: "2020 - present",
+                entreprise: ""
+            }
         ],
         education: [
- 
+            {
+                diplome: "PhD",
+                etablissement: "INRIA - Ecole Polytechnique - IPP France",
+                details: "Thesis funded by a Cordi-S scholarship, specializing in cellular fraud detection and data modeling.",
+                annee: ""
+            },
+            {
+                diplome: "Engineering degree",
+                etablissement: "Ecole National Polytechnique, Yaounde - Cameroon",
+                details: "Thesis funded by a Cordi-S scholarship, specializing in cellular fraud detection and data modeling.",
+                annee: ""
+            }
+        ],
+        awards_and_honors: [
+            {
+                titre: "Winner of the Heidelberg Young Researchers Forum (HLF)",
+                annee: 2024,
+                description: "Award for promising young researchers in mathematics and computer science."
+            },
+            {
+                titre: "Best student paper award",
+                annee: 2023,
+                description: "Award given for an exceptional publication (CoRes 2023)."
+            }
+        ],
+        interests: [
+            "Piano",
+            "Graphic design",
+            "French literature",
+            "Participation in associations for workers' well-being"
         ]
     },
     {
@@ -348,7 +416,7 @@ const speakers = [
             }
         ]
     },
-    
+
     {
         id: 9,
         name: "Dr Gilles Tagne",
@@ -480,7 +548,6 @@ const speakers = [
 ];
 
 
-
 const intervenants = [
     {
         id: 1,
@@ -491,10 +558,8 @@ const intervenants = [
         bio: "Premier avocat général au parquet général près de la Cour Suprême, M AWALA Wodougue Jean Claude est un magistrat Hors hiérarchie" +
             " au parcours professionel exceptionnel",
         skills: [],
-        experience: [
-        ],
-        education: [
-        ]
+        experience: [],
+        education: []
     },
     {
         id: 2,
@@ -504,14 +569,12 @@ const intervenants = [
         phone: "",
         bio: "",
         skills: [],
-        experience: [
-        ],
-        education: [
-        ]
+        experience: [],
+        education: []
     },
     {
         id: 3,
-        name: "Prof Dieudonné Njamen",
+        name: "Prof Dieudonné NJAMEN",
         title: "Professeur titulaire",
         email: "",
         phone: "",
@@ -576,7 +639,7 @@ const intervenants = [
         name: "Joseph NGANDEU",
         title: "PDG, Consultant International, Urbaniste et Expert-Environnementaliste",
         email: "joseph.ngandeu@gmail.com",
-        phone: "+33 6 45 23 67 89",
+        phone: "",
         bio: "PDG du Consortium Global IT Smart Solutions, consultant international en leadership et expert en géographie économique et environnementale, avec une riche expérience dans la gestion de projets internationaux et la protection de l'environnement.",
         skills: ["Leadership", "Urbanisme", "Géographie économique", "Protection de l'environnement", "Consultation internationale"],
         experience: [
@@ -626,117 +689,193 @@ const intervenants = [
             ]
         }
     },
-    
+
     {
         id: 5,
         name: "Patrice NYAMY",
         title: "Ingénieur Informatique - PDG de plusieurs entreprises",
         email: "",
         phone: "",
-        bio: "",
+        bio: "Après son diplôme d'informatique à l'Université Paris 6 ( France ), M. Nyamy a travaillé pour plusieurs grandes organisations et entreprises en France telles que la banque mondiale, Thalès," +
+            " Orange, Qualigraf et le secrétariat général aux affaires européennes",
         skills: [],
         experience: [
+            {
+                poste: "Entrepreneur",
+                entreprise: "",
+                periode: "",
+                description: "Il a en 2020 décidé de se lancer dans l'entrepreunariat. Il est aujourd'hui à la tête de plusieurs entreprises dans divers domaines: " +
+                    "informatique, d'édition littéraire et production de livres et de services évènementiels"
+            },
         ],
         education: [
+            {
+                diplome: "Informatique",
+                etablissement: "Université Paris 6 ",
+                annee: ""
+            }
         ],
-        additional_info: {
-      }
+        additional_info: {}
     },
-    
+
     {
-            id: 6,
-            name: "Steve NJOUONKEP",
-            title: "Épidémiologiste, chercheur doctorant en épidémiologie moléculaire",
-            email: "",
-            phone: "",
-            bio: "Steve est épidémiologiste, et étudie les facteurs de risques modifiables des maladies cardiométaboliques/chroniques non transmissibles. Sa thèse en cours porte sur la comorbidité du syndrome métabolique, précurseur du diabète et des maladies cardiovasculaires, et le syndrome de fragilité. Il utilise une approche intégrative combinant la métabolomique, avec les données cliniques, sociodémographiques et les habitudes alimentaires provenant de larges cohortes de patients. L’objectif est de découvrir des biomarqueurs sanguins qui reflètent des désordres métaboliques silencieux, permettant de prédire la survenue des maladies au moins 5 ans avant l'apparition des premiers symptômes cliniques.",
-            skills: ["Épidémiologie moléculaire", "Biostatistiques", "Nutrition", "Recherche clinique"],
-            experience: [
-                {
-                    poste: "Doctorant en épidémiologie moléculaire",
-                    entreprise: "INRAE / Institut universitaire de gériatrie de Montréal",
-                    periode: "2023 - Aujourd'hui",
-                    description: "Recherche sur les comorbidités du syndrome métabolique et du syndrome de fragilité à l'aide de données cliniques, métabolomiques et nutritionnelles."
-                },
-                {
-                    poste: "Collaborateur de recherche",
-                    entreprise: "Université Sorbonne Paris Nord",
-                    periode: "2021 - 2023",
-                    description: "Contribuer aux études sur la relation entre l'alimentation et les maladies chroniques dans la cohorte NutriNet-Santé."
-                }
-            ],
-            education: [
-                {
-                    diplome: "Doctorant en épidémiologie moléculaire (Boursier)",
-                    etablissement: "INRAE / Université de Montréal",
-                    annee: "2023 - en cours"
-                },
-                {
-                    diplome: "Master en Biostatistiques",
-                    etablissement: "Université Paris-Saclay",
-                    annee: "2023"
-                },
-                {
-                    diplome: "Master en Épidémiologie Nutritionnelle",
-                    etablissement: "Université Sorbonne Paris Nord",
-                    annee: "2021"
-                }
-            ],
-            activities_and_publications: [
-                {
-                    titre: "Prevalence and determinant of metabolic syndrome and pre-frailty comorbidity: results from the Whitehall II study",
-                    annee: "2024"
-                },
-                {
-                    titre: "N-glycolylneuraminic acid (Neu5Gc) and risk of cardiovascular diseases: A longitudinal analysis in the French NutriNet-Santé cohort",
-                    annee: "2022"
-                },
-                {
-                    titre: "Associations between ultra-processed food intakes and asthma symptoms or asthma control among the participants of the NutriNet-santé study",
-                    annee: "2022"
-                }
-            ],
-            scientific_conferences: [
-                {
-                    titre: "Metabolic phenotypes of metabolic syndrome and pre-frailty comorbidity in older adults",
-                    conference: "NutriNor conference",
-                    annee: "2024",
-                    lieu: "Oslo, Norvège"
-                },
-                {
-                    titre: "Prevalence and determinant of metabolic syndrome and pre-frailty comorbidity: results from the Whitehall II study",
-                    conference: "World conference of epidemiology",
-                    annee: "2024",
-                    lieu: "Cap-Town, Afrique du Sud"
-                },
-                {
-                    titre: "Qualité de vie liée à la santé des personnes vivant avec le diabète de type 2 au Centre national d’hypertension et de diabète de Yaoundé",
-                    conference: "Congrès de la Société Francophone du Diabète",
-                    annee: "2019",
-                    lieu: "Marseille, France"
-                },
-                {
-                    titre: "Qualité de vie liée à la santé des personnes vivant avec le diabète de type 2 au Centre national d’hypertension et de diabète de Yaoundé",
-                    conference: "Congrès africain diabète",
-                    annee: "2019",
-                    lieu: "Yaoundé, Cameroun"
-                }
-            ]
-        },
-        
+        id: 6,
+        name: "Steve NJOUONKEP",
+        title: "Épidémiologiste, chercheur doctorant en épidémiologie moléculaire",
+        email: "",
+        phone: "",
+        bio: "Steve est épidémiologiste, et étudie les facteurs de risques modifiables des maladies cardiométaboliques/chroniques non transmissibles. Sa thèse en cours porte sur la comorbidité du syndrome métabolique, précurseur du diabète et des maladies cardiovasculaires, et le syndrome de fragilité. Il utilise une approche intégrative combinant la métabolomique, avec les données cliniques, sociodémographiques et les habitudes alimentaires provenant de larges cohortes de patients. L’objectif est de découvrir des biomarqueurs sanguins qui reflètent des désordres métaboliques silencieux, permettant de prédire la survenue des maladies au moins 5 ans avant l'apparition des premiers symptômes cliniques.",
+        skills: ["Épidémiologie moléculaire", "Biostatistiques", "Nutrition", "Recherche clinique"],
+        experience: [
+            {
+                poste: "Doctorant en épidémiologie moléculaire",
+                entreprise: "INRAE / Institut universitaire de gériatrie de Montréal",
+                periode: "2023 - Aujourd'hui",
+                description: "Recherche sur les comorbidités du syndrome métabolique et du syndrome de fragilité à l'aide de données cliniques, métabolomiques et nutritionnelles."
+            },
+            {
+                poste: "Collaborateur de recherche",
+                entreprise: "Université Sorbonne Paris Nord",
+                periode: "2021 - 2023",
+                description: "Contribuer aux études sur la relation entre l'alimentation et les maladies chroniques dans la cohorte NutriNet-Santé."
+            }
+        ],
+        education: [
+            {
+                diplome: "Doctorant en épidémiologie moléculaire (Boursier)",
+                etablissement: "INRAE / Université de Montréal",
+                annee: "2023 - en cours"
+            },
+            {
+                diplome: "Master en Biostatistiques",
+                etablissement: "Université Paris-Saclay",
+                annee: "2023"
+            },
+            {
+                diplome: "Master en Épidémiologie Nutritionnelle",
+                etablissement: "Université Sorbonne Paris Nord",
+                annee: "2021"
+            }
+        ],
+        activities_and_publications: [
+            {
+                titre: "Prevalence and determinant of metabolic syndrome and pre-frailty comorbidity: results from the Whitehall II study",
+                annee: "2024"
+            },
+            {
+                titre: "N-glycolylneuraminic acid (Neu5Gc) and risk of cardiovascular diseases: A longitudinal analysis in the French NutriNet-Santé cohort",
+                annee: "2022"
+            },
+            {
+                titre: "Associations between ultra-processed food intakes and asthma symptoms or asthma control among the participants of the NutriNet-santé study",
+                annee: "2022"
+            }
+        ],
+        scientific_conferences: [
+            {
+                titre: "Metabolic phenotypes of metabolic syndrome and pre-frailty comorbidity in older adults",
+                conference: "NutriNor conference",
+                annee: "2024",
+                lieu: "Oslo, Norvège"
+            },
+            {
+                titre: "Prevalence and determinant of metabolic syndrome and pre-frailty comorbidity: results from the Whitehall II study",
+                conference: "World conference of epidemiology",
+                annee: "2024",
+                lieu: "Cap-Town, Afrique du Sud"
+            },
+            {
+                titre: "Qualité de vie liée à la santé des personnes vivant avec le diabète de type 2 au Centre national d’hypertension et de diabète de Yaoundé",
+                conference: "Congrès de la Société Francophone du Diabète",
+                annee: "2019",
+                lieu: "Marseille, France"
+            },
+            {
+                titre: "Qualité de vie liée à la santé des personnes vivant avec le diabète de type 2 au Centre national d’hypertension et de diabète de Yaoundé",
+                conference: "Congrès africain diabète",
+                annee: "2019",
+                lieu: "Yaoundé, Cameroun"
+            }
+        ]
+    },
+
     {
         id: 7,
         name: "Dr Anne Josiane KOUAM",
         title: "Docteur Ingénieur - Chercheur à TU Berlin",
         email: "",
         phone: "",
-        bio: "",
-        skills: [],
+        bio: "Chercheur expérimenté en détection de fraudes, anonymisation des données, et analyse des comportements de mobilité. Expertise en programmation, apprentissage automatique, et encadrement académique.",
+        skills: [
+            "Analyse des données",
+            "Détection de fraudes",
+            "Apprentissage automatique",
+            "Recherche et développement en télécommunications",
+            "Modélisation des données de mobilité",
+            "Python",
+            "C/C++",
+            "Java",
+            "Shell",
+            "Français (natif)",
+            "Anglais (avancé)",
+            "Allemand (intermédiaire)",
+            "Espagnol (de base)"
+        ],
         experience: [
+            {
+                poste: "Supervision d'étudiants",
+                description: "Supervision d’étudiants en master et doctorat, TU Berlin, dans des projets liés à la confidentialité, la détection de fraudes, et l’analyse des données de mobilité.",
+                periode: "Oct 2024 - présent",
+                entreprise: ""
+            },
+            {
+                poste: "Chercheur",
+                description: "Expertise en détection de fraudes, anonymisation, et modélisation des données cellulaires et de mobilité.",
+                periode: "2019 - présent",
+                entreprise: ""
+                
+            },
+            {
+                poste: "Organisation d’événements scientifiques",
+                description: "Organisation de hackathons, panels, et conférences liés à la sécurité des réseaux et à l’innovation.",
+                periode: "2020 - présent",
+                entreprise: ""
+            }
         ],
         education: [
+            {
+                diplome: "Doctorat",
+                etablissement: "INRIA - Ecole Polytechnique - IPP France",
+                details: "Thèse financée par une bourse Cordi-S, spécialisée en détection de fraudes cellulaires et modélisation de données.",
+                annee: ""
+            },
+            {
+                diplome: "Diplôme d'ingénieur",
+                etablissement: "Ecole National Polytechnique, Yaounde - Cameroun",
+                details: "Thèse financée par une bourse Cordi-S, spécialisée en détection de fraudes cellulaires et modélisation de données.",
+                annee: ""
+            },
+        ],
+        awards_and_honors: [
+            {
+                titre: "Lauréate du Forum des Jeunes Chercheurs de Heidelberg (HLF)",
+                annee: 2024,
+                description: "Récompense pour de jeunes chercheurs prometteurs dans les mathématiques et l'informatique."
+            },
+            {
+                titre: "Prix du meilleur article étudiant",
+                annee: 2023,
+                description: "Prix décerné pour une publication exceptionnelle (CoRes 2023)."
+            }
+        ],
+        interests: [
+            "Piano",
+            "Design graphique",
+            "Littérature française",
+            "Participation à des associations pour le bien-être des travailleurs"
         ]
     },
+
 
     {
         id: 8,
@@ -826,7 +965,7 @@ const intervenants = [
             }
         ]
     },
-    
+
     {
         id: 9,
         name: "Dr Gilles Tagne",
@@ -950,11 +1089,9 @@ const intervenants = [
                 description: ""
             }
         ],
-        education: [
-        ]
+        education: []
     },
 ];
-
 
 
 // Définir `params` comme une promesse
@@ -963,9 +1100,9 @@ type Params = Promise<{ id: string }>;
 export default function SpeakerProfilePage({params}: { params: Params }) {
 
     const resolvedParams = use(params);
-    const { boolState } = useBooleanContext(); // récupère le contexte de la langue fr/en
+    const {boolState} = useBooleanContext(); // récupère le contexte de la langue fr/en
     const id = parseInt(resolvedParams.id, 10);
-    const list = boolState ? speakers: intervenants;
+    const list = boolState ? speakers : intervenants;
     const speaker = list.find((speaker) => speaker.id === id);
     if (!speaker) {
         return (
@@ -1034,15 +1171,15 @@ export default function SpeakerProfilePage({params}: { params: Params }) {
 
                     {/* Styles pour l'animation des étoiles */}
                     <style jsx>{`
-                    @keyframes twinkle {
-                        0%, 100% {
-                            opacity: 0.3;
+                        @keyframes twinkle {
+                            0%, 100% {
+                                opacity: 0.3;
+                            }
+                            50% {
+                                opacity: 1;
+                            }
                         }
-                        50% {
-                            opacity: 1;
-                        }
-                    }
-                `}</style>
+                    `}</style>
                 </header>
 
                 <p>Speaker introuvable</p>;
@@ -1168,7 +1305,7 @@ export default function SpeakerProfilePage({params}: { params: Params }) {
                         {speaker.education.map((education, index) => (
                             <div key={index} className="mb-2">
                                 <h4 className="font-semibold">{education.diplome}</h4>
-                                <p>{education.etablissement}  {education.annee}</p>
+                                <p>{education.etablissement} {education.annee}</p>
                             </div>
                         ))}
                     </section>

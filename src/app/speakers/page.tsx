@@ -18,7 +18,7 @@ const intervenants = [
     },
     {
         id: '3',
-        name: 'Prof Dieudonné NDJAMEN',
+        name: 'Prof Dr Dieudonné NJAMEN',
         title: 'Professeur Titulaire des Universités - Université de Yaoundé 1 - Recteur Université ZTF Cameroun',
         image: '/images/dieudonne.jpg',
     },
@@ -42,26 +42,26 @@ const intervenants = [
     },
     {
         id: '7',
-        name: 'Anne Josiane KOUAM',
+        name: 'Dr Anne Josiane KOUAM',
         title: 'Docteur Ingénieur - Chercheur à TU Berlin - Allemagne',
         image: '/images/josiane.jpg',
     },
     {
         id: '8',
-        name: 'Anicet FANGWA',
+        name: 'Dr Anicet FANGWA',
         title: 'Docteur - Professeur assistant - Université de McGill - Canada',
         image: '/images/anicet.jpg',
     },
     {
         id: '9',
-        name: 'Gilles TAGNE',
+        name: 'Dr Gilles TAGNE',
         title: 'Professeur associé en Robotique - JUNIA - Université de Lille France',
         image: '/images/gilles.jpg',
     },
     {
         id: '10',
-        name: 'Moïse ADAMOU',
-        title: 'Professeur - Université de Ngaoundéré - Vice Doyen chargé de la recherche et de la coopération université de Garoua Cameroun',
+        name: 'Prof Moïse ADAMOU',
+        title: 'Professeur - Vice Doyen, recherche et coopération / FMSB - université de Garoua Cameroun',
         image: '/images/adamou.jpg',
     },
 
@@ -81,7 +81,7 @@ const speakers = [
     },
     {
         id: '3',
-        name: 'Dieudonné NDJAMEN',
+        name: 'Prof Dr Dieudonné NJAMEN',
         title: 'Professor - Yaoundé 1 University - Rector ZTF University Cameroon',
         image: '/images/dieudonne.jpg',
     },
@@ -105,26 +105,26 @@ const speakers = [
     },
     {
         id: '7',
-        name: 'Anne Josiane KOUAM',
+        name: 'Dr Anne Josiane KOUAM',
         title: 'Engineer Doctor - Researcher at TU Berlin - Germany',
         image: '/images/josiane.jpg',
     },
     {
         id: '8',
-        name: 'Anicet FANGWA',
+        name: 'Dr Anicet FANGWA',
         title: 'PhD Assistant Professor - McGill University Desautels Faculty of Management - Canada',
         image: '/images/anicet.jpg',
     },
     {
         id: '9',
-        name: 'Gilles TAGNE',
+        name: 'Dr Gilles TAGNE',
         title: 'Associate Professor in Robotics - JUNIA - University of Lille, France',
         image: '/images/gilles.jpg',
     },
     {
         id: '10',
-        name: 'Moïse ADAMOU',
-        title: 'Professor - University of Ngaoundéré - Vice-Dean in charge of research and cooperation at the University of Garoua, Cameroon',
+        name: 'Prof Moïse ADAMOU',
+        title: 'Professor - Vice-Dean , research and cooperation FSMB / University of Garoua, Cameroon',
         image: '/images/adamou.jpg',
     }
 
@@ -228,13 +228,24 @@ export default function SpeakersPage() {
                                 </h2>
                                 <p className="text-center text-gray-600 italic">{event.title}</p>
                                 <div className="text-center mt-6">
-                                    <Link href={`/speakers/${event.id}`}>
-                                        <button
-                                            className="px-6 py-2 bg-yellow-600 text-white rounded-md hover:bg-yellow-700 transition-colors">
-                                            Voir le profil
-                                        </button>
-                                    </Link>
-                                </div>*
+                                    {boolState ? (
+
+                                        <Link href={`/speakers/${event.id}`}>
+                                            <button
+                                                className="px-6 py-2 bg-yellow-600 text-white rounded-md hover:bg-yellow-700 transition-colors">
+                                                Profile
+                                            </button>
+                                        </Link>
+
+                                    ) : (
+                                        <Link href={`/speakers/${event.id}`}>
+                                            <button
+                                                className="px-6 py-2 bg-yellow-600 text-white rounded-md hover:bg-yellow-700 transition-colors">
+                                                Voir le profil
+                                            </button>
+                                        </Link>
+                                    )}
+                                </div>
                             </div>
                         ))}
                     </div>
